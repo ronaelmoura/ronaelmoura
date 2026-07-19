@@ -1,129 +1,53 @@
-<h1 align="center">👋 Olá, eu sou Ronael Moura</h1>
+<h1 align="center">
+Olá 👋, eu sou Ronael Moura
+</h1>
 
 <h3 align="center">
-Desenvolvedor Full Stack • Suporte em TI • Criador da Ronas Tech
+Desenvolvedor Full Stack
 </h3>
-
 <p align="center">
 Transformando ideias em soluções reais através da tecnologia.
 </p>
+<p align="center">
 
----
+<a href="https://github.com/ronaelmoura">
+<img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white">
+</a>
 
-# 🚀 Sobre mim
+<a href="https://www.linkedin.com/in/ronael-moura">
+<img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white">
+</a>
 
-Sou Desenvolvedor Full Stack formado pelo SENAI, apaixonado por tecnologia, desenvolvimento web e aprendizado contínuo.
+<a href="https://ronaelmoura.github.io/portfolio-ronas-tech/">
+<img src="https://img.shields.io/badge/Portfólio-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white">
+</a>
 
-Atualmente estou desenvolvendo o **Ronas Desk**, um sistema completo para gestão de clientes e chamados, aplicando boas práticas de arquitetura, Git, banco de dados e desenvolvimento Full Stack.
+</p>
+## 💻 Sobre mim
 
-Também possuo experiência em Suporte em TI, manutenção de computadores e atendimento a usuários.
+Sou Desenvolvedor Full Stack formado pelo SENAI, apaixonado por tecnologia e desenvolvimento web.
+
+Atualmente desenvolvo o **Ronas Desk**, um sistema completo para gerenciamento de clientes e chamados, aplicando boas práticas de arquitetura de software.
+
+Também possuo experiência em Suporte em TI, manutenção de computadores e atendimento ao usuário.
 
 Meu objetivo é evoluir constantemente como desenvolvedor e construir soluções modernas, escaláveis e de qualidade.
 
----
+## 🚀 Tecnologias
 
-# 💻 Tecnologias
+## ⭐ Projeto em Destaque
 
-### Front-end
-
-- HTML5
-- CSS3
-- JavaScript
-- React
-
-### Back-end
-
-- Node.js
-- Express.js
-
-### Banco de Dados
-
-- MySQL
-
-### Ferramentas
-
-- Git
-- GitHub
-- VS Code
-- Postman
-- Figma
-
----
-
-# ⭐ Projeto em destaque
-
-## Ronas Desk
+### Ronas Desk
 
 Sistema Full Stack para gerenciamento de clientes e chamados.
 
-### Principais funcionalidades
+🚧 Em desenvolvimento.
 
-- Cadastro de clientes
-- Controle de chamados
-- Dashboard
-- API REST
-- Banco de dados MySQL
-- Interface moderna
-- Arquitetura MVC
+## 📫 Contato
 
-🚧 Projeto em desenvolvimento.
+📧 ronaelmoura240@gmail.com
 
----
+📍 Tianguá - Ceará
 
-# 📂 Outros projetos
+💼 Desenvolvedor Full Stack
 
-- 🌐 Portfólio Ronas Tech
-- 🤖 Bot Ticket com IA
-- 🛒 Loja de Games
-- 📚 Projetos desenvolvidos durante o curso de Programador Full Stack
-
----
-
-# 🏆 Formação
-
-🎓 Programador Full Stack — SENAI
-
-Carga horária: **670 horas**
-
----
-
-# 📚 Conhecimentos
-
-- Desenvolvimento Web
-- APIs REST
-- Banco de Dados
-- Git Flow
-- Versionamento
-- Responsividade
-- Boas práticas de código
-
----
-
-# 📈 Atualmente
-
-Estou focado em:
-
-- 🚀 Evoluir o Ronas Desk
-- 📖 Aprimorar React e Node.js
-- 💼 Construir um portfólio profissional
-- 🎥 Produzir conteúdo para o canal Ronas Tech
-
----
-
-# 📫 Contato
-
-📧 Email: ronaelmoura240@gmail.com
-
-💼 LinkedIn:
-https://www.linkedin.com/in/ronael-moura
-
-🌐 Portfólio:
-https://ronaelmoura.github.io/portfolio-ronas-tech/
-
----
-
-<p align="center">
-
-"Transformando aprendizado em soluções reais, um commit de cada vez."
-
-</p>
