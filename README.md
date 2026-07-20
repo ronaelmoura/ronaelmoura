@@ -1,7 +1,7 @@
 <!-- ========================= BANNER ========================= -->
 
 <p align="center">
-  <img src="<img width="1983" height="793" alt="ChatGPT Image 19 de jul  de 2026, 20_28_48" src="https://github.com/user-attachments/assets/f7652d15-7031-4ee1-88fc-ff660e917fcc" />
+  <img src="<img width="1983" height="793" alt="banner-github.png" src="https://github.com/user-attachments/assets/f7652d15-7031-4ee1-88fc-ff660e917fcc" />
 " alt="Ronael Moura Banner" width="100%" />
 </p>
 
