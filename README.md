@@ -9,7 +9,7 @@
 </p>
 
 <h1 align="center">
-Olá 👋, eu sou Ronael Moura
+Opa 👋, eu sou Ronael Moura
 </h1>
 
 <h3 align="center">
