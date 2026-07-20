@@ -53,9 +53,7 @@ Meu objetivo é crescer profissionalmente, contribuir com projetos desafiadores 
 # 🚀 Tecnologias
 
 <p align="center">
-
-<img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,express,mysql,git,github,vscode,postman,figma"/>
-
+<img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,express,mysql,git,github,vscode,postman,figma&theme=dark"/>
 </p>
 
 ---
