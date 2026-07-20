@@ -62,14 +62,6 @@ Meu objetivo é crescer profissionalmente, contribuir com projetos desafiadores 
 
 ---
 
-<div align="center">
-
-<img src="https://streak-stats.demolab.com?user=ronaelmoura&theme=tokyonight"/>
-
-</div>
-
----
-
 # ⭐ Projeto em Destaque
 
 # Ronas Desk
