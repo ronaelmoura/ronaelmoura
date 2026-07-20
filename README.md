@@ -4,6 +4,10 @@
   <img src="./banner-github.png" alt="Banner profissional de Ronael Moura - Desenvolvedor Full Stack" width="100%" />
 </p>
 
+<p align="center">
+  <img src="https://komarev.com/ghpvc/?username=ronaelmoura&label=Visualizações%20do%20Perfil&color=0e75b6&style=for-the-badge" alt="Contador de visitas" />
+</p>
+
 <h1 align="center">
 Olá 👋, eu sou Ronael Moura
 </h1>
