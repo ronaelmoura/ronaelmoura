@@ -44,7 +44,7 @@ Transformando ideias em soluções reais através da tecnologia.
 
 # 👨‍💻 Sobre mim
 
-Sou **Desenvolvedor Full Stack**, formado pelo **SENAI** no curso de **Programador Full Stack (670 horas)**.
+Sou **Desenvolvedor Full Stack**, formado pelo **SENAI** no curso de **Programador Full Stack **.
 
 Tenho experiência com desenvolvimento web, APIs REST, banco de dados MySQL, Git e GitHub, além de atuação em **Suporte em TI**, manutenção de computadores e atendimento a usuários.
 
