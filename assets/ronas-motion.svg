@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+  <title id="title">Ronael Moura — Full Stack Developer</title>
+  <desc id="desc">Painel tecnológico animado com trajetória de desenvolvimento Full Stack.</desc>
+  <defs>
+    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070D"/>
+      <stop offset="0.55" stop-color="#071426"/>
+      <stop offset="1" stop-color="#05070D"/>
+    </linearGradient>
+    <linearGradient id="electric" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#1479FF"/>
+      <stop offset="0.5" stop-color="#19D3FF"/>
+      <stop offset="1" stop-color="#1479FF"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
+      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#65B8FF" stroke-opacity=".08" stroke-width="1"/>
+    </pattern>
+  </defs>
+  <rect width="1200" height="280" rx="18" fill="url(#background)"/>
+  <rect width="1200" height="280" rx="18" fill="url(#grid)"/>
+  <circle cx="1040" cy="70" r="150" fill="#1479FF" opacity=".11">
+    <animate attributeName="r" values="135;168;135" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  <path d="M0 218 H128 L162 184 H275 L316 143 H478" fill="none" stroke="url(#electric)" stroke-width="2" filter="url(#glow)" stroke-dasharray="500" stroke-dashoffset="500">
+    <animate attributeName="stroke-dashoffset" values="500;0" dur="2.4s" repeatCount="indefinite"/>
+  </path>
+  <path d="M1200 54 H1074 L1028 100 H900 L854 146 H728" fill="none" stroke="url(#electric)" stroke-width="2" filter="url(#glow)" stroke-dasharray="500" stroke-dashoffset="500">
+    <animate attributeName="stroke-dashoffset" values="500;0" dur="2.8s" begin=".5s" repeatCount="indefinite"/>
+  </path>
+  <g fill="#19D3FF" filter="url(#glow)">
+    <circle cx="162" cy="184" r="5"><animate attributeName="opacity" values=".25;1;.25" dur="1.5s" repeatCount="indefinite"/></circle>
+    <circle cx="316" cy="143" r="5"><animate attributeName="opacity" values=".25;1;.25" dur="1.5s" begin=".4s" repeatCount="indefinite"/></circle>
+    <circle cx="1028" cy="100" r="5"><animate attributeName="opacity" values=".25;1;.25" dur="1.5s" begin=".7s" repeatCount="indefinite"/></circle>
+  </g>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <text x="70" y="83" fill="#19D3FF" font-size="13" font-weight="700" letter-spacing="4">RONAS // BUILD LOG</text>
+    <text x="70" y="140" fill="#F4F7FB" font-size="42" font-weight="800" letter-spacing="-1">RONAEL MOURA</text>
+    <text x="70" y="174" fill="#A9B9CC" font-size="18" letter-spacing="2">FULL STACK DEVELOPER</text>
+    <text x="70" y="245" fill="#19D3FF" font-size="14" font-family="monospace">PROBLEMA → PRODUTO → TESTES → DEPLOY</text>
+    <text x="782" y="89" fill="#A9B9CC" font-size="12" letter-spacing="2">CURRENT SYSTEM</text>
+    <text x="782" y="125" fill="#F4F7FB" font-size="27" font-weight="700">RONAS DESK</text>
+    <text x="782" y="151" fill="#19D3FF" font-size="14" font-family="monospace">v1.0.0 · STABLE · ONLINE</text>
+    <rect x="782" y="180" width="336" height="8" rx="4" fill="#10263F"/>
+    <rect x="782" y="180" width="282" height="8" rx="4" fill="url(#electric)">
+      <animate attributeName="width" values="40;282;282" dur="2.6s" repeatCount="indefinite"/>
+    </rect>
+    <text x="782" y="222" fill="#A9B9CC" font-size="12" letter-spacing="1">REACT · NODE · EXPRESS · MYSQL</text>
+  </g>
+</svg>

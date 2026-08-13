@@ -1,4 +1,4 @@
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:05070D,45:071426,100:1479FF&height=190&section=header&text=Ronael%20Moura&fontSize=48&fontColor=F4F7FB&fontAlignY=38&desc=FULL%20STACK%20DEVELOPER%20%E2%80%A2%20RONAS%20TECH&descAlignY=60&descSize=14&animation=fadeIn" alt="Ronael Moura — Desenvolvedor Full Stack" />
+<img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/ronas-motion.svg" alt="Ronael Moura — Full Stack Developer" />
 
 <p align="center">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=900&color=19D3FF&center=true&vCenter=true&width=700&lines=Eu+transformo+problemas+reais+em+software+que+funciona.;React+%2B+Node.js+%2B+Express+%2B+MySQL.;Do+problema+ao+deploy%2C+com+qualidade+e+responsabilidade." alt="Desenvolvedor Full Stack construindo software útil" />
@@ -41,6 +41,17 @@ Minha experiência em suporte de TI me ensinou a investigar antes de programar, 
   </tr>
 </table>
 
+## 🧭 Meu painel de construção
+
+```javascript
+const ronael = {
+  foco: 'transformar problemas operacionais em software útil',
+  entrego: ['interface', 'API REST', 'regras de negócio', 'dados', 'testes', 'deploy'],
+  agora: 'Ronas Desk v1.0 em produção',
+  próximoDesafio: 'contribuir em um time que constrói produtos com impacto real',
+}
+```
+
 ## 🚀 Case principal — Ronas Desk v1.0
 
 <p align="center">
@@ -57,6 +68,17 @@ Plataforma Full Stack de Help Desk publicada em produção. Criei para simular a
 | Produto | Engenharia | Qualidade |
 | --- | --- | --- |
 | Clientes, chamados, SLA, relatórios, auditoria, anexos e Portal do Cliente | React 19, Express 5, MySQL, JWT, Docker, Nginx, Render, Aiven TLS e Cloudinary | **122 testes automatizados**, CI no GitHub Actions, Helmet, rate limit e permissões por perfil |
+
+### Arquitetura que eu construí
+
+```mermaid
+flowchart LR
+  U["Equipe e clientes"] --> F["React 19"]
+  F --> A["API REST · Express 5"]
+  A --> S["Serviços e regras de negócio"]
+  S --> D[("MySQL com TLS")]
+  S --> C["Cloudinary · anexos privados"]
+```
 
 ## 🧰 Stack de trabalho
 
@@ -80,6 +102,19 @@ Plataforma Full Stack de Help Desk publicada em produção. Criei para simular a
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=ronaelmoura&bg_color=05070D&color=C9D5E3&line=1479FF&point=19D3FF&area=true&area_color=071426&hide_border=true" alt="Atividade no GitHub" />
+</p>
+
+<p align="center">
+  <img src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/output/github-contribution-grid-snake.svg" alt="Animação das contribuições no GitHub" />
+</p>
+
+## 🤝 Vamos construir algo que importa
+
+Se a sua empresa procura alguém com disposição para entender o problema, aprender rápido e entregar software que funciona de verdade, vamos conversar.
+
+<p align="center">
+  <a href="mailto:ronaelmoura240@gmail.com"><img src="https://img.shields.io/badge/ENVIAR_E--MAIL-19D3FF?style=for-the-badge&logo=gmail&logoColor=05070D" alt="Enviar e-mail para Ronael Moura" /></a>
+  <a href="https://www.linkedin.com/in/ronael-moura"><img src="https://img.shields.io/badge/CONECTAR_NO_LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="Conectar no LinkedIn" /></a>
 </p>
 
 <img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:1479FF,55:071426,100:05070D&height=120&section=footer&text=Vamos+construir+algo+que+funciona.&fontSize=22&fontColor=F4F7FB&fontAlignY=67&animation=twinkling" alt="Vamos construir algo que funciona" />
