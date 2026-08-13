@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="190" viewBox="0 0 1200 190" role="img" aria-labelledby="title desc">
+  <title id="title">Fluxo de engenharia de Ronael Moura</title>
+  <desc id="desc">Um fluxo animado que conecta problema, produto, testes e deploy.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#071426"/><stop offset="1" stop-color="#05070D"/></linearGradient>
+    <linearGradient id="line" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#1479FF"/><stop offset=".5" stop-color="#19D3FF"/><stop offset="1" stop-color="#1479FF"/></linearGradient>
+    <filter id="glow"><feGaussianBlur stdDeviation="3" result="b"/><feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge></filter>
+  </defs>
+  <rect width="1200" height="190" rx="16" fill="url(#bg)"/>
+  <path d="M100 102 H1095" stroke="#173552" stroke-width="3" stroke-linecap="round"/>
+  <path d="M100 102 H1095" stroke="url(#line)" stroke-width="3" stroke-linecap="round" stroke-dasharray="24 46" filter="url(#glow)">
+    <animate attributeName="stroke-dashoffset" values="0;-70" dur="1.8s" repeatCount="indefinite"/>
+  </path>
+  <g font-family="Arial, Helvetica, sans-serif" text-anchor="middle">
+    <g transform="translate(150 102)"><circle r="35" fill="#0B1F35" stroke="#1479FF" stroke-width="2"/><text y="5" fill="#19D3FF" font-size="22">01</text><text y="64" fill="#EAFBFF" font-size="13" font-weight="700">ENTENDER</text><text y="82" fill="#8CA3BD" font-size="11">o problema</text></g>
+    <g transform="translate(450 102)"><circle r="35" fill="#0B1F35" stroke="#1479FF" stroke-width="2"/><text y="5" fill="#19D3FF" font-size="22">02</text><text y="64" fill="#EAFBFF" font-size="13" font-weight="700">CONSTRUIR</text><text y="82" fill="#8CA3BD" font-size="11">a solução</text></g>
+    <g transform="translate(750 102)"><circle r="35" fill="#0B1F35" stroke="#1479FF" stroke-width="2"/><text y="5" fill="#19D3FF" font-size="22">03</text><text y="64" fill="#EAFBFF" font-size="13" font-weight="700">VALIDAR</text><text y="82" fill="#8CA3BD" font-size="11">com testes</text></g>
+    <g transform="translate(1050 102)"><circle r="35" fill="#0B1F35" stroke="#19D3FF" stroke-width="2" filter="url(#glow)"><animate attributeName="r" values="35;38;35" dur="2s" repeatCount="indefinite"/></circle><text y="5" fill="#19D3FF" font-size="22">04</text><text y="64" fill="#EAFBFF" font-size="13" font-weight="700">PUBLICAR</text><text y="82" fill="#8CA3BD" font-size="11">e evoluir</text></g>
+    <text x="600" y="30" fill="#19D3FF" font-size="12" font-weight="700" letter-spacing="3">ENGINEERING FLOW // RONAS TECH</text>
+  </g>
+</svg>

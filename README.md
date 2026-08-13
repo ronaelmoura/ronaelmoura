@@ -86,10 +86,7 @@ flowchart LR
   <img src="https://skillicons.dev/icons?i=js,react,nodejs,express,mysql,docker,git,github,postman,figma&theme=dark" alt="JavaScript, React, Node.js, Express, MySQL, Docker, Git, GitHub, Postman e Figma" />
 </p>
 
-<p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ronaelmoura&show_icons=true&theme=transparent&hide_border=true&title_color=19D3FF&icon_color=1479FF&text_color=C9D5E3&ring_color=19D3FF" alt="Estatísticas do GitHub de Ronael Moura" />
-  <img height="165" src="https://github-readme-streak-stats.herokuapp.com?user=ronaelmoura&theme=transparent&hide_border=true&ring=19D3FF&fire=19D3FF&currStreakLabel=19D3FF&sideLabels=C9D5E3&dates=8C9BAD" alt="Sequência de contribuições de Ronael Moura" />
-</p>
+<img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/engineering-pulse.svg" alt="Fluxo de engenharia: entender, construir, validar e publicar" />
 
 ## 📌 Projetos que representam meu trabalho
 
@@ -99,14 +96,6 @@ flowchart LR
 | 🌐 | [**Portfólio Profissional**](https://github.com/ronaelmoura/ronaelmoura.github.io) | UX responsiva e uma apresentação objetiva do meu trabalho. |
 | ⚙️ | [**Ronas Tech Site**](https://github.com/ronaelmoura/ronas-tech-site) | Site institucional para transformar serviços de tecnologia em presença digital clara. |
 | 🔍 | [**Laboratório ERESOLVE npm**](https://github.com/ronaelmoura/laboratorio-erro-eresolve-npm) | Diagnóstico documentado de um conflito real de dependências — investigação, não só código. |
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ronaelmoura&bg_color=05070D&color=C9D5E3&line=1479FF&point=19D3FF&area=true&area_color=071426&hide_border=true" alt="Atividade no GitHub" />
-</p>
-
-<p align="center">
-  <img src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/output/github-contribution-grid-snake.svg" alt="Animação das contribuições no GitHub" />
-</p>
 
 ## 🤝 Vamos construir algo que importa
 
