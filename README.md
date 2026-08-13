@@ -1,116 +1,61 @@
+<h1 align="center">Ronael Moura</h1>
+
+<p align="center">Desenvolvedor Full Stack · React · Node.js · Express · MySQL</p>
+<p align="center">Transformo problemas operacionais em produtos web claros, seguros e prontos para uso.</p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=ronaelmoura&label=Visualizações%20do%20Perfil&color=0e75b6&style=for-the-badge" alt="Contador de visualizações do perfil" />
-</p>
-
-<h1 align="center">Opa 👋, eu sou Ronael Moura</h1>
-
-<h3 align="center">💻 Desenvolvedor Full Stack</h3>
-
-<p align="center">Transformando ideias em soluções reais através da tecnologia.</p>
-
-<p align="center">
-  <a href="https://github.com/ronaelmoura"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" /></a>
-  <a href="https://www.linkedin.com/in/ronael-moura"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
-  <a href="https://ronas-tech-site.vercel.app/"><img src="https://img.shields.io/badge/Portfólio-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfólio" /></a>
-  <a href="https://www.youtube.com/@RonasTech"><img src="https://img.shields.io/badge/YouTube-FF0000?style=for-the-badge&logo=youtube&logoColor=white" alt="YouTube" /></a>
+  <a href="https://ronaelmoura.github.io/"><img src="https://img.shields.io/badge/Portfólio-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Portfólio de Ronael Moura" /></a>
+  <a href="https://www.linkedin.com/in/ronael-moura"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn de Ronael Moura" /></a>
+  <a href="https://www.ronastech.com.br/"><img src="https://img.shields.io/badge/Ronas_Tech-1479FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Site da Ronas Tech" /></a>
 </p>
 
 ---
 
-# 👨‍💻 Sobre mim
+## Sobre mim
 
-Sou **Desenvolvedor Full Stack**, formado pelo **SENAI** no curso de **Programador Full Stack**.
+Sou Desenvolvedor Full Stack formado pelo SENAI no curso de Programador Full Stack (670 horas). Construo aplicações completas com React, Node.js, Express e MySQL — da experiência do usuário e API até banco de dados, testes e deploy.
 
-Tenho experiência com desenvolvimento web, APIs REST, banco de dados MySQL, Git e GitHub, além de atuação em **Suporte em TI**, manutenção de computadores e atendimento a usuários.
+Minha experiência anterior em suporte de TI fortaleceu minha forma de trabalhar: entender o contexto do usuário, investigar a causa do problema e entregar uma solução confiável. Estou aberto a oportunidades como Desenvolvedor Full Stack e a projetos onde eu possa gerar impacto real.
 
-Atualmente estou desenvolvendo o **Ronas Desk**, um sistema completo para gerenciamento de clientes e chamados, utilizando boas práticas de arquitetura de software e desenvolvimento Full Stack.
+## Projeto principal: Ronas Desk v1.0
 
-Meu objetivo é crescer profissionalmente, contribuir com projetos desafiadores e criar soluções modernas que gerem impacto real.
+O [Ronas Desk](https://github.com/ronaelmoura/ronas-desk) é uma plataforma Full Stack de Help Desk publicada em produção. Criei o projeto para simular a operação de uma equipe de suporte com segurança, rastreabilidade e indicadores reais de atendimento.
 
----
+- React 19, Node.js, Express 5 e MySQL
+- JWT, perfis de acesso, Helmet, rate limit e rotas protegidas
+- Clientes, chamados, SLA, auditoria, relatórios, anexos e Portal do Cliente
+- Docker, Nginx, Render, Aiven com TLS e Cloudinary
+- 122 testes automatizados no backend e CI no GitHub Actions
 
-# 🚀 Tecnologias
+**[Testar a demonstração segura](https://ronas-desk.onrender.com/)** · **[Ver repositório](https://github.com/ronaelmoura/ronas-desk)**
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=html,css,js,react,nodejs,express,mysql,git,github,vscode,postman,figma&theme=dark" alt="Tecnologias: HTML, CSS, JavaScript, React, Node.js, Express, MySQL, Git, GitHub, VS Code, Postman e Figma" />
+## Tecnologias
+
+<p>
+  <img src="https://skillicons.dev/icons?i=js,react,nodejs,express,mysql,docker,git,github,postman,figma&theme=dark" alt="JavaScript, React, Node.js, Express, MySQL, Docker, Git, GitHub, Postman e Figma" />
 </p>
 
----
+## Repositórios em destaque
 
-# 🚀 Projetos em Destaque
+| Projeto | O que demonstra | Links |
+| --- | --- | --- |
+| **Ronas Desk** | Produto Full Stack em produção: regras de negócio, segurança, testes e deploy. | [Demo](https://ronas-desk.onrender.com/) · [Código](https://github.com/ronaelmoura/ronas-desk) |
+| **Portfólio Profissional** | Posicionamento profissional, UX responsiva e apresentação dos projetos. | [Site](https://ronaelmoura.github.io/) · [Código](https://github.com/ronaelmoura/ronaelmoura.github.io) |
+| **Ronas Tech Site** | Site institucional para apresentar serviços e soluções digitais. | [Site](https://www.ronastech.com.br/) · [Código](https://github.com/ronaelmoura/ronas-tech-site) |
+| **Laboratório ERESOLVE npm** | Reprodução, diagnóstico e documentação de um conflito real de dependências. | [Código](https://github.com/ronaelmoura/laboratorio-erro-eresolve-npm) |
 
-## 💼 Ronas Desk
+## Atualmente
 
-Sistema Full Stack para gerenciamento de clientes e chamados.
+- Evoluindo produtos e soluções digitais na [Ronas Tech](https://www.ronastech.com.br/)
+- Construindo aplicações Full Stack com React, Node.js, Express e MySQL
+- Aprimorando arquitetura de software, testes e qualidade de código
+- Buscando uma oportunidade para contribuir em um time de desenvolvimento
 
-**Tecnologias:** React, Node.js, Express, MySQL, Git e GitHub.  
-**Status:** Em desenvolvimento.
+## Contato
 
-<a href="https://github.com/ronaelmoura/ronas-desk"><img src="https://img.shields.io/badge/Ver_repositório-181717?style=for-the-badge&logo=github&logoColor=white" alt="Ver repositório do Ronas Desk" /></a>
+- [Portfólio](https://ronaelmoura.github.io/)
+- [LinkedIn](https://www.linkedin.com/in/ronael-moura)
+- [Ronas Tech](https://www.ronastech.com.br/)
+- E-mail: [ronaelmoura240@gmail.com](mailto:ronaelmoura240@gmail.com)
 
-## 🌐 Ronas Tech
-
-Site institucional da Ronas Tech, empresa focada em desenvolvimento de sites, sistemas web, APIs, dashboards e soluções digitais.
-
-**Tecnologias:** React, Vite, JavaScript e CSS Modules.
-
-<a href="https://ronas-tech-site.vercel.app/"><img src="https://img.shields.io/badge/Ver_projeto-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Ver projeto Ronas Tech" /></a>
-<a href="https://github.com/ronaelmoura/ronas-tech-site"><img src="https://img.shields.io/badge/Ver_repositório-181717?style=for-the-badge&logo=github&logoColor=white" alt="Ver repositório do Ronas Tech" /></a>
-
-## 👨‍💻 Portfólio Profissional
-
-Portfólio com informações profissionais, projetos, tecnologias e formas de contato.
-
-<a href="https://ronaelmoura.github.io/"><img src="https://img.shields.io/badge/Ver_projeto-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Ver portfólio profissional" /></a>
-<a href="https://github.com/ronaelmoura/ronaelmoura.github.io"><img src="https://img.shields.io/badge/Ver_repositório-181717?style=for-the-badge&logo=github&logoColor=white" alt="Ver repositório do portfólio profissional" /></a>
-
----
-
-# 📈 Contribuições
-
-<p align="center">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=ronaelmoura&theme=github-dark&hide_border=true" alt="Gráfico de contribuições de Ronael Moura" />
-</p>
-
----
-
-# 🏆 Certificações
-
-🎓 Programador Full Stack — SENAI  
-📚 670 horas  
-💻 Técnico em Suporte em TI  
-📊 Pacote Office Completo
-
----
-
-# 🎯 Atualmente
-
-- 🚀 Desenvolvendo o Ronas Desk
-- 📖 Aprimorando React
-- ⚡ Estudando Arquitetura de Software
-- 💼 Buscando oportunidade como Desenvolvedor Full Stack
-- 🎥 Criando conteúdo para o canal Ronas Tech
-
----
-
-# 📫 Contato
-
-📍 Tianguá — Ceará — Brasil  
-📧 ronaelmoura240@gmail.com  
-💼 [LinkedIn](https://www.linkedin.com/in/ronael-moura)  
-🌐 [Site institucional](https://www.ronastech.com.br/)  
-🐙 [GitHub](https://github.com/ronaelmoura)
-
----
-
-<p align="center">
-  ⭐ Obrigado por visitar meu perfil!<br />
-  Se gostou dos meus projetos, deixe uma ⭐ nos repositórios.
-</p>
-
----
-
-<p align="center">
-  <b>Transformando ideias em soluções reais através da tecnologia.</b>
-</p>
+<p align="center"><i>Construindo software útil, com responsabilidade do problema ao deploy.</i></p>
