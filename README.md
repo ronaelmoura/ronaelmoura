@@ -47,7 +47,7 @@ Minha experiência em suporte de TI me ensinou a investigar antes de programar, 
 const ronael = {
   foco: 'transformar problemas operacionais em software útil',
   entrego: ['interface', 'API REST', 'regras de negócio', 'dados', 'testes', 'deploy'],
-  agora: 'Ronas Desk v1.0 em produção',
+  agora: 'evoluindo um portfólio com frontend, backend e produto',
   próximoDesafio: 'contribuir em um time que constrói produtos com impacto real',
 }
 ```
@@ -93,9 +93,13 @@ flowchart LR
 | | Projeto | Por que vale abrir |
 | :---: | --- | --- |
 | 🖥️ | [**Ronas Desk**](https://github.com/ronaelmoura/ronas-desk) | Produto Full Stack em produção: regras de negócio, segurança, testes e deploy. |
-| 🌐 | [**Portfólio Profissional**](https://github.com/ronaelmoura/ronaelmoura.github.io) | UX responsiva e uma apresentação objetiva do meu trabalho. |
-| ⚙️ | [**Ronas Tech Site**](https://github.com/ronaelmoura/ronas-tech-site) | Site institucional para transformar serviços de tecnologia em presença digital clara. |
-| 🔍 | [**Laboratório ERESOLVE npm**](https://github.com/ronaelmoura/laboratorio-erro-eresolve-npm) | Diagnóstico documentado de um conflito real de dependências — investigação, não só código. |
+| 💰 | [**Nexo — Dashboard Financeiro**](https://github.com/ronaelmoura/nexo-dashboard-financeiro) · [Demo](https://ronaelmoura.github.io/nexo-dashboard-financeiro/) | React, gráficos, filtros, modo escuro e experiência responsiva aplicados a finanças pessoais. |
+| 📦 | [**StockFlow API**](https://github.com/ronaelmoura/stockflow-api) | API de estoque e pedidos com Node.js, Express, MySQL, autenticação, transações e documentação OpenAPI. |
+| ❄️ | [**ClimaZen**](https://github.com/ronaelmoura/climazen-landing-page) · [Demo](https://ronaelmoura.github.io/climazen-landing-page/) | Landing page comercial com design responsivo, simulador de economia, formulário e foco em conversão. |
+
+<p align="center">
+  <a href="https://www.ronastech.com.br/#projetos"><img src="https://img.shields.io/badge/VER_CASES_NO_SITE-1479FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Ver estudos de caso no site da Ronas Tech" /></a>
+</p>
 
 ## 🤝 Vamos construir algo que importa
 
