@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="340" viewBox="0 0 1200 340" role="img" aria-labelledby="title desc">
+  <title id="title">Demonstração ilustrativa do fluxo de deploy do Ronas Desk</title>
+  <desc id="desc">Simulação estilizada de terminal — não é uma gravação real de tela, apenas uma representação animada do fluxo de build, testes e deploy.</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#05070D"/>
+      <stop offset="1" stop-color="#071426"/>
+    </linearGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2.5" result="blur"/>
+      <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="340" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="340" rx="18" fill="none" stroke="#173552" stroke-width="1"/>
+
+  <rect x="0" y="0" width="1200" height="44" rx="18" fill="#0B1120"/>
+  <rect x="0" y="26" width="1200" height="18" fill="#0B1120"/>
+  <circle cx="28" cy="22" r="6" fill="#ff655e"/>
+  <circle cx="50" cy="22" r="6" fill="#f4b940"/>
+  <circle cx="72" cy="22" r="6" fill="#46c87c"/>
+  <text x="600" y="27" fill="#5F7083" font-family="monospace" font-size="12" text-anchor="middle">ronael@dev: ~/ronas-desk — demonstração ilustrativa, não é gravação real</text>
+
+  <g font-family="'DM Mono', monospace" font-size="16" fill="#DCE9F6">
+    <text x="36" y="90" fill="#19D3FF">$ git clone github.com/ronaelmoura/ronas-desk</text>
+
+    <g opacity="0">
+      <text x="36" y="122">Cloning into 'ronas-desk'... done.</text>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.02;0.08;1" dur="14s" repeatCount="indefinite"/>
+    </g>
+
+    <g opacity="0">
+      <text x="36" y="160" fill="#19D3FF">$ npm run test</text>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.14;0.2;1" dur="14s" repeatCount="indefinite"/>
+    </g>
+    <g opacity="0">
+      <text x="36" y="192" fill="#55e79b">✓ 122 testes passando</text>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.24;0.3;1" dur="14s" repeatCount="indefinite"/>
+    </g>
+
+    <g opacity="0">
+      <text x="36" y="230" fill="#19D3FF">$ docker build . &amp;&amp; docker push</text>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.38;0.44;1" dur="14s" repeatCount="indefinite"/>
+    </g>
+    <g opacity="0">
+      <text x="36" y="262" fill="#8CA3BD">Imagem publicada · Render · MySQL TLS · Cloudinary</text>
+      <animate attributeName="opacity" values="0;0;1;1" keyTimes="0;0.5;0.56;1" dur="14s" repeatCount="indefinite"/>
+    </g>
+
+    <g opacity="0">
+      <text x="36" y="300" fill="#F4F7FB" font-weight="700">✓ v1.0.0 estável · online em ronas-desk.onrender.com</text>
+      <animate attributeName="opacity" values="0;0;1;1;0" keyTimes="0;0.66;0.72;0.96;1" dur="14s" repeatCount="indefinite"/>
+    </g>
+  </g>
+
+  <rect x="30" y="308" width="9" height="16" fill="#19D3FF" filter="url(#glow)">
+    <animate attributeName="opacity" values="1;1;0;0" dur="1s" repeatCount="indefinite"/>
+  </rect>
+</svg>

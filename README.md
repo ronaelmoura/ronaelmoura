@@ -16,6 +16,16 @@
   <img src="https://img.shields.io/badge/DISPONÍVEL%20PARA-OPORTUNIDADES-19D3FF?style=flat-square&labelColor=071426" alt="Disponível para oportunidades" />
 </p>
 
+<p align="center">
+  <img src="https://img.shields.io/badge/React-05070D?style=for-the-badge&logo=react&logoColor=19D3FF" alt="React" />
+  <img src="https://img.shields.io/badge/TypeScript-05070D?style=for-the-badge&logo=typescript&logoColor=1479FF" alt="TypeScript" />
+  <img src="https://img.shields.io/badge/Node.js-05070D?style=for-the-badge&logo=nodedotjs&logoColor=19D3FF" alt="Node.js" />
+  <img src="https://img.shields.io/badge/Express-05070D?style=for-the-badge&logo=express&logoColor=F4F7FB" alt="Express" />
+  <img src="https://img.shields.io/badge/MySQL-05070D?style=for-the-badge&logo=mysql&logoColor=1479FF" alt="MySQL" />
+  <img src="https://img.shields.io/badge/Docker-05070D?style=for-the-badge&logo=docker&logoColor=19D3FF" alt="Docker" />
+  <img src="https://img.shields.io/badge/Git-05070D?style=for-the-badge&logo=git&logoColor=F4F7FB" alt="Git" />
+</p>
+
 <br />
 
 ```text
@@ -58,6 +68,10 @@ const ronael = {
 <p align="center">
   <a href="https://ronas-desk.onrender.com/"><img width="100%" src="https://img.shields.io/badge/RONAS_DESK-v1.0.0_ESTÁVEL-1479FF?style=for-the-badge&labelColor=05070D&logo=react&logoColor=19D3FF" alt="Ronas Desk v1.0 estável" /></a>
 </p>
+
+<img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/terminal-demo.svg" alt="Simulação ilustrativa (não é gravação real) do fluxo de build, testes e deploy do Ronas Desk" />
+
+<p align="center"><sub>Demonstração ilustrativa do fluxo de deploy — não é uma gravação de tela real. <a href="https://ronas-desk.onrender.com/">Veja o produto de verdade rodando aqui →</a></sub></p>
 
 Plataforma Full Stack de Help Desk publicada em produção. Criei para simular a operação de uma equipe de suporte com segurança, rastreabilidade e indicadores reais de atendimento.
 
