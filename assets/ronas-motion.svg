@@ -1,6 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="280" viewBox="0 0 1200 280" role="img" aria-labelledby="title desc">
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="title desc">
   <title id="title">Ronael Moura — Full Stack Developer</title>
-  <desc id="desc">Painel tecnológico animado com trajetória de desenvolvimento Full Stack.</desc>
+  <desc id="desc">Painel tecnológico animado com trajetória de desenvolvimento Full Stack e provas de entrega.</desc>
   <defs>
     <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
       <stop offset="0" stop-color="#05070D"/>
@@ -20,8 +20,8 @@
       <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#65B8FF" stroke-opacity=".08" stroke-width="1"/>
     </pattern>
   </defs>
-  <rect width="1200" height="280" rx="18" fill="url(#background)"/>
-  <rect width="1200" height="280" rx="18" fill="url(#grid)"/>
+  <rect width="1200" height="320" rx="18" fill="url(#background)"/>
+  <rect width="1200" height="320" rx="18" fill="url(#grid)"/>
   <circle cx="1040" cy="70" r="150" fill="#1479FF" opacity=".11">
     <animate attributeName="r" values="135;168;135" dur="5s" repeatCount="indefinite"/>
   </circle>
@@ -49,5 +49,22 @@
       <animate attributeName="width" values="40;282;282" dur="2.6s" repeatCount="indefinite"/>
     </rect>
     <text x="782" y="222" fill="#A9B9CC" font-size="12" letter-spacing="1">REACT · NODE · EXPRESS · MYSQL</text>
+  </g>
+  <line x1="70" y1="266" x2="1130" y2="266" stroke="#173552" stroke-width="1"/>
+  <g font-family="Arial, Helvetica, sans-serif">
+    <g transform="translate(70 292)">
+      <text fill="#F4F7FB" font-size="22" font-weight="800">670h</text>
+      <text x="60" y="0" fill="#8CA3BD" font-size="12">formação Full Stack · SENAI</text>
+    </g>
+    <circle cx="430" cy="286" r="2.5" fill="#1479FF"/>
+    <g transform="translate(460 292)">
+      <text fill="#F4F7FB" font-size="22" font-weight="800">122</text>
+      <text x="46" y="0" fill="#8CA3BD" font-size="12">testes automatizados no back-end</text>
+    </g>
+    <circle cx="830" cy="286" r="2.5" fill="#1479FF"/>
+    <g transform="translate(860 292)">
+      <text fill="#F4F7FB" font-size="22" font-weight="800">v1.0</text>
+      <text x="46" y="0" fill="#19D3FF" font-size="12" font-family="monospace">em produção · dados reais de uso</text>
+    </g>
   </g>
 </svg>

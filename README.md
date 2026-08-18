@@ -68,7 +68,11 @@ Plataforma Full Stack de Help Desk publicada em produção. Criei para simular a
 
 | Produto | Engenharia | Qualidade |
 | --- | --- | --- |
-| Clientes, chamados, SLA, relatórios, auditoria, anexos e Portal do Cliente | React 19, Express 5, MySQL, JWT, Docker, Nginx, Render, Aiven TLS e Cloudinary | **122 testes automatizados**, CI no GitHub Actions, Helmet, rate limit e permissões por perfil |
+| Clientes, chamados, SLA, relatórios, auditoria, anexos e Portal do Cliente | React 19, Express 5, MySQL, JWT, Docker, Nginx, Render, Aiven TLS e Cloudinary | **122 testes automatizados**, Helmet, rate limit e permissões por perfil |
+
+<p align="center">
+  <a href="https://github.com/ronaelmoura/ronas-desk/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/ronaelmoura/ronas-desk/ci.yml?branch=main&label=CI%20RONAS%20DESK&style=for-the-badge&logo=githubactions&logoColor=white&color=1479FF&labelColor=05070D" alt="Status do CI do Ronas Desk" /></a>
+</p>
 
 ### Arquitetura que eu construí
 
@@ -81,11 +85,15 @@ flowchart LR
   S --> C["Cloudinary · anexos privados"]
 ```
 
-## 🧰 Stack de trabalho
+## 🧰 O que eu domino, e pra que serve
 
-<p align="center">
-  <img src="https://skillicons.dev/icons?i=js,ts,react,nodejs,express,mysql,docker,git,github,postman,figma&theme=dark" alt="JavaScript, TypeScript, React, Node.js, Express, MySQL, Docker, Git, GitHub, Postman e Figma" />
-</p>
+| Camada | Domino | Uso na prática |
+| --- | --- | --- |
+| 🖼️ Interface | React 19, TypeScript, Vite | Dashboards e produtos com estado complexo, UI responsiva e modo escuro |
+| ⚙️ Serviços | Node.js, Express 5, REST, JWT | APIs com regras de negócio, autenticação e autorização por perfil |
+| 🗄️ Dados | MySQL, transações, Zod | Consistência transacional e integridade em operações concorrentes |
+| ✅ Qualidade | Vitest, CI no GitHub Actions | Testes automatizados e build validado antes de qualquer deploy |
+| 🚀 Entrega | Docker, Nginx, Render, Cloudflare Workers | Deploy containerizado, observável e em produção real |
 
 <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/engineering-pulse.svg" alt="Fluxo de engenharia: entender, construir, validar e publicar" />
 
@@ -100,13 +108,18 @@ flowchart LR
   <img src="https://github-readme-streak-stats.herokuapp.com/?user=ronaelmoura&hide_border=true&background=05070D&stroke=071426&ring=1479FF&fire=19D3FF&currStreakLabel=19D3FF&sideLabels=F4F7FB&currStreakNum=F4F7FB&sideNums=F4F7FB&dates=8891A3" alt="Sequência de contribuições de Ronael Moura" />
 </p>
 
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/output/github-contribution-grid-snake-dark.svg" />
+  <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/output/github-contribution-grid-snake.svg" alt="Cobra animada percorrendo o grafo de contribuições de Ronael Moura" />
+</picture>
+
 ## 📌 Projetos que representam meu trabalho
 
 | | Projeto | Por que vale abrir |
 | :---: | --- | --- |
 | 🖥️ | [**Ronas Desk**](https://github.com/ronaelmoura/ronas-desk) · [Demo](https://ronas-desk.onrender.com/) | Produto Full Stack em produção: regras de negócio, segurança, testes e deploy. |
 | 💰 | [**Nexo — Dashboard Financeiro**](https://github.com/ronaelmoura/nexo-dashboard-financeiro) · [Demo](https://ronaelmoura.github.io/nexo-dashboard-financeiro/) | React, gráficos, filtros, modo escuro e experiência responsiva aplicados a finanças pessoais. |
-| 📦 | [**StockFlow API**](https://github.com/ronaelmoura/stockflow-api) | API de estoque e pedidos com Node.js, Express, MySQL, autenticação, transações e documentação OpenAPI. |
+| 📦 | [**StockFlow API**](https://github.com/ronaelmoura/stockflow-api) [![CI](https://img.shields.io/github/actions/workflow/status/ronaelmoura/stockflow-api/ci.yml?branch=main&label=CI&style=flat-square&color=1479FF&labelColor=05070D)](https://github.com/ronaelmoura/stockflow-api/actions/workflows/ci.yml) | API de estoque e pedidos com Node.js, Express, MySQL, autenticação, transações e documentação OpenAPI. |
 | ❄️ | [**ClimaZen**](https://github.com/ronaelmoura/climazen-landing-page) · [Demo](https://ronaelmoura.github.io/climazen-landing-page/) | Landing page comercial com design responsivo, simulador de economia, formulário e foco em conversão. |
 | 🧩 | [**Portfólio**](https://github.com/ronaelmoura/ronaelmoura.github.io) · [Demo](https://ronaelmoura.github.io/) | Site autoral com storytelling, laboratório interativo de engenharia e cases documentados. |
 
