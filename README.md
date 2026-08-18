@@ -12,6 +12,7 @@
 
 <p align="center">
   <img src="https://komarev.com/ghpvc/?username=ronaelmoura&label=VISITAS+NO+PERFIL&color=1479FF&style=flat-square" alt="Visitas no perfil" />
+  <img src="https://img.shields.io/github/followers/ronaelmoura?label=SEGUIDORES&color=19D3FF&style=flat-square&labelColor=071426" alt="Seguidores no GitHub" />
   <img src="https://img.shields.io/badge/DISPONÍVEL%20PARA-OPORTUNIDADES-19D3FF?style=flat-square&labelColor=071426" alt="Disponível para oportunidades" />
 </p>
 
@@ -83,19 +84,31 @@ flowchart LR
 ## 🧰 Stack de trabalho
 
 <p align="center">
-  <img src="https://skillicons.dev/icons?i=js,react,nodejs,express,mysql,docker,git,github,postman,figma&theme=dark" alt="JavaScript, React, Node.js, Express, MySQL, Docker, Git, GitHub, Postman e Figma" />
+  <img src="https://skillicons.dev/icons?i=js,ts,react,nodejs,express,mysql,docker,git,github,postman,figma&theme=dark" alt="JavaScript, TypeScript, React, Node.js, Express, MySQL, Docker, Git, GitHub, Postman e Figma" />
 </p>
 
 <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/engineering-pulse.svg" alt="Fluxo de engenharia: entender, construir, validar e publicar" />
+
+## 📊 Atividade & métricas
+
+<p align="center">
+  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ronaelmoura&show_icons=true&count_private=true&hide_title=false&hide_border=true&bg_color=05070D&title_color=19D3FF&icon_color=1479FF&text_color=F4F7FB&ring_color=1479FF" alt="Estatísticas do GitHub de Ronael Moura" />
+  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ronaelmoura&layout=compact&hide_border=true&bg_color=05070D&title_color=19D3FF&text_color=F4F7FB&langs_count=8" alt="Linguagens mais usadas por Ronael Moura" />
+</p>
+
+<p align="center">
+  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ronaelmoura&hide_border=true&background=05070D&stroke=071426&ring=1479FF&fire=19D3FF&currStreakLabel=19D3FF&sideLabels=F4F7FB&currStreakNum=F4F7FB&sideNums=F4F7FB&dates=8891A3" alt="Sequência de contribuições de Ronael Moura" />
+</p>
 
 ## 📌 Projetos que representam meu trabalho
 
 | | Projeto | Por que vale abrir |
 | :---: | --- | --- |
-| 🖥️ | [**Ronas Desk**](https://github.com/ronaelmoura/ronas-desk) | Produto Full Stack em produção: regras de negócio, segurança, testes e deploy. |
+| 🖥️ | [**Ronas Desk**](https://github.com/ronaelmoura/ronas-desk) · [Demo](https://ronas-desk.onrender.com/) | Produto Full Stack em produção: regras de negócio, segurança, testes e deploy. |
 | 💰 | [**Nexo — Dashboard Financeiro**](https://github.com/ronaelmoura/nexo-dashboard-financeiro) · [Demo](https://ronaelmoura.github.io/nexo-dashboard-financeiro/) | React, gráficos, filtros, modo escuro e experiência responsiva aplicados a finanças pessoais. |
 | 📦 | [**StockFlow API**](https://github.com/ronaelmoura/stockflow-api) | API de estoque e pedidos com Node.js, Express, MySQL, autenticação, transações e documentação OpenAPI. |
 | ❄️ | [**ClimaZen**](https://github.com/ronaelmoura/climazen-landing-page) · [Demo](https://ronaelmoura.github.io/climazen-landing-page/) | Landing page comercial com design responsivo, simulador de economia, formulário e foco em conversão. |
+| 🧩 | [**Portfólio**](https://github.com/ronaelmoura/ronaelmoura.github.io) · [Demo](https://ronaelmoura.github.io/) | Site autoral com storytelling, laboratório interativo de engenharia e cases documentados. |
 
 <p align="center">
   <a href="https://www.ronastech.com.br/#projetos"><img src="https://img.shields.io/badge/VER_CASES_NO_SITE-1479FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Ver estudos de caso no site da Ronas Tech" /></a>
