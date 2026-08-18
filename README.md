@@ -100,12 +100,12 @@ flowchart LR
 ## 📊 Atividade & métricas
 
 <p align="center">
-  <img height="165" src="https://github-readme-stats.vercel.app/api?username=ronaelmoura&show_icons=true&count_private=true&hide_title=false&hide_border=true&bg_color=05070D&title_color=19D3FF&icon_color=1479FF&text_color=F4F7FB&ring_color=1479FF" alt="Estatísticas do GitHub de Ronael Moura" />
-  <img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=ronaelmoura&layout=compact&hide_border=true&bg_color=05070D&title_color=19D3FF&text_color=F4F7FB&langs_count=8" alt="Linguagens mais usadas por Ronael Moura" />
+  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=ronaelmoura&show_icons=true&count_private=true&hide_title=false&hide_border=true&bg_color=05070D&title_color=19D3FF&icon_color=1479FF&text_color=F4F7FB&ring_color=1479FF" alt="Estatísticas do GitHub de Ronael Moura" />
+  <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ronaelmoura&layout=compact&hide_border=true&bg_color=05070D&title_color=19D3FF&text_color=F4F7FB&langs_count=8" alt="Linguagens mais usadas por Ronael Moura" />
 </p>
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=ronaelmoura&hide_border=true&background=05070D&stroke=071426&ring=1479FF&fire=19D3FF&currStreakLabel=19D3FF&sideLabels=F4F7FB&currStreakNum=F4F7FB&sideNums=F4F7FB&dates=8891A3" alt="Sequência de contribuições de Ronael Moura" />
+  <img src="https://streak-stats.demolab.com/?user=ronaelmoura&hide_border=true&background=05070D&stroke=071426&ring=1479FF&fire=19D3FF&currStreakLabel=19D3FF&sideLabels=F4F7FB&currStreakNum=F4F7FB&sideNums=F4F7FB&dates=8891A3" alt="Sequência de contribuições de Ronael Moura" />
 </p>
 
 <picture>
