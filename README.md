@@ -5,6 +5,7 @@
 </p>
 
 <p align="center">
+  <a href="https://ronas-desk.onrender.com/"><img src="https://img.shields.io/badge/TESTAR_RONAS_DESK-19D3FF?style=for-the-badge&logo=googlechrome&logoColor=05070D" alt="Testar demonstração do Ronas Desk" /></a>
   <a href="https://ronaelmoura.github.io/"><img src="https://img.shields.io/badge/VER_PORTFÓLIO-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Ver portfólio" /></a>
   <a href="https://www.linkedin.com/in/ronael-moura"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://www.ronastech.com.br/"><img src="https://img.shields.io/badge/RONAS_TECH-1479FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Ronas Tech" /></a>
@@ -19,7 +20,6 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/React-05070D?style=for-the-badge&logo=react&logoColor=19D3FF" alt="React" />
-  <img src="https://img.shields.io/badge/TypeScript-05070D?style=for-the-badge&logo=typescript&logoColor=1479FF" alt="TypeScript" />
   <img src="https://img.shields.io/badge/Node.js-05070D?style=for-the-badge&logo=nodedotjs&logoColor=19D3FF" alt="Node.js" />
   <img src="https://img.shields.io/badge/Express-05070D?style=for-the-badge&logo=express&logoColor=F4F7FB" alt="Express" />
   <img src="https://img.shields.io/badge/MySQL-05070D?style=for-the-badge&logo=mysql&logoColor=1479FF" alt="MySQL" />
@@ -104,7 +104,7 @@ flowchart LR
 
 | Camada | Domino | Uso na prática |
 | --- | --- | --- |
-| 🖼️ Interface | React 19, TypeScript, Vite | Dashboards e produtos com estado complexo, UI responsiva e modo escuro |
+| 🖼️ Interface | React 19, Vite — também aplico TypeScript (Nexo) | Dashboards e produtos com estado complexo, UI responsiva e modo escuro |
 | ⚙️ Serviços | Node.js, Express 5, REST, JWT | APIs com regras de negócio, autenticação e autorização por perfil |
 | 🗄️ Dados | MySQL, transações, Zod | Consistência transacional e integridade em operações concorrentes |
 | ✅ Qualidade | Vitest, CI no GitHub Actions | Testes automatizados e build validado antes de qualquer deploy |
