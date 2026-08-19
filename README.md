@@ -8,6 +8,7 @@
   <a href="https://ronaelmoura.github.io/"><img src="https://img.shields.io/badge/VER_PORTFÓLIO-0A66C2?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Ver portfólio" /></a>
   <a href="https://www.linkedin.com/in/ronael-moura"><img src="https://img.shields.io/badge/LINKEDIN-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" /></a>
   <a href="https://www.ronastech.com.br/"><img src="https://img.shields.io/badge/RONAS_TECH-1479FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Ronas Tech" /></a>
+  <a href="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/curriculo-ronael-moura.pdf"><img src="https://img.shields.io/badge/CURRÍCULO-19D3FF?style=for-the-badge&logo=readdotcv&logoColor=05070D" alt="Baixar currículo em PDF" /></a>
 </p>
 
 <p align="center">
