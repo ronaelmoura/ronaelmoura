@@ -80,16 +80,27 @@ export function latestCommit() {
     'ultimo commit',
     async () => {
       const events = await rest(`/users/${USER}/events/public?per_page=100`);
-      const push = events.find((e) => e.type === 'PushEvent' && e.payload?.head);
-      if (!push) return null;
+      const pushes = events
+        .filter((e) => e.type === 'PushEvent' && e.payload?.head)
+        .sort((a, b) => new Date(b.created_at) - new Date(a.created_at));
 
-      const [owner, repo] = push.repo.name.split('/');
-      const commit = await rest(`/repos/${owner}/${repo}/commits/${push.payload.head}`);
-      return {
-        repo,
-        message: commit.commit.message.split('\n')[0],
-        at: push.created_at,
-      };
+      // O SHA do feed pode ter sumido — rebase e force-push reescrevem historia
+      // e o evento continua apontando para um commit que nao existe mais.
+      // Por isso tenta alguns, em vez de desistir no primeiro 404.
+      for (const push of pushes.slice(0, 5)) {
+        const [owner, repo] = push.repo.name.split('/');
+        try {
+          const commit = await rest(`/repos/${owner}/${repo}/commits/${push.payload.head}`);
+          return {
+            repo,
+            message: commit.commit.message.split('\n')[0],
+            at: push.created_at,
+          };
+        } catch {
+          // commit reescrito; tenta o push anterior
+        }
+      }
+      return null;
     },
     null,
   );

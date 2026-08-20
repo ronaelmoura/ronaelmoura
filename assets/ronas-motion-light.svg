@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="t d">
   <title id="t">Ronael Moura — Full Stack Developer</title>
-  <desc id="d">Cena de desenvolvimento (madrugada) com monitores, codigo em movimento e cidade ao fundo.</desc>
+  <desc id="d">Cena de desenvolvimento (madrugada) com monitores, código em movimento e cidade ao fundo.</desc>
 
   <style>
   @keyframes twinkle { 0%,100% { opacity:.15 } 50% { opacity:.7 } }
@@ -15,7 +15,9 @@
 
   @keyframes scrollCode { from { transform:translateY(0) } to { transform:translateY(-130px) } }
   @keyframes sweep { 0% { opacity:.9; transform:translateY(-18px) } 100% { opacity:.9; transform:translateY(130px) } }
-  @keyframes scanline { 0% { opacity:.85; transform:translateY(-8px) } 100% { opacity:.85; transform:translateY(210px) } }
+  /* Animacao CSS sobrescreve o atributo opacity do elemento: o valor abaixo e o
+     brilho final da varredura, nao um multiplicador do que esta no markup. */
+  @keyframes scanline { 0% { opacity:.1; transform:translateY(-8px) } 100% { opacity:.1; transform:translateY(210px) } }
   @keyframes shineX { 0% { opacity:1; transform:translateX(-220px) } 100% { opacity:1; transform:translateX(560px) } }
 
   @keyframes drawLine { 0% { stroke-dashoffset:180 } 35%,80% { stroke-dashoffset:0 } 100% { stroke-dashoffset:180 } }
@@ -52,7 +54,7 @@
   .flash { opacity:0; animation:flash 19s linear infinite }
   .flag { animation:flag 1.5s ease-in-out infinite }
   @keyframes type-flow { 0% { transform:scaleX(0) } 62%,100% { transform:scaleX(1) } }
-  @keyframes caret-flow { 0% { transform:translateX(-304.2px) } 62%,100% { transform:translateX(0) } }
+  @keyframes caret-flow { 0% { transform:translateX(-280.8px) } 62%,100% { transform:translateX(0) } }
   @media (prefers-reduced-motion: reduce) {
     * { animation: none !important; }
   }</style>
@@ -108,14 +110,14 @@
     <clipPath id="titleBox"><rect x="60" y="46" width="520" height="212"/></clipPath>
     
     <clipPath id="clip-flow">
-      <rect x="70" y="207" width="304.2" height="18.2"
-            style="transform-origin:70px 220px;animation:type-flow 11s steps(39,end) infinite"/>
+      <rect x="70" y="207" width="280.8" height="18.2"
+            style="transform-origin:70px 220px;animation:type-flow 11s steps(36,end) infinite"/>
     </clipPath>
     
     <g id="rainSheet" stroke="#3E8CCB" stroke-width="1" stroke-linecap="round"><line x1="-50" y1="-34" x2="-58" y2="2"/><line x1="-50" y1="46" x2="-58" y2="82"/><line x1="-50" y1="126" x2="-58" y2="162"/><line x1="-50" y1="206" x2="-58" y2="242"/><line x1="-50" y1="286" x2="-58" y2="322"/><line x1="0" y1="-34" x2="-8" y2="2"/><line x1="0" y1="46" x2="-8" y2="82"/><line x1="0" y1="126" x2="-8" y2="162"/><line x1="0" y1="206" x2="-8" y2="242"/><line x1="0" y1="286" x2="-8" y2="322"/><line x1="50" y1="-34" x2="42" y2="2"/><line x1="50" y1="46" x2="42" y2="82"/><line x1="50" y1="126" x2="42" y2="162"/><line x1="50" y1="206" x2="42" y2="242"/><line x1="50" y1="286" x2="42" y2="322"/><line x1="100" y1="-34" x2="92" y2="2"/><line x1="100" y1="46" x2="92" y2="82"/><line x1="100" y1="126" x2="92" y2="162"/><line x1="100" y1="206" x2="92" y2="242"/><line x1="100" y1="286" x2="92" y2="322"/><line x1="150" y1="-34" x2="142" y2="2"/><line x1="150" y1="46" x2="142" y2="82"/><line x1="150" y1="126" x2="142" y2="162"/><line x1="150" y1="206" x2="142" y2="242"/><line x1="150" y1="286" x2="142" y2="322"/><line x1="200" y1="-34" x2="192" y2="2"/><line x1="200" y1="46" x2="192" y2="82"/><line x1="200" y1="126" x2="192" y2="162"/><line x1="200" y1="206" x2="192" y2="242"/><line x1="200" y1="286" x2="192" y2="322"/><line x1="250" y1="-34" x2="242" y2="2"/><line x1="250" y1="46" x2="242" y2="82"/><line x1="250" y1="126" x2="242" y2="162"/><line x1="250" y1="206" x2="242" y2="242"/><line x1="250" y1="286" x2="242" y2="322"/><line x1="300" y1="-34" x2="292" y2="2"/><line x1="300" y1="46" x2="292" y2="82"/><line x1="300" y1="126" x2="292" y2="162"/><line x1="300" y1="206" x2="292" y2="242"/><line x1="300" y1="286" x2="292" y2="322"/><line x1="350" y1="-34" x2="342" y2="2"/><line x1="350" y1="46" x2="342" y2="82"/><line x1="350" y1="126" x2="342" y2="162"/><line x1="350" y1="206" x2="342" y2="242"/><line x1="350" y1="286" x2="342" y2="322"/><line x1="400" y1="-34" x2="392" y2="2"/><line x1="400" y1="46" x2="392" y2="82"/><line x1="400" y1="126" x2="392" y2="162"/><line x1="400" y1="206" x2="392" y2="242"/><line x1="400" y1="286" x2="392" y2="322"/><line x1="450" y1="-34" x2="442" y2="2"/><line x1="450" y1="46" x2="442" y2="82"/><line x1="450" y1="126" x2="442" y2="162"/><line x1="450" y1="206" x2="442" y2="242"/><line x1="450" y1="286" x2="442" y2="322"/><line x1="500" y1="-34" x2="492" y2="2"/><line x1="500" y1="46" x2="492" y2="82"/><line x1="500" y1="126" x2="492" y2="162"/><line x1="500" y1="206" x2="492" y2="242"/><line x1="500" y1="286" x2="492" y2="322"/><line x1="550" y1="-34" x2="542" y2="2"/><line x1="550" y1="46" x2="542" y2="82"/><line x1="550" y1="126" x2="542" y2="162"/><line x1="550" y1="206" x2="542" y2="242"/><line x1="550" y1="286" x2="542" y2="322"/><line x1="600" y1="-34" x2="592" y2="2"/><line x1="600" y1="46" x2="592" y2="82"/><line x1="600" y1="126" x2="592" y2="162"/><line x1="600" y1="206" x2="592" y2="242"/><line x1="600" y1="286" x2="592" y2="322"/><line x1="650" y1="-34" x2="642" y2="2"/><line x1="650" y1="46" x2="642" y2="82"/><line x1="650" y1="126" x2="642" y2="162"/><line x1="650" y1="206" x2="642" y2="242"/><line x1="650" y1="286" x2="642" y2="322"/><line x1="700" y1="-34" x2="692" y2="2"/><line x1="700" y1="46" x2="692" y2="82"/><line x1="700" y1="126" x2="692" y2="162"/><line x1="700" y1="206" x2="692" y2="242"/><line x1="700" y1="286" x2="692" y2="322"/><line x1="750" y1="-34" x2="742" y2="2"/><line x1="750" y1="46" x2="742" y2="82"/><line x1="750" y1="126" x2="742" y2="162"/><line x1="750" y1="206" x2="742" y2="242"/><line x1="750" y1="286" x2="742" y2="322"/><line x1="800" y1="-34" x2="792" y2="2"/><line x1="800" y1="46" x2="792" y2="82"/><line x1="800" y1="126" x2="792" y2="162"/><line x1="800" y1="206" x2="792" y2="242"/><line x1="800" y1="286" x2="792" y2="322"/><line x1="850" y1="-34" x2="842" y2="2"/><line x1="850" y1="46" x2="842" y2="82"/><line x1="850" y1="126" x2="842" y2="162"/><line x1="850" y1="206" x2="842" y2="242"/><line x1="850" y1="286" x2="842" y2="322"/><line x1="900" y1="-34" x2="892" y2="2"/><line x1="900" y1="46" x2="892" y2="82"/><line x1="900" y1="126" x2="892" y2="162"/><line x1="900" y1="206" x2="892" y2="242"/><line x1="900" y1="286" x2="892" y2="322"/><line x1="950" y1="-34" x2="942" y2="2"/><line x1="950" y1="46" x2="942" y2="82"/><line x1="950" y1="126" x2="942" y2="162"/><line x1="950" y1="206" x2="942" y2="242"/><line x1="950" y1="286" x2="942" y2="322"/><line x1="1000" y1="-34" x2="992" y2="2"/><line x1="1000" y1="46" x2="992" y2="82"/><line x1="1000" y1="126" x2="992" y2="162"/><line x1="1000" y1="206" x2="992" y2="242"/><line x1="1000" y1="286" x2="992" y2="322"/><line x1="1050" y1="-34" x2="1042" y2="2"/><line x1="1050" y1="46" x2="1042" y2="82"/><line x1="1050" y1="126" x2="1042" y2="162"/><line x1="1050" y1="206" x2="1042" y2="242"/><line x1="1050" y1="286" x2="1042" y2="322"/><line x1="1100" y1="-34" x2="1092" y2="2"/><line x1="1100" y1="46" x2="1092" y2="82"/><line x1="1100" y1="126" x2="1092" y2="162"/><line x1="1100" y1="206" x2="1092" y2="242"/><line x1="1100" y1="286" x2="1092" y2="322"/><line x1="1150" y1="-34" x2="1142" y2="2"/><line x1="1150" y1="46" x2="1142" y2="82"/><line x1="1150" y1="126" x2="1142" y2="162"/><line x1="1150" y1="206" x2="1142" y2="242"/><line x1="1150" y1="286" x2="1142" y2="322"/><line x1="1200" y1="-34" x2="1192" y2="2"/><line x1="1200" y1="46" x2="1192" y2="82"/><line x1="1200" y1="126" x2="1192" y2="162"/><line x1="1200" y1="206" x2="1192" y2="242"/><line x1="1200" y1="286" x2="1192" y2="322"/></g>
   </defs>
 
-  <g clip-path="url(#frame)" font-family="'JetBrains Mono','Courier New',monospace">
+  <g clip-path="url(#frame)" font-family="'JetBrains Mono',ui-monospace,'Cascadia Mono','Segoe UI Mono',Consolas,Menlo,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace">
     <rect width="1200" height="320" fill="url(#sky)"/>
     
     <circle cx="700" cy="82" r="52" fill="url(#celGlow)"/>
@@ -257,10 +259,11 @@
       <text x="70" y="166" font-size="16" fill="#3D587A" letter-spacing="1">full stack developer</text>
       <text x="70" y="192" font-size="11" fill="#5F7B99" letter-spacing="1">react · node · express · mysql</text>
       
-      <text x="70" y="220" font-size="13" fill="#1F6FB2" clip-path="url(#clip-flow)">problema -&gt; produto -&gt; testes -&gt; deploy</text>
-      <rect x="374.2" y="208" width="7.2" height="13" fill="#1F6FB2"
-            style="animation:caret-flow 11s steps(39,end) infinite,blink 1.2s steps(1,end) infinite"/>
-      <text x="70" y="242" font-size="10.5" fill="#5F7B99">ultimo commit · ha 13min · ronaelmoura</text>
+      <text x="70" y="220" font-size="13" fill="#1F6FB2" clip-path="url(#clip-flow)"
+            textLength="280.8" lengthAdjust="spacing">problema → produto → testes → deploy</text>
+      <rect x="353.8" y="208" width="7.2" height="13" fill="#1F6FB2"
+            style="animation:caret-flow 11s steps(36,end) infinite,blink 1.2s steps(1,end) infinite"/>
+      <text x="70" y="242" font-size="10.5" fill="#5F7B99">último commit · há 54min · ronaelmoura</text>
 
       <g clip-path="url(#titleBox)">
         <rect class="scan" x="60" y="46" width="520" height="3" fill="#3E8CCB" opacity="0.1"/>
