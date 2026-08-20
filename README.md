@@ -1,4 +1,9 @@
-<img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/ronas-motion.svg" alt="Ronael Moura — Full Stack Developer" />
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/ronas-motion-light.svg" />
+  <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/ronas-motion.svg" alt="Ronael Moura — Full Stack Developer" />
+</picture>
+
+<p align="center"><sub>A cena acompanha a hora em São Paulo e mostra meu último commit de verdade. Regenerada de hora em hora.</sub></p>
 
 <p align="center">
   <a href="https://ronaelmoura.github.io/"><img src="https://img.shields.io/badge/portfólio-0B1626?style=for-the-badge&logo=googlechrome&logoColor=5FA8E0" alt="Portfólio" /></a>
@@ -28,6 +33,21 @@ const ronael = {
 }
 ```
 
+<details>
+<summary><code>$ cat trajetoria.txt</code></summary>
+
+<br />
+
+Comecei em suporte de TI, atendendo quem estava com o problema na frente e sem paciência para jargão. Isso me ensinou três coisas que carrego para o código:
+
+- **Reproduzir antes de opinar.** Metade dos bugs "impossíveis" some quando você olha o log de verdade.
+- **Escrever para quem vai ler depois.** Chamado, commit e README têm o mesmo dono: a próxima pessoa — que às vezes sou eu daqui a seis meses.
+- **A entrega termina no usuário, não no merge.** Deploy que ninguém consegue usar é rascunho caro.
+
+Depois vieram as 670 horas de formação Full Stack no SENAI e a Ronas Tech, onde levo produto do problema até a produção.
+
+</details>
+
 ## Stack
 
 | Camada | Ferramentas | Uso na prática |
@@ -50,6 +70,11 @@ Plataforma Full Stack de Help Desk publicada em produção — meu case principa
 | --- | --- | --- |
 | Clientes, chamados, SLA, relatórios, auditoria, anexos e Portal do Cliente | React 19, Express 5, MySQL, JWT, Docker, Nginx, Render, Aiven TLS e Cloudinary | **122 testes automatizados**, Helmet, rate limit e permissões por perfil |
 
+<details>
+<summary><code>$ ronas-desk --arquitetura</code></summary>
+
+<br />
+
 ```mermaid
 flowchart LR
   U["Equipe e clientes"] --> F["React 19"]
@@ -58,6 +83,10 @@ flowchart LR
   S --> D[("MySQL com TLS")]
   S --> C["Cloudinary · anexos privados"]
 ```
+
+O front nunca fala com o banco. Toda regra de negócio vive na camada de serviços, que é onde ficam as transações — assim dois atendentes mexendo no mesmo chamado não se atropelam. Anexos não passam pelo servidor de aplicação: vão direto para o Cloudinary com acesso privado.
+
+</details>
 
 <p align="center">
   <a href="https://ronas-desk.onrender.com/"><img src="https://img.shields.io/badge/testar_demonstração-5FA8E0?style=flat-square&labelColor=0B1626" alt="Testar demonstração" /></a>
@@ -82,7 +111,34 @@ flowchart LR
   <img height="160" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ronaelmoura&layout=compact&hide_border=true&bg_color=0B1626&title_color=5FA8E0&text_color=C8D8EA&langs_count=8" alt="Linguagens mais usadas" />
 </p>
 
-<img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/black-pearl-sailing.svg" alt="Pérola Negra navegando" />
+<picture>
+  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/black-pearl-sailing-light.svg" />
+  <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/black-pearl-sailing.svg" alt="Pérola Negra navegando sobre o gráfico de contribuições" />
+</picture>
+
+<p align="center"><sub>O mar não é enfeite: a altura de cada onda é o total de contribuições daquela semana, e o navio percorre essa curva.</sub></p>
+
+<details>
+<summary><code>$ como-a-arte-funciona --verbose</code></summary>
+
+<br />
+
+As duas cenas deste perfil são SVG que eu gero, não widget de terceiro — o que significa que nenhum serviço fora do ar derruba a página. Um workflow roda de hora em hora e redesenha tudo:
+
+| Peça | De onde vem |
+| --- | --- |
+| Luz da cena | Hora atual em São Paulo — madrugada, manhã, tarde e noite têm paletas diferentes |
+| Chuva e relâmpago | Aparecem no fim da tarde e na madrugada |
+| Linha do último commit | Feed público de eventos, com a mensagem buscada pelo SHA |
+| Rótulo do monitor | Última execução do CI do Ronas Desk |
+| Altura das ondas | Contribuições por semana no último ano |
+| Versão clara/escura | Duas artes geradas no mesmo passo, servidas por `<picture>` |
+
+A animação é SMIL puro dentro do SVG, inclusive o efeito de máquina de escrever — um `clipPath` que cresce em passos discretos, uma letra por vez. O navio não é animado à mão: ele percorre a curva das contribuições com `animateMotion`, então sobe de verdade nas semanas cheias.
+
+O código está em [`scripts/`](https://github.com/ronaelmoura/ronaelmoura/tree/main/scripts) — sem dependências, só Node.
+
+</details>
 
 ## Contato
 
