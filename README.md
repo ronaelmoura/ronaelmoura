@@ -14,7 +14,7 @@
 
 ## Sobre
 
-Desenvolvedor Full Stack formado pelo SENAI (670 horas) e fundador da Ronas Tech. Construo aplicações completas com React, Node.js, Express e MySQL — não só a interface: API, regras de negócio, banco, autenticação, testes e deploy.
+Desenvolvedor Full Stack e fundador da Ronas Tech. Construo aplicações completas com React, Node.js, Express e MySQL — não só a interface: API, regras de negócio, banco, autenticação, testes e deploy.
 
 Minha experiência em suporte de TI me ensinou a reproduzir o bug antes de sair reescrevendo tudo, comunicar com clareza e assumir a solução até ela funcionar de verdade — não só no `localhost`.
 
