@@ -1,7 +1,7 @@
 <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/ronas-motion.svg" alt="Ronael Moura — Full Stack Developer" />
 
 <p align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=900&color=19D3FF&center=true&vCenter=true&width=700&lines=Eu+transformo+problemas+reais+em+software+que+funciona.;React+%2B+Node.js+%2B+Express+%2B+MySQL.;Do+problema+ao+deploy%2C+com+qualidade+e+responsabilidade." alt="Desenvolvedor Full Stack construindo software útil" />
+  <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=3000&pause=900&color=19D3FF&center=true&vCenter=true&width=700&lines=Capit%C3%A3o+deste+navio%2C+eu+transformo+problemas+reais+em+software+que+funciona.;React+%2B+Node.js+%2B+Express+%2B+MySQL+s%C3%A3o+meu+arsenal.;Do+mapa+do+tesouro+ao+deploy%2C+com+c%C3%B3digo+de+honra." alt="Desenvolvedor Full Stack construindo software útil" />
 </p>
 
 <p align="center">
@@ -13,9 +13,9 @@
 </p>
 
 <p align="center">
-  <img src="https://komarev.com/ghpvc/?username=ronaelmoura&label=VISITAS+NO+PERFIL&color=1479FF&style=flat-square" alt="Visitas no perfil" />
-  <img src="https://img.shields.io/github/followers/ronaelmoura?label=SEGUIDORES&color=19D3FF&style=flat-square&labelColor=071426" alt="Seguidores no GitHub" />
-  <img src="https://img.shields.io/badge/DISPONÍVEL%20PARA-OPORTUNIDADES-19D3FF?style=flat-square&labelColor=071426" alt="Disponível para oportunidades" />
+  <img src="https://komarev.com/ghpvc/?username=ronaelmoura&label=NAVEGANTES+QUE+PASSARAM+POR+AQUI&color=1479FF&style=flat-square" alt="Visitas no perfil" />
+  <img src="https://img.shields.io/github/followers/ronaelmoura?label=TRIPULAÇÃO&color=19D3FF&style=flat-square&labelColor=071426" alt="Seguidores no GitHub" />
+  <img src="https://img.shields.io/badge/ACEITANDO-NOVAS%20EXPEDIÇÕES-19D3FF?style=flat-square&labelColor=071426" alt="Disponível para oportunidades" />
 </p>
 
 <p align="center">
@@ -30,41 +30,41 @@
 <br />
 
 ```text
-// Minha forma de trabalhar
-entender o problema → desenhar a solução → construir → testar → publicar → evoluir
+// O código do meu navio
+entender a missão → traçar a rota → construir → testar as águas → zarpar (deploy) → evoluir
 ```
 
-## ⚡ O que eu entrego
+## ⚡ O que este pirata entrega
 
-Sou Desenvolvedor Full Stack formado pelo SENAI (670 horas) e fundador da Ronas Tech. Construo aplicações completas com React, Node.js, Express e MySQL — não apenas interfaces: entrego APIs, regras de negócio, banco de dados, autenticação, testes e deploy.
+Sou Desenvolvedor Full Stack formado pelo SENAI (670 horas) e capitão da própria embarcação, a Ronas Tech. Construo aplicações completas com React, Node.js, Express e MySQL — não navego só na superfície: entrego API, regras de negócio, banco de dados, autenticação, testes e deploy, do casco ao mastro.
 
-Minha experiência em suporte de TI me ensinou a investigar antes de programar, comunicar com clareza e assumir responsabilidade pela solução até ela funcionar para quem precisa usar.
+Minha experiência em suporte de TI me ensinou a ler o mapa antes de zarpar, comunicar com clareza à tripulação e assumir o comando da solução até o navio chegar ao porto certo — funcionando de verdade para quem precisa usar.
 
 <table>
   <tr>
     <td width="50%" valign="top">
-      <h3>🧠 Pensamento de produto</h3>
-      <p>Transformo necessidades operacionais em fluxos simples, rastreáveis e úteis para o usuário.</p>
+      <h3>🧠 Faro para o tesouro (produto)</h3>
+      <p>Transformo necessidades operacionais em fluxos simples, rastreáveis e valiosos para o usuário — sem enrolação, sem ilha perdida.</p>
     </td>
     <td width="50%" valign="top">
-      <h3>🛠️ Engenharia prática</h3>
-      <p>Interface, API, dados, segurança, testes e deploy conectados em uma entrega real.</p>
+      <h3>🛠️ Engenharia de bordo</h3>
+      <p>Interface, API, dados, segurança, testes e deploy amarrados numa entrega real, sem furo no casco.</p>
     </td>
   </tr>
 </table>
 
-## 🧭 Meu painel de construção
+## 🧭 Meu diário de bordo
 
 ```javascript
-const ronael = {
-  foco: 'transformar problemas operacionais em software útil',
-  entrego: ['interface', 'API REST', 'regras de negócio', 'dados', 'testes', 'deploy'],
-  agora: 'evoluindo um portfólio com frontend, backend e produto',
-  próximoDesafio: 'contribuir em um time que constrói produtos com impacto real',
+const capitaoRonael = {
+  bandeira: 'transformar problemas operacionais em software útil',
+  carregamento: ['interface', 'API REST', 'regras de negócio', 'dados', 'testes', 'deploy'],
+  rotaAtual: 'evoluindo um portfólio com frontend, backend e produto',
+  proximoTesouro: 'contribuir em um time que constrói produtos com impacto real',
 }
 ```
 
-## 🚀 Case principal — Ronas Desk v1.0
+## 🚀 A joia da coroa — Ronas Desk v1.0
 
 <p align="center">
   <a href="https://ronas-desk.onrender.com/"><img width="100%" src="https://img.shields.io/badge/RONAS_DESK-v1.0.0_ESTÁVEL-1479FF?style=for-the-badge&labelColor=05070D&logo=react&logoColor=19D3FF" alt="Ronas Desk v1.0 estável" /></a>
@@ -72,16 +72,16 @@ const ronael = {
 
 <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/terminal-demo.svg" alt="Simulação ilustrativa (não é gravação real) do fluxo de build, testes e deploy do Ronas Desk" />
 
-<p align="center"><sub>Demonstração ilustrativa do fluxo de deploy — não é uma gravação de tela real. <a href="https://ronas-desk.onrender.com/">Veja o produto de verdade rodando aqui →</a></sub></p>
+<p align="center"><sub>Simulação ilustrativa da travessia até o deploy — não é uma gravação de tela real. <a href="https://ronas-desk.onrender.com/">Veja o navio de verdade navegando aqui →</a></sub></p>
 
-Plataforma Full Stack de Help Desk publicada em produção. Criei para simular a operação de uma equipe de suporte com segurança, rastreabilidade e indicadores reais de atendimento.
+Plataforma Full Stack de Help Desk publicada em produção — o tesouro mais valioso deste baú. Criei para simular a operação de uma tripulação de suporte com segurança, rastreabilidade e indicadores reais de atendimento.
 
 <p align="center">
   <a href="https://ronas-desk.onrender.com/"><img src="https://img.shields.io/badge/TESTAR_DEMONSTRAÇÃO-19D3FF?style=for-the-badge&logo=googlechrome&logoColor=05070D" alt="Testar demonstração do Ronas Desk" /></a>
   <a href="https://github.com/ronaelmoura/ronas-desk"><img src="https://img.shields.io/badge/EXPLORAR_CÓDIGO-0B111A?style=for-the-badge&logo=github&logoColor=white" alt="Explorar código do Ronas Desk" /></a>
 </p>
 
-| Produto | Engenharia | Qualidade |
+| Carga a bordo | Engenharia do casco | Vigia de qualidade |
 | --- | --- | --- |
 | Clientes, chamados, SLA, relatórios, auditoria, anexos e Portal do Cliente | React 19, Express 5, MySQL, JWT, Docker, Nginx, Render, Aiven TLS e Cloudinary | **122 testes automatizados**, Helmet, rate limit e permissões por perfil |
 
@@ -89,30 +89,30 @@ Plataforma Full Stack de Help Desk publicada em produção. Criei para simular a
   <a href="https://github.com/ronaelmoura/ronas-desk/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/ronaelmoura/ronas-desk/ci.yml?branch=main&label=CI%20RONAS%20DESK&style=for-the-badge&logo=githubactions&logoColor=white&color=1479FF&labelColor=05070D" alt="Status do CI do Ronas Desk" /></a>
 </p>
 
-### Arquitetura que eu construí
+### O casco que eu construí (arquitetura)
 
 ```mermaid
 flowchart LR
-  U["Equipe e clientes"] --> F["React 19"]
+  U["Tripulação e clientes"] --> F["React 19"]
   F --> A["API REST · Express 5"]
   A --> S["Serviços e regras de negócio"]
   S --> D[("MySQL com TLS")]
-  S --> C["Cloudinary · anexos privados"]
+  S --> C["Cloudinary · porão de anexos privados"]
 ```
 
-## 🧰 O que eu domino, e pra que serve
+## 🧰 As armas do meu arsenal
 
-| Camada | Domino | Uso na prática |
+| Convés | Domino | Uso na prática |
 | --- | --- | --- |
 | 🖼️ Interface | React 19, Vite — também aplico TypeScript (Nexo) | Dashboards e produtos com estado complexo, UI responsiva e modo escuro |
 | ⚙️ Serviços | Node.js, Express 5, REST, JWT | APIs com regras de negócio, autenticação e autorização por perfil |
-| 🗄️ Dados | MySQL, transações, Zod | Consistência transacional e integridade em operações concorrentes |
-| ✅ Qualidade | Vitest, CI no GitHub Actions | Testes automatizados e build validado antes de qualquer deploy |
-| 🚀 Entrega | Docker, Nginx, Render, Cloudflare Workers | Deploy containerizado, observável e em produção real |
+| 🗄️ Porão do tesouro (dados) | MySQL, transações, Zod | Consistência transacional e integridade em operações concorrentes |
+| ✅ Vigia de qualidade | Vitest, CI no GitHub Actions | Testes automatizados e build validado antes de qualquer zarpada |
+| 🚀 Travessia (entrega) | Docker, Nginx, Render, Cloudflare Workers | Deploy containerizado, observável e em produção real |
 
 <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/engineering-pulse.svg" alt="Fluxo de engenharia: entender, construir, validar e publicar" />
 
-## 📊 Atividade & métricas
+## 📊 Livro de bordo — atividade & métricas
 
 <p align="center">
   <img height="165" src="https://github-readme-stats-eight-theta.vercel.app/api?username=ronaelmoura&show_icons=true&count_private=true&hide_title=false&hide_border=true&bg_color=05070D&title_color=19D3FF&icon_color=1479FF&text_color=F4F7FB&ring_color=1479FF" alt="Estatísticas do GitHub de Ronael Moura" />
@@ -128,9 +128,9 @@ flowchart LR
   <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/output/github-contribution-grid-snake.svg" alt="Cobra animada percorrendo o grafo de contribuições de Ronael Moura" />
 </picture>
 
-## 📌 Projetos que representam meu trabalho
+## 📌 Tesouros que representam meu trabalho
 
-| | Projeto | Por que vale abrir |
+| | Achado | Por que vale desenterrar |
 | :---: | --- | --- |
 | 🖥️ | [**Ronas Desk**](https://github.com/ronaelmoura/ronas-desk) · [Demo](https://ronas-desk.onrender.com/) | Produto Full Stack em produção: regras de negócio, segurança, testes e deploy. |
 | 💰 | [**Nexo — Dashboard Financeiro**](https://github.com/ronaelmoura/nexo-dashboard-financeiro) · [Demo](https://ronaelmoura.github.io/nexo-dashboard-financeiro/) | React, gráficos, filtros, modo escuro e experiência responsiva aplicados a finanças pessoais. |
@@ -142,9 +142,9 @@ flowchart LR
   <a href="https://www.ronastech.com.br/#projetos"><img src="https://img.shields.io/badge/VER_CASES_NO_SITE-1479FF?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Ver estudos de caso no site da Ronas Tech" /></a>
 </p>
 
-## 🤝 Vamos construir algo que importa
+## 🤝 Junte-se à tripulação
 
-Se a sua empresa procura alguém com disposição para entender o problema, aprender rápido e entregar software que funciona de verdade, vamos conversar.
+Se sua empresa procura alguém com disposição para ler o mapa, aprender rápido e entregar software que chega ao porto funcionando de verdade, vamos conversar — sem código de conduta pirata de furar acordo: aqui é compromisso de verdade.
 
 <p align="center">
   <a href="mailto:ronaelmoura240@gmail.com"><img src="https://img.shields.io/badge/ENVIAR_E--MAIL-19D3FF?style=for-the-badge&logo=gmail&logoColor=05070D" alt="Enviar e-mail para Ronael Moura" /></a>
