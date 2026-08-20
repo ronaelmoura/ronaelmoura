@@ -38,13 +38,32 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Publicar se mudou
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add assets
-          if git diff --quiet --cached; then
-            echo "nada mudou"
-          else
+
+          for tentativa in 1 2 3; do
+            git add assets
+            if git diff --quiet --cached; then
+              echo "nada mudou"
+              exit 0
+            fi
+
             git commit -m "chore: atualizar arte do perfil"
-            git push
-          fi
+            if git push; then
+              exit 0
+            fi
+
+            # Alguem publicou enquanto este job rodava. Os SVGs sao derivados de
+            # scripts/, entao a saida certa e voltar para a nova base e gerar de
+            # novo — nunca mesclar arte gerada, que so produz conflito bobo.
+            echo "remoto mudou; refazendo sobre a nova base (tentativa $tentativa)"
+            git fetch origin main
+            git reset --hard origin/main
+            node scripts/generate.mjs
+          done
+
+          echo "nao foi possivel publicar depois de 3 tentativas"
+          exit 1
