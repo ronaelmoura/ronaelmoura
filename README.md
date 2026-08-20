@@ -44,7 +44,7 @@ Comecei em suporte de TI, atendendo quem estava com o problema na frente e sem p
 - **Escrever para quem vai ler depois.** Chamado, commit e README têm o mesmo dono: a próxima pessoa — que às vezes sou eu daqui a seis meses.
 - **A entrega termina no usuário, não no merge.** Deploy que ninguém consegue usar é rascunho caro.
 
-Depois vieram as 670 horas de formação Full Stack no SENAI e a Ronas Tech, onde levo produto do problema até a produção.
+Hoje toco a Ronas Tech, onde levo produto do problema até a produção.
 
 </details>
 
