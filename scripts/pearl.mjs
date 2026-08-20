@@ -1,7 +1,13 @@
 // Perola Negra navegando sobre o grafico de contribuicoes.
 // A linha do mar NAO e decorativa: cada ponto e uma semana do ultimo ano.
-// O navio percorre essa mesma curva com animateMotion, entao ele literalmente
-// sobe nas semanas cheias e desce nas semanas paradas.
+//
+// O navio nao tem animacao escrita a mao. Os keyframes de posicao e angulo sao
+// calculados a partir da mesma curva, entao ele sobe de verdade nas semanas
+// cheias. (A versao anterior usava animateMotion; virou CSS para respeitar
+// prefers-reduced-motion. `offset-path` faria o mesmo, mas transform tem suporte
+// mais amplo e o calculo ja esta aqui de qualquer jeito.)
+
+import { styleBlock } from './css.mjs';
 
 const FONT = "'JetBrains Mono','Courier New',monospace";
 
@@ -18,9 +24,7 @@ function smoothPath(points) {
   for (let i = 1; i < points.length - 1; i++) {
     const [cx, cy] = points[i];
     const [nx, ny] = points[i + 1];
-    const mx = (cx + nx) / 2;
-    const my = (cy + ny) / 2;
-    d += ` Q ${cx.toFixed(1)} ${cy.toFixed(1)} ${mx.toFixed(1)} ${my.toFixed(1)}`;
+    d += ` Q ${cx.toFixed(1)} ${cy.toFixed(1)} ${((cx + nx) / 2).toFixed(1)} ${((cy + ny) / 2).toFixed(1)}`;
   }
   const last = points[points.length - 1];
   d += ` L ${last[0].toFixed(1)} ${last[1].toFixed(1)}`;
@@ -42,10 +46,8 @@ function seaPoints(weeks) {
   });
 
   const n = smooth.length;
-  const startX = -40;
-  const span = WIDTH + 80;
   return smooth.map((value, i) => {
-    const x = startX + (span * i) / (n - 1);
+    const x = -40 + ((WIDTH + 80) * i) / (n - 1);
     // Marulho de base + contribuicao: o mar nunca fica morto, mas as semanas
     // cheias levantam ondas de verdade.
     const y = BASE_Y - (Math.sin(i * 0.7) * SWELL + value * AMPLITUDE);
@@ -53,10 +55,23 @@ function seaPoints(weeks) {
   });
 }
 
+/** Um keyframe por semana, com o angulo tirado da inclinacao local da curva. */
+function sailKeyframes(points) {
+  const n = points.length;
+  const steps = points.map(([x, y], i) => {
+    const [px, py] = points[Math.max(i - 1, 0)];
+    const [nx, ny] = points[Math.min(i + 1, n - 1)];
+    const angle = (Math.atan2(ny - py, nx - px) * 180) / Math.PI;
+    const pct = ((i / (n - 1)) * 100).toFixed(2);
+    return `${pct}%{transform:translate(${x.toFixed(1)}px,${y.toFixed(1)}px) rotate(${angle.toFixed(2)}deg)}`;
+  });
+  return `\n  @keyframes sail{${steps.join('')}}`;
+}
+
 /** Navio desenhado ao redor da origem: (0,0) e a linha d'agua. */
-function ship(p) {
+function ship(p, restingTransform) {
   return `
-  <g id="ship">
+  <g class="sail" style="transform:${restingTransform}">
     <path d="M -86 -8 C -88 6 -72 18 -48 21 L 52 21 C 76 18 92 4 98 -12 L 72 -6 L 40 -4 L -40 -4 L -72 -6 Z"
           fill="${p.body}" stroke="${p.metal}" stroke-width="1.4"/>
     <path d="M -80 -4 L 92 -4 L 86 4 L -76 4 Z" fill="${p.hullBand}" opacity="0.65"/>
@@ -94,9 +109,7 @@ function ship(p) {
       <line x1="-56" y1="-96" x2="-88" y2="-12"/>
     </g>
 
-    <g>
-      <animateTransform attributeName="transform" type="rotate" values="-7 -4 -152;6 -4 -152;-7 -4 -152"
-                        dur="1.5s" repeatCount="indefinite"/>
+    <g class="flag" style="transform-origin:-4px -152px">
       <path d="M -4 -152 Q -32 -160 -42 -150 Q -32 -140 -4 -146 Z" fill="${p.body}" stroke="${p.sailEdge}" stroke-width="0.6"/>
       <g transform="translate(-24,-150) scale(0.5)" fill="${p.ink}">
         <circle cx="0" cy="0" r="4.2"/>
@@ -104,9 +117,7 @@ function ship(p) {
       </g>
     </g>
 
-    <g>
-      <animateTransform attributeName="transform" type="rotate" values="6 48 -110;-7 48 -110;6 48 -110"
-                        dur="1.7s" repeatCount="indefinite"/>
+    <g class="flag" style="transform-origin:48px -110px;animation-duration:1.7s;animation-delay:-.5s">
       <path d="M 48 -110 Q 26 -117 18 -108 Q 26 -100 48 -105 Z" fill="${p.body}" stroke="${p.sailEdge}" stroke-width="0.6"/>
       <g transform="translate(32,-108) scale(0.4)" fill="${p.ink}">
         <circle cx="0" cy="0" r="4.2"/>
@@ -115,38 +126,46 @@ function ship(p) {
     </g>
 
     <g fill="${p.lamp}">
-      <circle cx="-88" cy="-14" r="1.8"><animate attributeName="opacity" values="0.3;1;0.3" dur="2.4s" repeatCount="indefinite"/></circle>
-      <circle cx="92" cy="-16" r="1.8"><animate attributeName="opacity" values="1;0.3;1" dur="2.8s" repeatCount="indefinite"/></circle>
+      <circle class="blink" cx="-88" cy="-14" r="1.8" style="animation-duration:2.4s"/>
+      <circle class="blink" cx="92" cy="-16" r="1.8" style="animation-duration:2.8s;animation-delay:-1.4s"/>
     </g>
   </g>`;
 }
 
-function rain(p) {
+function rainDefs(p) {
   if (!p.rain) return '';
-  let drops = '';
-  for (let i = 0; i < 24; i++) {
-    const x = -40 + i * 54;
-    drops += `<line x1="${x}" y1="-30" x2="${x - 7}" y2="2"/>`;
+  let lines = '';
+  for (let col = 0; col < 24; col++) {
+    const x = -50 + col * 54;
+    for (let row = 0; row < 4; row++) {
+      const y = -30 + row * 80;
+      lines += `<line x1="${x}" y1="${y}" x2="${x - 7}" y2="${y + 34}"/>`;
+    }
   }
-  const sheet = (begin, dur, opacity) => `
-    <g stroke="${p.accentSoft}" stroke-width="1" stroke-opacity="${opacity}" stroke-linecap="round">
-      ${drops}
-      <animateTransform attributeName="transform" type="translate" values="0 0;-70 300"
-                        dur="${dur}s" begin="${begin}s" repeatCount="indefinite"/>
-    </g>`;
-  return sheet(0, 0.9, 0.28) + sheet(0.3, 1.1, 0.18);
+  return `<g id="rainSheet" stroke="${p.accentSoft}" stroke-width="1" stroke-linecap="round">${lines}</g>`;
 }
 
-function foam(p, y, dur, opacity, stroke) {
+function rain(p) {
+  if (!p.rain) return '';
+  const sheet = (dur, delay, opacity, dx, dy) => `
+    <g class="fall" style="animation-duration:${dur}s;animation-delay:-${delay}s">
+      <use href="#rainSheet" xlink:href="#rainSheet" transform="translate(${dx},${dy})" opacity="${opacity}"/>
+    </g>`;
+  return sheet(0.9, 0, 0.28, 0, 0) + sheet(1.1, 0.35, 0.18, 19, 28);
+}
+
+/**
+ * Espuma: uma onda longa deslizando na horizontal.
+ * Deslocar e mais confiavel que interpolar `d`, que ainda tem suporte irregular.
+ */
+function foam(p, y, dur, opacity, stroke, delay) {
+  const period = 160;
   const points = [];
-  for (let i = 0; i <= 8; i++) points.push([-40 + i * 160, y]);
-  const flat = smoothPath(points);
-  const up = smoothPath(points.map(([x], i) => [x, y + (i % 2 ? 7 : -7)]));
-  const down = smoothPath(points.map(([x], i) => [x, y + (i % 2 ? -7 : 7)]));
+  for (let i = 0; i <= 12; i++) points.push([-200 + i * period, y + (i % 2 ? 6 : -6)]);
   return `
-    <path d="${flat}" fill="none" stroke="${stroke}" stroke-opacity="${opacity}" stroke-width="1.8">
-      <animate attributeName="d" values="${up};${down};${up}" dur="${dur}s" repeatCount="indefinite"/>
-    </path>`;
+    <g class="drift" style="animation-duration:${dur}s;animation-delay:-${delay}s">
+      <path d="${smoothPath(points)}" fill="none" stroke="${stroke}" stroke-opacity="${opacity}" stroke-width="1.8"/>
+    </g>`;
 }
 
 export function renderPearl({ palette: base, weeks, total }) {
@@ -161,13 +180,25 @@ export function renderPearl({ palette: base, weeks, total }) {
   const points = seaPoints(weeks);
   const line = smoothPath(points);
   const fill = `${line} L ${WIDTH + 40} ${HEIGHT} L -40 ${HEIGHT} Z`;
+
+  // Parado, o navio fica no meio do mar em vez de fora do quadro.
+  const mid = points[Math.floor(points.length / 2)];
+  const resting = `translate(${mid[0].toFixed(1)}px,${mid[1].toFixed(1)}px)`;
+
   const legend = total
     ? `altura das ondas = contribuicoes por semana · ${total} no ultimo ano`
     : 'altura das ondas = contribuicoes por semana';
 
+  const extra = `${sailKeyframes(points)}
+  @keyframes drift { from { transform:translateX(0) } to { transform:translateX(-320px) } }
+  .sail { animation:sail 30s linear infinite }
+  .drift { animation:drift 4s linear infinite }`;
+
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}" role="img" aria-labelledby="t d">
   <title id="t">Perola Negra navegando sobre o grafico de contribuicoes</title>
   <desc id="d">A altura das ondas vem do total de contribuicoes de cada semana do ultimo ano. O navio percorre essa curva.</desc>
+
+  ${styleBlock(extra)}
 
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
@@ -189,7 +220,7 @@ export function renderPearl({ palette: base, weeks, total }) {
       <feColorMatrix in="n" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 0.035 0"/>
     </filter>
     <clipPath id="frame"><rect width="${WIDTH}" height="${HEIGHT}" rx="16"/></clipPath>
-    <path id="seaPath" d="${line}" fill="none"/>
+    ${rainDefs(p)}
   </defs>
 
   <g clip-path="url(#frame)">
@@ -200,30 +231,22 @@ export function renderPearl({ palette: base, weeks, total }) {
     ${p.celestialType === 'moon' ? `<circle cx="998" cy="56" r="20" fill="${p.bgMid}" opacity="0.85"/>` : ''}
 
     <g fill="${p.accentSoft}" opacity="${p.starOpacity}">
-      <circle cx="120" cy="40" r="1.3"><animate attributeName="opacity" values="0.15;0.7;0.15" dur="6s" repeatCount="indefinite"/></circle>
-      <circle cx="330" cy="66" r="1"><animate attributeName="opacity" values="0.6;0.1;0.6" dur="7.2s" repeatCount="indefinite"/></circle>
-      <circle cx="560" cy="34" r="1.2"><animate attributeName="opacity" values="0.2;0.65;0.2" dur="5.4s" repeatCount="indefinite"/></circle>
-      <circle cx="760" cy="58" r="1"><animate attributeName="opacity" values="0.55;0.12;0.55" dur="8s" repeatCount="indefinite"/></circle>
-      <circle cx="1150" cy="44" r="1.1"><animate attributeName="opacity" values="0.18;0.6;0.18" dur="6.6s" repeatCount="indefinite"/></circle>
+      <circle class="twk" cx="120" cy="40" r="1.3"/>
+      <circle class="twk" cx="330" cy="66" r="1" style="animation-duration:7.2s;animation-delay:-1.1s"/>
+      <circle class="twk" cx="560" cy="34" r="1.2" style="animation-duration:5.4s;animation-delay:-2.3s"/>
+      <circle class="twk" cx="760" cy="58" r="1" style="animation-duration:8s;animation-delay:-3.4s"/>
+      <circle class="twk" cx="1150" cy="44" r="1.1" style="animation-duration:6.6s;animation-delay:-4.2s"/>
     </g>
 
     ${rain(p)}
-
-    ${ship(p)
-      .replace(
-        '<g id="ship">',
-        `<g id="ship">
-      <animateMotion dur="30s" repeatCount="indefinite" rotate="auto" keyPoints="0;1" keyTimes="0;1" calcMode="linear">
-        <mpath href="#seaPath" xlink:href="#seaPath"/>
-      </animateMotion>`,
-      )}
+    ${ship(p, resting)}
 
     <path d="${fill}" fill="url(#water)"/>
     <path d="${line}" fill="none" stroke="${p.accent}" stroke-width="2" stroke-opacity="0.65"/>
 
-    ${foam(p, 214, 3.6, 0.3, p.accentSoft)}
-    ${foam(p, 232, 4.8, 0.22, p.accent)}
-    ${foam(p, 248, 4.2, 0.16, p.accentSoft)}
+    ${foam(p, 214, 3.6, 0.3, p.accentSoft, 0)}
+    ${foam(p, 232, 4.8, 0.22, p.accent, 1.2)}
+    ${foam(p, 248, 4.2, 0.16, p.accentSoft, 2.4)}
 
     <text x="24" y="${HEIGHT - 14}" font-family="${FONT}" font-size="9" fill="${p.dim}" opacity="0.8">${legend}</text>
 

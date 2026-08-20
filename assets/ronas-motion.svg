@@ -2,6 +2,61 @@
   <title id="t">Ronael Moura — Full Stack Developer</title>
   <desc id="d">Cena de desenvolvimento (madrugada) com monitores, codigo em movimento e cidade ao fundo.</desc>
 
+  <style>
+  @keyframes twinkle { 0%,100% { opacity:.15 } 50% { opacity:.7 } }
+  @keyframes blink { 0%,49% { opacity:1 } 50%,100% { opacity:0 } }
+  @keyframes breathe { 0%,100% { transform:translateY(0) } 50% { transform:translateY(2px) } }
+  @keyframes glow { 0%,100% { opacity:.18 } 50% { opacity:.46 } }
+  @keyframes softGlow { 0%,100% { opacity:.55 } 50% { opacity:1 } }
+  @keyframes rim { 0%,100% { opacity:.2 } 50% { opacity:.5 } }
+
+  @keyframes driftRight { from { transform:translateX(-1720px) } to { transform:translateX(0) } }
+  @keyframes driftLeft { from { transform:translateX(0) } to { transform:translateX(-1760px) } }
+
+  @keyframes scrollCode { from { transform:translateY(0) } to { transform:translateY(-130px) } }
+  @keyframes sweep { 0% { opacity:.9; transform:translateY(-18px) } 100% { opacity:.9; transform:translateY(130px) } }
+  @keyframes scanline { 0% { opacity:.85; transform:translateY(-8px) } 100% { opacity:.85; transform:translateY(210px) } }
+  @keyframes shineX { 0% { opacity:1; transform:translateX(-220px) } 100% { opacity:1; transform:translateX(560px) } }
+
+  @keyframes drawLine { 0% { stroke-dashoffset:180 } 35%,80% { stroke-dashoffset:0 } 100% { stroke-dashoffset:180 } }
+  @keyframes drawChart { 0% { stroke-dashoffset:180 } 70%,100% { stroke-dashoffset:0 } }
+
+  @keyframes bar { 0%,100% { transform:scaleY(1) } 25% { transform:scaleY(.45) } 60% { transform:scaleY(1.18) } }
+  @keyframes eq { 0%,100% { transform:scaleY(.5) } 30% { transform:scaleY(1) } 65% { transform:scaleY(.72) } }
+
+  @keyframes steam { 0% { opacity:0; transform:translateY(0) } 40% { opacity:.5 } 100% { opacity:0; transform:translateY(-17px) } }
+  @keyframes rise { 0% { opacity:0; transform:translateY(0) } 30% { opacity:.42 } 100% { opacity:0; transform:translateY(-180px) } }
+  @keyframes fall { from { transform:translate(0,0) } to { transform:translate(-18px,80px) } }
+  @keyframes flash { 0%,100% { opacity:0 } 1% { opacity:.16 } 2.6% { opacity:.02 } 4% { opacity:.11 } 6.5% { opacity:0 } }
+
+  @keyframes flag { 0%,100% { transform:rotate(-7deg) } 50% { transform:rotate(6deg) } }
+  .twk { animation:twinkle 6s ease-in-out infinite }
+  .blink { animation:blink 1.1s steps(1,end) infinite }
+  .breathe { animation:breathe 6.5s ease-in-out infinite }
+  .glow { opacity:.3; animation:glow 4.5s ease-in-out infinite }
+  .soft { animation:softGlow 5.5s ease-in-out infinite }
+  .rim { opacity:.35; animation:rim 5.5s ease-in-out infinite }
+  .cloud-a { animation:driftRight 80s linear infinite }
+  .cloud-b { animation:driftLeft 104s linear infinite }
+  .code-scroll { animation:scrollCode 11s linear infinite }
+  .sweep { opacity:0; animation:sweep 6s linear infinite }
+  .scan { opacity:0; animation:scanline 9s linear infinite }
+  .shine { opacity:0; animation:shineX 8s linear infinite }
+  .draw-line { stroke-dashoffset:0; animation:drawLine 7s ease-in-out infinite }
+  .draw-chart { stroke-dashoffset:0; animation:drawChart 5s ease-out infinite }
+  .bar { animation:bar 3.4s ease-in-out infinite }
+  .eq { animation:eq 1.6s ease-in-out infinite }
+  .steam { opacity:0; animation:steam 4.6s ease-out infinite }
+  .rise { opacity:0; animation:rise 16s linear infinite }
+  .fall { animation:fall .95s linear infinite }
+  .flash { opacity:0; animation:flash 19s linear infinite }
+  .flag { animation:flag 1.5s ease-in-out infinite }
+  @keyframes type-flow { 0% { transform:scaleX(0) } 62%,100% { transform:scaleX(1) } }
+  @keyframes caret-flow { 0% { transform:translateX(-304.2px) } 62%,100% { transform:translateX(0) } }
+  @media (prefers-reduced-motion: reduce) {
+    * { animation: none !important; }
+  }</style>
+
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
       <stop offset="0" stop-color="#03060C"/>
@@ -51,81 +106,32 @@
     <clipPath id="mainScreen"><rect x="936" y="106" width="208" height="128"/></clipPath>
     <clipPath id="sideScreen"><rect x="790" y="140" width="110" height="88"/></clipPath>
     <clipPath id="titleBox"><rect x="60" y="46" width="520" height="212"/></clipPath>
+    
+    <clipPath id="clip-flow">
+      <rect x="70" y="207" width="304.2" height="18.2"
+            style="transform-origin:70px 220px;animation:type-flow 11s steps(39,end) infinite"/>
+    </clipPath>
+    
+    <g id="rainSheet" stroke="#8FC4EF" stroke-width="1" stroke-linecap="round"><line x1="-50" y1="-34" x2="-58" y2="2"/><line x1="-50" y1="46" x2="-58" y2="82"/><line x1="-50" y1="126" x2="-58" y2="162"/><line x1="-50" y1="206" x2="-58" y2="242"/><line x1="-50" y1="286" x2="-58" y2="322"/><line x1="0" y1="-34" x2="-8" y2="2"/><line x1="0" y1="46" x2="-8" y2="82"/><line x1="0" y1="126" x2="-8" y2="162"/><line x1="0" y1="206" x2="-8" y2="242"/><line x1="0" y1="286" x2="-8" y2="322"/><line x1="50" y1="-34" x2="42" y2="2"/><line x1="50" y1="46" x2="42" y2="82"/><line x1="50" y1="126" x2="42" y2="162"/><line x1="50" y1="206" x2="42" y2="242"/><line x1="50" y1="286" x2="42" y2="322"/><line x1="100" y1="-34" x2="92" y2="2"/><line x1="100" y1="46" x2="92" y2="82"/><line x1="100" y1="126" x2="92" y2="162"/><line x1="100" y1="206" x2="92" y2="242"/><line x1="100" y1="286" x2="92" y2="322"/><line x1="150" y1="-34" x2="142" y2="2"/><line x1="150" y1="46" x2="142" y2="82"/><line x1="150" y1="126" x2="142" y2="162"/><line x1="150" y1="206" x2="142" y2="242"/><line x1="150" y1="286" x2="142" y2="322"/><line x1="200" y1="-34" x2="192" y2="2"/><line x1="200" y1="46" x2="192" y2="82"/><line x1="200" y1="126" x2="192" y2="162"/><line x1="200" y1="206" x2="192" y2="242"/><line x1="200" y1="286" x2="192" y2="322"/><line x1="250" y1="-34" x2="242" y2="2"/><line x1="250" y1="46" x2="242" y2="82"/><line x1="250" y1="126" x2="242" y2="162"/><line x1="250" y1="206" x2="242" y2="242"/><line x1="250" y1="286" x2="242" y2="322"/><line x1="300" y1="-34" x2="292" y2="2"/><line x1="300" y1="46" x2="292" y2="82"/><line x1="300" y1="126" x2="292" y2="162"/><line x1="300" y1="206" x2="292" y2="242"/><line x1="300" y1="286" x2="292" y2="322"/><line x1="350" y1="-34" x2="342" y2="2"/><line x1="350" y1="46" x2="342" y2="82"/><line x1="350" y1="126" x2="342" y2="162"/><line x1="350" y1="206" x2="342" y2="242"/><line x1="350" y1="286" x2="342" y2="322"/><line x1="400" y1="-34" x2="392" y2="2"/><line x1="400" y1="46" x2="392" y2="82"/><line x1="400" y1="126" x2="392" y2="162"/><line x1="400" y1="206" x2="392" y2="242"/><line x1="400" y1="286" x2="392" y2="322"/><line x1="450" y1="-34" x2="442" y2="2"/><line x1="450" y1="46" x2="442" y2="82"/><line x1="450" y1="126" x2="442" y2="162"/><line x1="450" y1="206" x2="442" y2="242"/><line x1="450" y1="286" x2="442" y2="322"/><line x1="500" y1="-34" x2="492" y2="2"/><line x1="500" y1="46" x2="492" y2="82"/><line x1="500" y1="126" x2="492" y2="162"/><line x1="500" y1="206" x2="492" y2="242"/><line x1="500" y1="286" x2="492" y2="322"/><line x1="550" y1="-34" x2="542" y2="2"/><line x1="550" y1="46" x2="542" y2="82"/><line x1="550" y1="126" x2="542" y2="162"/><line x1="550" y1="206" x2="542" y2="242"/><line x1="550" y1="286" x2="542" y2="322"/><line x1="600" y1="-34" x2="592" y2="2"/><line x1="600" y1="46" x2="592" y2="82"/><line x1="600" y1="126" x2="592" y2="162"/><line x1="600" y1="206" x2="592" y2="242"/><line x1="600" y1="286" x2="592" y2="322"/><line x1="650" y1="-34" x2="642" y2="2"/><line x1="650" y1="46" x2="642" y2="82"/><line x1="650" y1="126" x2="642" y2="162"/><line x1="650" y1="206" x2="642" y2="242"/><line x1="650" y1="286" x2="642" y2="322"/><line x1="700" y1="-34" x2="692" y2="2"/><line x1="700" y1="46" x2="692" y2="82"/><line x1="700" y1="126" x2="692" y2="162"/><line x1="700" y1="206" x2="692" y2="242"/><line x1="700" y1="286" x2="692" y2="322"/><line x1="750" y1="-34" x2="742" y2="2"/><line x1="750" y1="46" x2="742" y2="82"/><line x1="750" y1="126" x2="742" y2="162"/><line x1="750" y1="206" x2="742" y2="242"/><line x1="750" y1="286" x2="742" y2="322"/><line x1="800" y1="-34" x2="792" y2="2"/><line x1="800" y1="46" x2="792" y2="82"/><line x1="800" y1="126" x2="792" y2="162"/><line x1="800" y1="206" x2="792" y2="242"/><line x1="800" y1="286" x2="792" y2="322"/><line x1="850" y1="-34" x2="842" y2="2"/><line x1="850" y1="46" x2="842" y2="82"/><line x1="850" y1="126" x2="842" y2="162"/><line x1="850" y1="206" x2="842" y2="242"/><line x1="850" y1="286" x2="842" y2="322"/><line x1="900" y1="-34" x2="892" y2="2"/><line x1="900" y1="46" x2="892" y2="82"/><line x1="900" y1="126" x2="892" y2="162"/><line x1="900" y1="206" x2="892" y2="242"/><line x1="900" y1="286" x2="892" y2="322"/><line x1="950" y1="-34" x2="942" y2="2"/><line x1="950" y1="46" x2="942" y2="82"/><line x1="950" y1="126" x2="942" y2="162"/><line x1="950" y1="206" x2="942" y2="242"/><line x1="950" y1="286" x2="942" y2="322"/><line x1="1000" y1="-34" x2="992" y2="2"/><line x1="1000" y1="46" x2="992" y2="82"/><line x1="1000" y1="126" x2="992" y2="162"/><line x1="1000" y1="206" x2="992" y2="242"/><line x1="1000" y1="286" x2="992" y2="322"/><line x1="1050" y1="-34" x2="1042" y2="2"/><line x1="1050" y1="46" x2="1042" y2="82"/><line x1="1050" y1="126" x2="1042" y2="162"/><line x1="1050" y1="206" x2="1042" y2="242"/><line x1="1050" y1="286" x2="1042" y2="322"/><line x1="1100" y1="-34" x2="1092" y2="2"/><line x1="1100" y1="46" x2="1092" y2="82"/><line x1="1100" y1="126" x2="1092" y2="162"/><line x1="1100" y1="206" x2="1092" y2="242"/><line x1="1100" y1="286" x2="1092" y2="322"/><line x1="1150" y1="-34" x2="1142" y2="2"/><line x1="1150" y1="46" x2="1142" y2="82"/><line x1="1150" y1="126" x2="1142" y2="162"/><line x1="1150" y1="206" x2="1142" y2="242"/><line x1="1150" y1="286" x2="1142" y2="322"/><line x1="1200" y1="-34" x2="1192" y2="2"/><line x1="1200" y1="46" x2="1192" y2="82"/><line x1="1200" y1="126" x2="1192" y2="162"/><line x1="1200" y1="206" x2="1192" y2="242"/><line x1="1200" y1="286" x2="1192" y2="322"/></g>
   </defs>
 
-  <g clip-path="url(#frame)">
+  <g clip-path="url(#frame)" font-family="'JetBrains Mono','Courier New',monospace">
     <rect width="1200" height="320" fill="url(#sky)"/>
     
     <circle cx="700" cy="82" r="52" fill="url(#celGlow)"/>
     <circle cx="700" cy="82" r="20" fill="#DCEBFF"/>
     <circle cx="692" cy="74" r="16" fill="#050B14" opacity="0.85"/>
-    <g fill="#8FC4EF" opacity="1"><circle cx="150" cy="44" r="1.2">
-        <animate attributeName="opacity" values="0.12;0.6;0.12" dur="6s" repeatCount="indefinite"/>
-      </circle><circle cx="368" cy="30" r="1">
-        <animate attributeName="opacity" values="0.55;0.12;0.55" dur="7.4s" repeatCount="indefinite"/>
-      </circle><circle cx="596" cy="46" r="1.1">
-        <animate attributeName="opacity" values="0.12;0.6;0.12" dur="5.2s" repeatCount="indefinite"/>
-      </circle><circle cx="836" cy="36" r="1">
-        <animate attributeName="opacity" values="0.55;0.12;0.55" dur="8s" repeatCount="indefinite"/>
-      </circle><circle cx="1058" cy="28" r="1.2">
-        <animate attributeName="opacity" values="0.12;0.6;0.12" dur="6.6s" repeatCount="indefinite"/>
-      </circle><circle cx="1160" cy="58" r="1">
-        <animate attributeName="opacity" values="0.55;0.12;0.55" dur="5.8s" repeatCount="indefinite"/>
-      </circle><circle cx="470" cy="66" r="1">
-        <animate attributeName="opacity" values="0.12;0.6;0.12" dur="9s" repeatCount="indefinite"/>
-      </circle></g>
+    <g fill="#8FC4EF" opacity="1"><circle cx="150" cy="44" r="1.2" class="twk" style="animation-duration:6s;animation-delay:-0s"/><circle cx="368" cy="30" r="1" class="twk" style="animation-duration:7.4s;animation-delay:-0.9s"/><circle cx="596" cy="46" r="1.1" class="twk" style="animation-duration:5.2s;animation-delay:-1.8s"/><circle cx="836" cy="36" r="1" class="twk" style="animation-duration:8s;animation-delay:-2.7s"/><circle cx="1058" cy="28" r="1.2" class="twk" style="animation-duration:6.6s;animation-delay:-3.6s"/><circle cx="1160" cy="58" r="1" class="twk" style="animation-duration:5.8s;animation-delay:-4.5s"/><circle cx="470" cy="66" r="1" class="twk" style="animation-duration:9s;animation-delay:-5.4s"/></g>
 
     <g opacity="0.5">
-      <ellipse cx="300" cy="230" rx="220" ry="24" fill="#0B1A2B">
-        <animate attributeName="cx" values="-260;1460" dur="80s" repeatCount="indefinite"/>
-      </ellipse>
-      <ellipse cx="900" cy="244" rx="280" ry="20" fill="#0B1A2B">
-        <animate attributeName="cx" values="1460;-300" dur="104s" repeatCount="indefinite"/>
-      </ellipse>
+      <ellipse class="cloud-a" cx="1460" cy="230" rx="220" ry="24" fill="#0B1A2B"/>
+      <ellipse class="cloud-b" cx="1460" cy="244" rx="280" ry="20" fill="#0B1A2B"/>
     </g>
 
     <path d="M0 252 V232 H48 V240 H96 V226 H150 V238 H196 V222 H248 V236 H300 V228 H352 V218 H404 V234 H456 V224 H508 V238 H556 V216 H600 V192 H646 V220 H690 V200 H736 V230 H780 V208 H824 V226 H868 V196 H914 V224 H960 V186 H1006 V218 H1050 V206 H1096 V230 H1140 V210 H1200 V252 Z"
           fill="#0B1A2B"/>
     <rect x="0" y="184" width="1200" height="68" fill="url(#haze)"/>
-    <g fill="#5FA8E0" opacity="1"><rect x="18" y="240" width="3" height="4">
-        <animate attributeName="opacity" values="0.7;0.14;0.7" dur="4.2s" repeatCount="indefinite"/>
-      </rect><rect x="112" y="234" width="3" height="4">
-        <animate attributeName="opacity" values="0.18;0.7;0.18" dur="5.6s" repeatCount="indefinite"/>
-      </rect><rect x="166" y="244" width="3" height="4">
-        <animate attributeName="opacity" values="0.7;0.14;0.7" dur="6.8s" repeatCount="indefinite"/>
-      </rect><rect x="262" y="242" width="3" height="4">
-        <animate attributeName="opacity" values="0.18;0.7;0.18" dur="4.8s" repeatCount="indefinite"/>
-      </rect><rect x="318" y="236" width="3" height="4">
-        <animate attributeName="opacity" values="0.7;0.14;0.7" dur="7.2s" repeatCount="indefinite"/>
-      </rect><rect x="372" y="228" width="3" height="4">
-        <animate attributeName="opacity" values="0.18;0.7;0.18" dur="5.1s" repeatCount="indefinite"/>
-      </rect><rect x="470" y="234" width="3" height="4">
-        <animate attributeName="opacity" values="0.7;0.14;0.7" dur="6.2s" repeatCount="indefinite"/>
-      </rect><rect x="530" y="244" width="3" height="4">
-        <animate attributeName="opacity" values="0.18;0.7;0.18" dur="4.6s" repeatCount="indefinite"/>
-      </rect><rect x="618" y="204" width="3" height="4">
-        <animate attributeName="opacity" values="0.7;0.14;0.7" dur="7.8s" repeatCount="indefinite"/>
-      </rect><rect x="632" y="222" width="3" height="4">
-        <animate attributeName="opacity" values="0.18;0.7;0.18" dur="5s" repeatCount="indefinite"/>
-      </rect><rect x="664" y="232" width="3" height="4">
-        <animate attributeName="opacity" values="0.7;0.14;0.7" dur="5.4s" repeatCount="indefinite"/>
-      </rect><rect x="712" y="212" width="3" height="4">
-        <animate attributeName="opacity" values="0.18;0.7;0.18" dur="6.4s" repeatCount="indefinite"/>
-      </rect><rect x="748" y="240" width="3" height="4">
-        <animate attributeName="opacity" values="0.7;0.14;0.7" dur="6s" repeatCount="indefinite"/>
-      </rect><rect x="798" y="220" width="3" height="4">
-        <animate attributeName="opacity" values="0.18;0.7;0.18" dur="4.4s" repeatCount="indefinite"/>
-      </rect><rect x="890" y="208" width="3" height="4">
-        <animate attributeName="opacity" values="0.7;0.14;0.7" dur="8.2s" repeatCount="indefinite"/>
-      </rect><rect x="978" y="198" width="3" height="4">
-        <animate attributeName="opacity" values="0.18;0.7;0.18" dur="5.9s" repeatCount="indefinite"/>
-      </rect><rect x="1024" y="230" width="3" height="4">
-        <animate attributeName="opacity" values="0.7;0.14;0.7" dur="6.9s" repeatCount="indefinite"/>
-      </rect><rect x="1112" y="222" width="3" height="4">
-        <animate attributeName="opacity" values="0.18;0.7;0.18" dur="4.9s" repeatCount="indefinite"/>
-      </rect><rect x="1166" y="226" width="3" height="4">
-        <animate attributeName="opacity" values="0.7;0.14;0.7" dur="7.6s" repeatCount="indefinite"/>
-      </rect></g>
+    <g fill="#5FA8E0" opacity="1"><rect x="18" y="240" width="3" height="4" class="twk" style="animation-duration:4.2s;animation-delay:-0s"/><rect x="112" y="234" width="3" height="4" class="twk" style="animation-duration:5.6s;animation-delay:-0.7s"/><rect x="166" y="244" width="3" height="4" class="twk" style="animation-duration:6.8s;animation-delay:-1.4s"/><rect x="262" y="242" width="3" height="4" class="twk" style="animation-duration:4.8s;animation-delay:-2.0999999999999996s"/><rect x="318" y="236" width="3" height="4" class="twk" style="animation-duration:7.2s;animation-delay:-2.8s"/><rect x="372" y="228" width="3" height="4" class="twk" style="animation-duration:5.1s;animation-delay:-3.5s"/><rect x="470" y="234" width="3" height="4" class="twk" style="animation-duration:6.2s;animation-delay:-4.199999999999999s"/><rect x="530" y="244" width="3" height="4" class="twk" style="animation-duration:4.6s;animation-delay:-4.8999999999999995s"/><rect x="618" y="204" width="3" height="4" class="twk" style="animation-duration:7.8s;animation-delay:-5.6s"/><rect x="632" y="222" width="3" height="4" class="twk" style="animation-duration:5s;animation-delay:-6.3s"/><rect x="664" y="232" width="3" height="4" class="twk" style="animation-duration:5.4s;animation-delay:-7s"/><rect x="712" y="212" width="3" height="4" class="twk" style="animation-duration:6.4s;animation-delay:-7.699999999999999s"/><rect x="748" y="240" width="3" height="4" class="twk" style="animation-duration:6s;animation-delay:-8.399999999999999s"/><rect x="798" y="220" width="3" height="4" class="twk" style="animation-duration:4.4s;animation-delay:-9.1s"/><rect x="890" y="208" width="3" height="4" class="twk" style="animation-duration:8.2s;animation-delay:-9.799999999999999s"/><rect x="978" y="198" width="3" height="4" class="twk" style="animation-duration:5.9s;animation-delay:-10.5s"/><rect x="1024" y="230" width="3" height="4" class="twk" style="animation-duration:6.9s;animation-delay:-11.2s"/><rect x="1112" y="222" width="3" height="4" class="twk" style="animation-duration:4.9s;animation-delay:-11.899999999999999s"/><rect x="1166" y="226" width="3" height="4" class="twk" style="animation-duration:7.6s;animation-delay:-12.6s"/></g>
 
     <rect x="0" y="252" width="1200" height="68" fill="#060D18"/>
     <line x1="0" y1="252" x2="1200" y2="252" stroke="#16263A" stroke-width="1"/>
@@ -137,25 +143,21 @@
       <rect x="784" y="134" width="122" height="100" rx="5" fill="#0D1C2E" stroke="#16263A" stroke-width="1.4"/>
       <rect x="790" y="140" width="110" height="88" fill="#071322"/>
       <g clip-path="url(#sideScreen)">
-        <g fill="#5C7492">
+        <g fill="#5C7492" class="soft">
           <rect x="796" y="147" width="46" height="3"/>
           <rect x="796" y="156" width="72" height="3"/>
           <rect x="796" y="165" width="34" height="3"/>
           <rect x="796" y="174" width="60" height="3"/>
           <rect x="796" y="183" width="44" height="3"/>
-          <animate attributeName="opacity" values="0.75;1;0.75" dur="3.4s" repeatCount="indefinite"/>
         </g>
         <rect x="796" y="192" width="28" height="3" fill="#5FA8E0"/>
-        <rect x="828" y="190" width="5" height="6" fill="#8FC4EF">
-          <animate attributeName="opacity" values="1;0;1" dur="1.1s" repeatCount="indefinite"/>
-        </rect>
-        <g fill="#5FA8E0" opacity="0.85">
-          <rect x="798" y="212" width="5" height="10"><animate attributeName="height" values="6;16;9;14;6" dur="1.6s" repeatCount="indefinite"/><animate attributeName="y" values="216;206;213;208;216" dur="1.6s" repeatCount="indefinite"/></rect>
-          <rect x="808" y="212" width="5" height="10"><animate attributeName="height" values="14;7;16;10;14" dur="1.9s" repeatCount="indefinite"/><animate attributeName="y" values="208;215;206;212;208" dur="1.9s" repeatCount="indefinite"/></rect>
-          <rect x="818" y="212" width="5" height="10"><animate attributeName="height" values="9;15;6;13;9" dur="1.4s" repeatCount="indefinite"/><animate attributeName="y" values="213;207;216;209;213" dur="1.4s" repeatCount="indefinite"/></rect>
-          <rect x="828" y="212" width="5" height="10"><animate attributeName="height" values="16;8;12;7;16" dur="2.1s" repeatCount="indefinite"/><animate attributeName="y" values="206;214;210;215;206" dur="2.1s" repeatCount="indefinite"/></rect>
-          <rect x="838" y="212" width="5" height="10"><animate attributeName="height" values="7;13;16;9;7" dur="1.7s" repeatCount="indefinite"/><animate attributeName="y" values="215;209;206;213;215" dur="1.7s" repeatCount="indefinite"/></rect>
-        </g>
+        <rect x="828" y="190" width="5" height="6" fill="#8FC4EF" class="blink"/>
+        <g fill="#5FA8E0" opacity="0.85"><rect x="798" y="206" width="5" height="16" class="eq"
+      style="transform-origin:800.5px 222px;animation-duration:1.6s;animation-delay:-0s"/><rect x="808" y="206" width="5" height="16" class="eq"
+      style="transform-origin:810.5px 222px;animation-duration:1.9s;animation-delay:-0.4s"/><rect x="818" y="206" width="5" height="16" class="eq"
+      style="transform-origin:820.5px 222px;animation-duration:1.4s;animation-delay:-0.8s"/><rect x="828" y="206" width="5" height="16" class="eq"
+      style="transform-origin:830.5px 222px;animation-duration:2.1s;animation-delay:-1.2000000000000002s"/><rect x="838" y="206" width="5" height="16" class="eq"
+      style="transform-origin:840.5px 222px;animation-duration:1.7s;animation-delay:-1.6s"/></g>
       </g>
     </g>
 
@@ -168,182 +170,101 @@
       <g fill="#5C7492">
         <circle cx="945" cy="113" r="2.2"/><circle cx="954" cy="113" r="2.2"/><circle cx="963" cy="113" r="2.2"/>
       </g>
-      <text x="974" y="116" font-family="'JetBrains Mono','Courier New',monospace" font-size="8.5" fill="#5FA8E0">ronas desk · v1.0.0 · ci ok</text>
+      <text x="974" y="116" font-size="8.5" fill="#5FA8E0">ronas desk · v1.0.0 · ci ok</text>
 
-      <g>
-        <animateTransform attributeName="transform" type="translate" values="0 0;0 -130" dur="11s" repeatCount="indefinite"/>
+      <g class="code-scroll">
         <g transform="translate(0 0)"><rect x="942" y="128" width="16" height="3" fill="#5FA8E0"/><rect x="962" y="128" width="42" height="3" fill="#5C7492"/><rect x="942" y="138" width="58" height="3" fill="#5C7492"/><rect x="1004" y="138" width="18" height="3" fill="#8FC4EF"/><rect x="948" y="148" width="30" height="3" fill="#5C7492"/><rect x="948" y="158" width="66" height="3" fill="#16263A"/><rect x="942" y="168" width="22" height="3" fill="#5FA8E0"/><rect x="968" y="168" width="36" height="3" fill="#5C7492"/><rect x="948" y="178" width="48" height="3" fill="#5C7492"/><rect x="948" y="188" width="26" height="3" fill="#8FC4EF"/><rect x="942" y="198" width="70" height="3" fill="#5C7492"/><rect x="942" y="208" width="34" height="3" fill="#5FA8E0"/><rect x="948" y="218" width="54" height="3" fill="#5C7492"/><rect x="948" y="228" width="28" height="3" fill="#16263A"/><rect x="942" y="238" width="62" height="3" fill="#5C7492"/></g>
         <g transform="translate(0 130)"><rect x="942" y="128" width="16" height="3" fill="#5FA8E0"/><rect x="962" y="128" width="42" height="3" fill="#5C7492"/><rect x="942" y="138" width="58" height="3" fill="#5C7492"/><rect x="1004" y="138" width="18" height="3" fill="#8FC4EF"/><rect x="948" y="148" width="30" height="3" fill="#5C7492"/><rect x="948" y="158" width="66" height="3" fill="#16263A"/><rect x="942" y="168" width="22" height="3" fill="#5FA8E0"/><rect x="968" y="168" width="36" height="3" fill="#5C7492"/><rect x="948" y="178" width="48" height="3" fill="#5C7492"/><rect x="948" y="188" width="26" height="3" fill="#8FC4EF"/><rect x="942" y="198" width="70" height="3" fill="#5C7492"/><rect x="942" y="208" width="34" height="3" fill="#5FA8E0"/><rect x="948" y="218" width="54" height="3" fill="#5C7492"/><rect x="948" y="228" width="28" height="3" fill="#16263A"/><rect x="942" y="238" width="62" height="3" fill="#5C7492"/></g>
       </g>
 
       <line x1="1030" y1="121" x2="1030" y2="234" stroke="#16263A" stroke-width="1"/>
 
-      <path d="M1040 186 L1052 174 L1064 180 L1076 158 L1088 166 L1100 144 L1112 152 L1124 136 L1136 130 L1136 190 L1040 190 Z" fill="url(#chartFill)">
-        <animate attributeName="opacity" values="0.5;1;0.5" dur="4.5s" repeatCount="indefinite"/>
-      </path>
-      <polyline points="1040,186 1052,174 1064,180 1076,158 1088,166 1100,144 1112,152 1124,136 1136,130"
+      <path class="soft" d="M1040 186 L1052 174 L1064 180 L1076 158 L1088 166 L1100 144 L1112 152 L1124 136 L1136 130 L1136 190 L1040 190 Z" fill="url(#chartFill)"/>
+      <polyline class="draw-chart" points="1040,186 1052,174 1064,180 1076,158 1088,166 1100,144 1112,152 1124,136 1136,130"
                 fill="none" stroke="#8FC4EF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
-                stroke-dasharray="180" stroke-dashoffset="180">
-        <animate attributeName="stroke-dashoffset" values="180;0;0" keyTimes="0;0.7;1" dur="5s" repeatCount="indefinite"/>
-      </polyline>
-      <circle cx="1136" cy="130" r="2.5" fill="#8FC4EF">
-        <animate attributeName="opacity" values="0.3;1;0.3" dur="1.8s" repeatCount="indefinite"/>
-      </circle>
+                stroke-dasharray="180"/>
+      <circle cx="1136" cy="130" r="2.5" fill="#8FC4EF" class="soft" style="animation-duration:1.8s"/>
 
-      <g fill="#5FA8E0" opacity="0.75">
-        <rect x="1040" y="212" width="8" height="18"><animate attributeName="height" values="18;9;22;14;18" dur="3.2s" repeatCount="indefinite"/><animate attributeName="y" values="212;221;208;216;212" dur="3.2s" repeatCount="indefinite"/></rect>
-        <rect x="1054" y="206" width="8" height="24"><animate attributeName="height" values="24;14;10;20;24" dur="3.8s" repeatCount="indefinite"/><animate attributeName="y" values="206;216;220;210;206" dur="3.8s" repeatCount="indefinite"/></rect>
-        <rect x="1068" y="216" width="8" height="14"><animate attributeName="height" values="14;22;12;18;14" dur="2.9s" repeatCount="indefinite"/><animate attributeName="y" values="216;208;218;212;216" dur="2.9s" repeatCount="indefinite"/></rect>
-        <rect x="1082" y="204" width="8" height="26"><animate attributeName="height" values="26;12;20;9;26" dur="4.2s" repeatCount="indefinite"/><animate attributeName="y" values="204;218;210;221;204" dur="4.2s" repeatCount="indefinite"/></rect>
-        <rect x="1096" y="214" width="8" height="16"><animate attributeName="height" values="16;24;11;19;16" dur="3.4s" repeatCount="indefinite"/><animate attributeName="y" values="214;206;219;211;214" dur="3.4s" repeatCount="indefinite"/></rect>
-        <rect x="1110" y="210" width="8" height="20"><animate attributeName="height" values="20;10;24;13;20" dur="3.6s" repeatCount="indefinite"/><animate attributeName="y" values="210;220;206;217;210" dur="3.6s" repeatCount="indefinite"/></rect>
-      </g>
+      <g fill="#5FA8E0" opacity="0.75"><rect x="1040" y="204" width="8" height="26" class="bar"
+      style="transform-origin:1044px 230px;animation-duration:3.2s;animation-delay:-0s"/><rect x="1054" y="204" width="8" height="26" class="bar"
+      style="transform-origin:1058px 230px;animation-duration:3.8s;animation-delay:-0.6s"/><rect x="1068" y="204" width="8" height="26" class="bar"
+      style="transform-origin:1072px 230px;animation-duration:2.9s;animation-delay:-1.2s"/><rect x="1082" y="204" width="8" height="26" class="bar"
+      style="transform-origin:1086px 230px;animation-duration:4.2s;animation-delay:-1.7999999999999998s"/><rect x="1096" y="204" width="8" height="26" class="bar"
+      style="transform-origin:1100px 230px;animation-duration:3.4s;animation-delay:-2.4s"/><rect x="1110" y="204" width="8" height="26" class="bar"
+      style="transform-origin:1114px 230px;animation-duration:3.6s;animation-delay:-3s"/></g>
 
-      <rect x="936" y="106" width="208" height="26" fill="url(#shine)">
-        <animate attributeName="y" values="90;234" dur="6s" repeatCount="indefinite"/>
-      </rect>
+      <rect class="sweep" x="936" y="106" width="208" height="26" fill="url(#shine)"/>
     </g>
 
     <g>
       <path d="M1004 268 L1136 262 L1146 278 L1010 284 Z" fill="#0D1C2E" stroke="#16263A" stroke-width="1"/>
-      <g fill="#5C7492">
-        <rect x="1016" y="270" width="9" height="3"><animate attributeName="opacity" values="0.4;1;0.4" dur="0.9s" repeatCount="indefinite"/></rect>
-        <rect x="1032" y="269" width="9" height="3"><animate attributeName="opacity" values="1;0.4;1" dur="1.3s" repeatCount="indefinite"/></rect>
-        <rect x="1048" y="268" width="9" height="3"/>
-        <rect x="1064" y="267" width="9" height="3"><animate attributeName="opacity" values="0.4;1;0.4" dur="1.1s" repeatCount="indefinite"/></rect>
-        <rect x="1080" y="266" width="9" height="3"/>
-        <rect x="1096" y="265" width="9" height="3"><animate attributeName="opacity" values="1;0.35;1" dur="0.75s" repeatCount="indefinite"/></rect>
-        <rect x="1022" y="277" width="9" height="3"/>
-        <rect x="1038" y="276" width="9" height="3"><animate attributeName="opacity" values="0.35;1;0.35" dur="1.5s" repeatCount="indefinite"/></rect>
-        <rect x="1054" y="275" width="9" height="3"/>
-        <rect x="1070" y="274" width="9" height="3"><animate attributeName="opacity" values="1;0.4;1" dur="1s" repeatCount="indefinite"/></rect>
-        <rect x="1086" y="273" width="9" height="3"/>
-      </g>
+      <g fill="#5C7492"><rect x="1016" y="270" width="9" height="3" class="blink" style="animation-duration:0.9s;animation-delay:-0s"/><rect x="1032" y="269" width="9" height="3" class="blink" style="animation-duration:1.3s;animation-delay:-0.3s"/><rect x="1048" y="268" width="9" height="3"/><rect x="1064" y="267" width="9" height="3" class="blink" style="animation-duration:1.1s;animation-delay:-0.8999999999999999s"/><rect x="1080" y="266" width="9" height="3"/><rect x="1096" y="265" width="9" height="3" class="blink" style="animation-duration:0.75s;animation-delay:-1.5s"/><rect x="1022" y="277" width="9" height="3"/><rect x="1038" y="276" width="9" height="3" class="blink" style="animation-duration:1.5s;animation-delay:-2.1s"/><rect x="1054" y="275" width="9" height="3"/><rect x="1070" y="274" width="9" height="3" class="blink" style="animation-duration:1s;animation-delay:-2.6999999999999997s"/><rect x="1086" y="273" width="9" height="3"/></g>
       <ellipse cx="1168" cy="272" rx="10" ry="7" fill="#0D1C2E" stroke="#16263A" stroke-width="1"/>
     </g>
 
     <g>
       <g fill="none" stroke="#5FA8E0" stroke-width="1.2" stroke-linecap="round">
-        <path d="M606 258 C601 250 611 246 606 238">
-          <animate attributeName="opacity" values="0;0.55;0" dur="4.6s" repeatCount="indefinite"/>
-          <animateTransform attributeName="transform" type="translate" values="0 0;0 -16" dur="4.6s" repeatCount="indefinite"/>
-        </path>
-        <path d="M616 256 C611 248 621 244 616 236">
-          <animate attributeName="opacity" values="0;0.45;0" dur="5.4s" begin="1.6s" repeatCount="indefinite"/>
-          <animateTransform attributeName="transform" type="translate" values="0 0;0 -18" dur="5.4s" begin="1.6s" repeatCount="indefinite"/>
-        </path>
-        <path d="M625 259 C620 251 630 247 625 239">
-          <animate attributeName="opacity" values="0;0.4;0" dur="5s" begin="3s" repeatCount="indefinite"/>
-          <animateTransform attributeName="transform" type="translate" values="0 0;0 -17" dur="5s" begin="3s" repeatCount="indefinite"/>
-        </path>
+        <path class="steam" d="M606 258 C601 250 611 246 606 238"/>
+        <path class="steam" style="animation-duration:5.4s;animation-delay:-1.6s" d="M616 256 C611 248 621 244 616 236"/>
+        <path class="steam" style="animation-duration:5s;animation-delay:-3s" d="M625 259 C620 251 630 247 625 239"/>
       </g>
       <path d="M598 264 H634 V286 Q634 293 627 293 H605 Q598 293 598 286 Z" fill="#0D1C2E" stroke="#5FA8E0" stroke-width="1.3"/>
       <path d="M634 270 Q646 272 644 280 Q642 287 634 286" fill="none" stroke="#5FA8E0" stroke-width="1.3"/>
       <ellipse cx="616" cy="264" rx="18" ry="3.4" fill="#16263A"/>
     </g>
 
-    <ellipse cx="1030" cy="180" rx="230" ry="150" fill="url(#screenGlow)">
-      <animate attributeName="opacity" values="0.6;1;0.6" dur="5.5s" repeatCount="indefinite"/>
-    </ellipse>
+    <ellipse class="soft" cx="1030" cy="180" rx="230" ry="150" fill="url(#screenGlow)"/>
 
     <path d="M762 306 Q762 292 782 292 H1038 Q1058 292 1058 306 V330 H762 Z" fill="#04080F" stroke="#16263A" stroke-width="1"/>
 
-    <g>
-      <animateTransform attributeName="transform" type="translate" values="0 0;0 2;0 0" dur="6.5s" repeatCount="indefinite"/>
+    <g class="breathe">
       <path d="M780 330 C784 296 812 282 838 274 C830 236 856 208 910 208 C964 208 990 236 982 274 C1008 282 1036 296 1040 330 Z" fill="#04080F"/>
-      <path d="M780 330 C784 296 812 282 838 274 C830 236 856 208 910 208 C964 208 990 236 982 274 C1008 282 1036 296 1040 330" fill="none" stroke="#5FA8E0" stroke-width="1.8" opacity="0.35">
-        <animate attributeName="opacity" values="0.2;0.5;0.2" dur="5.5s" repeatCount="indefinite"/>
-      </path>
+      <path class="rim" d="M780 330 C784 296 812 282 838 274 C830 236 856 208 910 208 C964 208 990 236 982 274 C1008 282 1036 296 1040 330" fill="none" stroke="#5FA8E0" stroke-width="1.8"/>
       <path d="M838 256 C838 192 982 192 982 256" fill="none" stroke="#4A5568" stroke-width="7" stroke-linecap="round"/>
       <path d="M838 256 C838 192 982 192 982 256" fill="none" stroke="#5FA8E0" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
       <rect x="825" y="246" width="21" height="36" rx="10" fill="#4A5568" stroke="#5FA8E0" stroke-width="1"/>
       <rect x="974" y="246" width="21" height="36" rx="10" fill="#4A5568" stroke="#5FA8E0" stroke-width="1"/>
-      <circle cx="984" cy="264" r="2.4" fill="#8FC4EF">
-        <animate attributeName="opacity" values="1;0.15;1" dur="2.4s" repeatCount="indefinite"/>
-      </circle>
+      <circle cx="984" cy="264" r="2.4" fill="#8FC4EF" class="blink" style="animation-duration:2.4s"/>
     </g>
 
     <g fill="#8FC4EF">
-      <circle cx="672" cy="300" r="1.2">
-        <animate attributeName="cy" values="308;120" dur="16s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.45;0" dur="16s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="744" cy="300" r="1">
-        <animate attributeName="cy" values="312;140" dur="21s" begin="3s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.4;0" dur="21s" begin="3s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="1104" cy="300" r="1.1">
-        <animate attributeName="cy" values="306;130" dur="18s" begin="6s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.4;0" dur="18s" begin="6s" repeatCount="indefinite"/>
-      </circle>
-      <circle cx="1178" cy="300" r="1">
-        <animate attributeName="cy" values="310;150" dur="24s" begin="9s" repeatCount="indefinite"/>
-        <animate attributeName="opacity" values="0;0.35;0" dur="24s" begin="9s" repeatCount="indefinite"/>
-      </circle>
+      <circle class="rise" cx="672" cy="300" r="1.2"/>
+      <circle class="rise" cx="744" cy="300" r="1" style="animation-duration:21s;animation-delay:-3s"/>
+      <circle class="rise" cx="1104" cy="300" r="1.1" style="animation-duration:18s;animation-delay:-6s"/>
+      <circle class="rise" cx="1178" cy="300" r="1" style="animation-duration:24s;animation-delay:-9s"/>
     </g>
 
     
-    <g stroke="#8FC4EF" stroke-width="1" stroke-opacity="0.32" stroke-linecap="round">
-      <line x1="-40" y1="-34" x2="-48" y2="2"/><line x1="10" y1="-34" x2="2" y2="2"/><line x1="60" y1="-34" x2="52" y2="2"/><line x1="110" y1="-34" x2="102" y2="2"/><line x1="160" y1="-34" x2="152" y2="2"/><line x1="210" y1="-34" x2="202" y2="2"/><line x1="260" y1="-34" x2="252" y2="2"/><line x1="310" y1="-34" x2="302" y2="2"/><line x1="360" y1="-34" x2="352" y2="2"/><line x1="410" y1="-34" x2="402" y2="2"/><line x1="460" y1="-34" x2="452" y2="2"/><line x1="510" y1="-34" x2="502" y2="2"/><line x1="560" y1="-34" x2="552" y2="2"/><line x1="610" y1="-34" x2="602" y2="2"/><line x1="660" y1="-34" x2="652" y2="2"/><line x1="710" y1="-34" x2="702" y2="2"/><line x1="760" y1="-34" x2="752" y2="2"/><line x1="810" y1="-34" x2="802" y2="2"/><line x1="860" y1="-34" x2="852" y2="2"/><line x1="910" y1="-34" x2="902" y2="2"/><line x1="960" y1="-34" x2="952" y2="2"/><line x1="1010" y1="-34" x2="1002" y2="2"/><line x1="1060" y1="-34" x2="1052" y2="2"/><line x1="1110" y1="-34" x2="1102" y2="2"/><line x1="1160" y1="-34" x2="1152" y2="2"/><line x1="1210" y1="-34" x2="1202" y2="2"/>
-      <animateTransform attributeName="transform" type="translate" values="0 0;-84 366"
-                        dur="0.95s" begin="0s" repeatCount="indefinite"/>
+    <g class="fall" style="animation-duration:0.95s;animation-delay:-0s">
+      <use href="#rainSheet" xlink:href="#rainSheet" transform="translate(0,0)" opacity="0.32"/>
     </g>
-    <g stroke="#8FC4EF" stroke-width="1" stroke-opacity="0.2" stroke-linecap="round">
-      <line x1="-40" y1="-34" x2="-48" y2="2"/><line x1="10" y1="-34" x2="2" y2="2"/><line x1="60" y1="-34" x2="52" y2="2"/><line x1="110" y1="-34" x2="102" y2="2"/><line x1="160" y1="-34" x2="152" y2="2"/><line x1="210" y1="-34" x2="202" y2="2"/><line x1="260" y1="-34" x2="252" y2="2"/><line x1="310" y1="-34" x2="302" y2="2"/><line x1="360" y1="-34" x2="352" y2="2"/><line x1="410" y1="-34" x2="402" y2="2"/><line x1="460" y1="-34" x2="452" y2="2"/><line x1="510" y1="-34" x2="502" y2="2"/><line x1="560" y1="-34" x2="552" y2="2"/><line x1="610" y1="-34" x2="602" y2="2"/><line x1="660" y1="-34" x2="652" y2="2"/><line x1="710" y1="-34" x2="702" y2="2"/><line x1="760" y1="-34" x2="752" y2="2"/><line x1="810" y1="-34" x2="802" y2="2"/><line x1="860" y1="-34" x2="852" y2="2"/><line x1="910" y1="-34" x2="902" y2="2"/><line x1="960" y1="-34" x2="952" y2="2"/><line x1="1010" y1="-34" x2="1002" y2="2"/><line x1="1060" y1="-34" x2="1052" y2="2"/><line x1="1110" y1="-34" x2="1102" y2="2"/><line x1="1160" y1="-34" x2="1152" y2="2"/><line x1="1210" y1="-34" x2="1202" y2="2"/>
-      <animateTransform attributeName="transform" type="translate" values="0 0;-84 366"
-                        dur="1.15s" begin="0.32s" repeatCount="indefinite"/>
+    <g class="fall" style="animation-duration:1.15s;animation-delay:-0.4s">
+      <use href="#rainSheet" xlink:href="#rainSheet" transform="translate(17,26)" opacity="0.2"/>
     </g>
-    <g stroke="#8FC4EF" stroke-width="1" stroke-opacity="0.26" stroke-linecap="round">
-      <line x1="-40" y1="-34" x2="-48" y2="2"/><line x1="10" y1="-34" x2="2" y2="2"/><line x1="60" y1="-34" x2="52" y2="2"/><line x1="110" y1="-34" x2="102" y2="2"/><line x1="160" y1="-34" x2="152" y2="2"/><line x1="210" y1="-34" x2="202" y2="2"/><line x1="260" y1="-34" x2="252" y2="2"/><line x1="310" y1="-34" x2="302" y2="2"/><line x1="360" y1="-34" x2="352" y2="2"/><line x1="410" y1="-34" x2="402" y2="2"/><line x1="460" y1="-34" x2="452" y2="2"/><line x1="510" y1="-34" x2="502" y2="2"/><line x1="560" y1="-34" x2="552" y2="2"/><line x1="610" y1="-34" x2="602" y2="2"/><line x1="660" y1="-34" x2="652" y2="2"/><line x1="710" y1="-34" x2="702" y2="2"/><line x1="760" y1="-34" x2="752" y2="2"/><line x1="810" y1="-34" x2="802" y2="2"/><line x1="860" y1="-34" x2="852" y2="2"/><line x1="910" y1="-34" x2="902" y2="2"/><line x1="960" y1="-34" x2="952" y2="2"/><line x1="1010" y1="-34" x2="1002" y2="2"/><line x1="1060" y1="-34" x2="1052" y2="2"/><line x1="1110" y1="-34" x2="1102" y2="2"/><line x1="1160" y1="-34" x2="1152" y2="2"/><line x1="1210" y1="-34" x2="1202" y2="2"/>
-      <animateTransform attributeName="transform" type="translate" values="0 0;-84 366"
-                        dur="0.78s" begin="0.64s" repeatCount="indefinite"/>
+    <g class="fall" style="animation-duration:0.78s;animation-delay:-0.2s">
+      <use href="#rainSheet" xlink:href="#rainSheet" transform="translate(33,53)" opacity="0.26"/>
     </g>
-    
-    <rect width="1200" height="320" fill="#FFFFFF" opacity="0">
-      <animate attributeName="opacity" values="0;0.16;0.02;0.11;0;0"
-               keyTimes="0;0.010;0.026;0.040;0.065;1" dur="19s" repeatCount="indefinite"/>
-    </rect>
+    <rect class="flash" width="1200" height="320" fill="#FFFFFF"/>
 
-    <g font-family="'JetBrains Mono','Courier New',monospace">
-      <text x="70" y="126" font-size="38" font-weight="700" fill="#5FA8E0" filter="url(#soft)" opacity="0.3">RONAEL MOURA
-        <animate attributeName="opacity" values="0.16;0.46;0.16" dur="4.5s" repeatCount="indefinite"/>
-      </text>
+    <g>
+      <text class="glow" x="70" y="126" font-size="38" font-weight="700" fill="#5FA8E0" filter="url(#soft)">RONAEL MOURA</text>
 
       <text x="70" y="74" font-size="12" fill="#5FA8E0" letter-spacing="3">RONAS // BUILD LOG</text>
       <text x="70" y="126" font-size="38" font-weight="700" fill="#E7F1FF">RONAEL MOURA</text>
 
-      <line x1="70" y1="140" x2="250" y2="140" stroke="#5FA8E0" stroke-width="1.5" stroke-dasharray="180" stroke-dashoffset="180">
-        <animate attributeName="stroke-dashoffset" values="180;0;0;180" keyTimes="0;0.35;0.8;1" dur="7s" repeatCount="indefinite"/>
-      </line>
+      <line class="draw-line" x1="70" y1="140" x2="250" y2="140" stroke="#5FA8E0" stroke-width="1.5" stroke-dasharray="180"/>
 
       <text x="70" y="166" font-size="16" fill="#8AA2BE" letter-spacing="1">full stack developer</text>
       <text x="70" y="192" font-size="11" fill="#5C7492" letter-spacing="1">react · node · express · mysql</text>
-
       
-    <clipPath id="tw">
-      <rect x="70" y="207" width="0" height="18.2">
-        <animate attributeName="width" values="0.0;7.8;15.6;23.4;31.2;39.0;46.8;54.6;62.4;70.2;78.0;85.8;93.6;101.4;109.2;117.0;124.8;132.6;140.4;148.2;156.0;163.8;171.6;179.4;187.2;195.0;202.8;210.6;218.4;226.2;234.0;241.8;249.6;257.4;265.2;273.0;280.8;288.6;296.4;304.2;304.2"
-                 keyTimes="0.0000;0.0159;0.0318;0.0477;0.0636;0.0795;0.0954;0.1113;0.1272;0.1431;0.1590;0.1749;0.1908;0.2067;0.2226;0.2385;0.2544;0.2703;0.2862;0.3021;0.3179;0.3338;0.3497;0.3656;0.3815;0.3974;0.4133;0.4292;0.4451;0.4610;0.4769;0.4928;0.5087;0.5246;0.5405;0.5564;0.5723;0.5882;0.6041;0.6200;1" calcMode="discrete"
-                 dur="11s" repeatCount="indefinite"/>
-      </rect>
-    </clipPath>
-    <text x="70" y="220" font-family="'JetBrains Mono','Courier New',monospace" font-size="13" fill="#5FA8E0"
-          clip-path="url(#tw)">problema -&gt; produto -&gt; testes -&gt; deploy</text>
-    <rect x="70" y="208" width="7.2" height="13" fill="#5FA8E0">
-      <animate attributeName="x" values="72.0;79.8;87.6;95.4;103.2;111.0;118.8;126.6;134.4;142.2;150.0;157.8;165.6;173.4;181.2;189.0;196.8;204.6;212.4;220.2;228.0;235.8;243.6;251.4;259.2;267.0;274.8;282.6;290.4;298.2;306.0;313.8;321.6;329.4;337.2;345.0;352.8;360.6;368.4;376.2;376.2" keyTimes="0.0000;0.0159;0.0318;0.0477;0.0636;0.0795;0.0954;0.1113;0.1272;0.1431;0.1590;0.1749;0.1908;0.2067;0.2226;0.2385;0.2544;0.2703;0.2862;0.3021;0.3179;0.3338;0.3497;0.3656;0.3815;0.3974;0.4133;0.4292;0.4451;0.4610;0.4769;0.4928;0.5087;0.5246;0.5405;0.5564;0.5723;0.5882;0.6041;0.6200;1"
-               calcMode="discrete" dur="11s" repeatCount="indefinite"/>
-      <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
-    </rect>
-
-      <text x="70" y="242" font-size="10.5" fill="#5C7492">ultimo commit · ha 1min · ronaelmoura</text>
+      <text x="70" y="220" font-size="13" fill="#5FA8E0" clip-path="url(#clip-flow)">problema -&gt; produto -&gt; testes -&gt; deploy</text>
+      <rect x="374.2" y="208" width="7.2" height="13" fill="#5FA8E0"
+            style="animation:caret-flow 11s steps(39,end) infinite,blink 1.2s steps(1,end) infinite"/>
+      <text x="70" y="242" font-size="10.5" fill="#5C7492">ultimo commit · ha 12min · ronaelmoura</text>
 
       <g clip-path="url(#titleBox)">
-        <rect x="60" y="46" width="520" height="3" fill="#8FC4EF" opacity="0.1">
-          <animate attributeName="y" values="40;254" dur="9s" repeatCount="indefinite"/>
-        </rect>
-        <rect x="-160" y="46" width="160" height="212" fill="url(#shine)">
-          <animate attributeName="x" values="-160;580" dur="8s" repeatCount="indefinite"/>
-        </rect>
+        <rect class="scan" x="60" y="46" width="520" height="3" fill="#8FC4EF" opacity="0.1"/>
+        <rect class="shine" x="60" y="46" width="160" height="212" fill="url(#shine)"/>
       </g>
     </g>
 
