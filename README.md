@@ -82,10 +82,6 @@ flowchart LR
   <img height="160" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ronaelmoura&layout=compact&hide_border=true&bg_color=0B1626&title_color=5FA8E0&text_color=C8D8EA&langs_count=8" alt="Linguagens mais usadas" />
 </p>
 
-<p align="center">
-  <img src="https://streak-stats.demolab.com/?user=ronaelmoura&hide_border=true&background=0B1626&stroke=1B2C42&ring=5FA8E0&fire=8FC4EF&currStreakLabel=5FA8E0&sideLabels=C8D8EA&currStreakNum=E7F1FF&sideNums=C8D8EA&dates=6B7F96" alt="Sequência de contribuições" />
-</p>
-
 <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/black-pearl-sailing.svg" alt="Pérola Negra navegando" />
 
 ## Contato
