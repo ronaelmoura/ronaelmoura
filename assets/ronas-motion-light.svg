@@ -335,7 +335,7 @@
       <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
     </rect>
 
-      <text x="70" y="242" font-size="10.5" fill="#5F7B99">ultimo commit · ha 54min · ronaelmoura</text>
+      <text x="70" y="242" font-size="10.5" fill="#5F7B99">ultimo commit · ha 1min · ronaelmoura</text>
 
       <g clip-path="url(#titleBox)">
         <rect x="60" y="46" width="520" height="3" fill="#3E8CCB" opacity="0.1">
