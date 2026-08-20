@@ -123,10 +123,7 @@ flowchart LR
   <img src="https://streak-stats.demolab.com/?user=ronaelmoura&hide_border=true&background=05070D&stroke=071426&ring=1479FF&fire=19D3FF&currStreakLabel=19D3FF&sideLabels=F4F7FB&currStreakNum=F4F7FB&sideNums=F4F7FB&dates=8891A3" alt="Sequência de contribuições de Ronael Moura" />
 </p>
 
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/output/github-contribution-grid-snake-dark.svg" />
-  <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/output/github-contribution-grid-snake.svg" alt="Cobra animada percorrendo o grafo de contribuições de Ronael Moura" />
-</picture>
+<img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/black-pearl-sailing.svg" alt="Pérola Negra navegando pelas águas do meu perfil" />
 
 ## 📌 Tesouros que representam meu trabalho
 
