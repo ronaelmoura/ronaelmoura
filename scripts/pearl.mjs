@@ -1,4 +1,4 @@
-// Perola Negra navegando sobre o grafico de contribuicoes.
+// Pérola Negra navegando sobre o gráfico de contribuições.
 // A linha do mar NAO e decorativa: cada ponto e uma semana do ultimo ano.
 //
 // O navio nao tem animacao escrita a mao. Os keyframes de posicao e angulo sao
@@ -9,7 +9,9 @@
 
 import { styleBlock } from './css.mjs';
 
-const FONT = "'JetBrains Mono','Courier New',monospace";
+const FONT =
+  "'JetBrains Mono',ui-monospace,'Cascadia Mono','Segoe UI Mono',Consolas,Menlo," +
+  "'DejaVu Sans Mono','Liberation Mono','Courier New',monospace";
 
 const WIDTH = 1200;
 const HEIGHT = 260;
@@ -186,8 +188,8 @@ export function renderPearl({ palette: base, weeks, total }) {
   const resting = `translate(${mid[0].toFixed(1)}px,${mid[1].toFixed(1)}px)`;
 
   const legend = total
-    ? `altura das ondas = contribuicoes por semana · ${total} no ultimo ano`
-    : 'altura das ondas = contribuicoes por semana';
+    ? `altura das ondas = contribuições por semana · ${total} no último ano`
+    : 'altura das ondas = contribuições por semana';
 
   const extra = `${sailKeyframes(points)}
   @keyframes drift { from { transform:translateX(0) } to { transform:translateX(-320px) } }
@@ -195,8 +197,8 @@ export function renderPearl({ palette: base, weeks, total }) {
   .drift { animation:drift 4s linear infinite }`;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="${WIDTH}" height="${HEIGHT}" viewBox="0 0 ${WIDTH} ${HEIGHT}" role="img" aria-labelledby="t d">
-  <title id="t">Perola Negra navegando sobre o grafico de contribuicoes</title>
-  <desc id="d">A altura das ondas vem do total de contribuicoes de cada semana do ultimo ano. O navio percorre essa curva.</desc>
+  <title id="t">Pérola Negra navegando sobre o gráfico de contribuições</title>
+  <desc id="d">A altura das ondas vem do total de contribuições de cada semana do último ano. O navio percorre essa curva.</desc>
 
   ${styleBlock(extra)}
 

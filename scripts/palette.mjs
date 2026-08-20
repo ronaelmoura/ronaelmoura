@@ -17,7 +17,7 @@ const DARK = {
     starOpacity: 1, windowOpacity: 1, rain: true,
   },
   manha: {
-    label: 'manha',
+    label: 'manhã',
     bgTop: '#0A1524', bgMid: '#1B3A5C', horizon: '#C97B4E',
     city: '#15293F', haze: '#E0956B',
     desk: '#0A1421', deskLine: '#1E3450',
@@ -68,7 +68,7 @@ const LIGHT = {
     starOpacity: 0.3, windowOpacity: 0.5, rain: true,
   },
   manha: {
-    label: 'manha',
+    label: 'manhã',
     bgTop: '#B7D6F0', bgMid: '#D9E9F8', horizon: '#F4D9C0',
     city: '#8FA9C4', haze: '#E8A87C',
     desk: '#EDF3FA', deskLine: '#BCCFE3',

@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="260" viewBox="0 0 1200 260" role="img" aria-labelledby="t d">
-  <title id="t">Perola Negra navegando sobre o grafico de contribuicoes</title>
-  <desc id="d">A altura das ondas vem do total de contribuicoes de cada semana do ultimo ano. O navio percorre essa curva.</desc>
+  <title id="t">Pérola Negra navegando sobre o gráfico de contribuições</title>
+  <desc id="d">A altura das ondas vem do total de contribuições de cada semana do último ano. O navio percorre essa curva.</desc>
 
   <style>
   @keyframes twinkle { 0%,100% { opacity:.15 } 50% { opacity:.7 } }
@@ -15,7 +15,9 @@
 
   @keyframes scrollCode { from { transform:translateY(0) } to { transform:translateY(-130px) } }
   @keyframes sweep { 0% { opacity:.9; transform:translateY(-18px) } 100% { opacity:.9; transform:translateY(130px) } }
-  @keyframes scanline { 0% { opacity:.85; transform:translateY(-8px) } 100% { opacity:.85; transform:translateY(210px) } }
+  /* Animacao CSS sobrescreve o atributo opacity do elemento: o valor abaixo e o
+     brilho final da varredura, nao um multiplicador do que esta no markup. */
+  @keyframes scanline { 0% { opacity:.1; transform:translateY(-8px) } 100% { opacity:.1; transform:translateY(210px) } }
   @keyframes shineX { 0% { opacity:1; transform:translateX(-220px) } 100% { opacity:1; transform:translateX(560px) } }
 
   @keyframes drawLine { 0% { stroke-dashoffset:180 } 35%,80% { stroke-dashoffset:0 } 100% { stroke-dashoffset:180 } }
@@ -181,7 +183,7 @@
       <path d="M -200.0 242.0 Q -40.0 254.0 40.0 248.0 Q 120.0 242.0 200.0 248.0 Q 280.0 254.0 360.0 248.0 Q 440.0 242.0 520.0 248.0 Q 600.0 254.0 680.0 248.0 Q 760.0 242.0 840.0 248.0 Q 920.0 254.0 1000.0 248.0 Q 1080.0 242.0 1160.0 248.0 Q 1240.0 254.0 1320.0 248.0 Q 1400.0 242.0 1480.0 248.0 Q 1560.0 254.0 1640.0 248.0 L 1720.0 242.0" fill="none" stroke="#8FC4EF" stroke-opacity="0.16" stroke-width="1.8"/>
     </g>
 
-    <text x="24" y="246" font-family="'JetBrains Mono','Courier New',monospace" font-size="9" fill="#5C7492" opacity="0.8">altura das ondas = contribuicoes por semana · 402 no ultimo ano</text>
+    <text x="24" y="246" font-family="'JetBrains Mono',ui-monospace,'Cascadia Mono','Segoe UI Mono',Consolas,Menlo,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace" font-size="9" fill="#5C7492" opacity="0.8">altura das ondas = contribuições por semana · 402 no último ano</text>
 
     <rect width="1200" height="260" rx="16" fill="#000" filter="url(#grain)"/>
   </g>

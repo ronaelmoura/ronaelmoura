@@ -30,7 +30,9 @@ const KEYFRAMES = `
 
   @keyframes scrollCode { from { transform:translateY(0) } to { transform:translateY(-130px) } }
   @keyframes sweep { 0% { opacity:.9; transform:translateY(-18px) } 100% { opacity:.9; transform:translateY(130px) } }
-  @keyframes scanline { 0% { opacity:.85; transform:translateY(-8px) } 100% { opacity:.85; transform:translateY(210px) } }
+  /* Animacao CSS sobrescreve o atributo opacity do elemento: o valor abaixo e o
+     brilho final da varredura, nao um multiplicador do que esta no markup. */
+  @keyframes scanline { 0% { opacity:.1; transform:translateY(-8px) } 100% { opacity:.1; transform:translateY(210px) } }
   @keyframes shineX { 0% { opacity:1; transform:translateX(-220px) } 100% { opacity:1; transform:translateX(560px) } }
 
   @keyframes drawLine { 0% { stroke-dashoffset:180 } 35%,80% { stroke-dashoffset:0 } 100% { stroke-dashoffset:180 } }

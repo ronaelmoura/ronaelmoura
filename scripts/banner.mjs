@@ -4,7 +4,13 @@
 
 import { styleBlock } from './css.mjs';
 
-const FONT = "'JetBrains Mono','Courier New',monospace";
+// SVG carregado via <img> nao baixa webfont — so existe o que ja esta na
+// maquina de quem olha. JetBrains Mono quase nunca esta, e cair direto em
+// Courier New (fina e datada) desperdicava Consolas, Cascadia e SF Mono, que
+// vem instaladas e sao bem melhores. A ordem abaixo tenta as boas antes.
+const FONT =
+  "'JetBrains Mono',ui-monospace,'Cascadia Mono','Segoe UI Mono',Consolas,Menlo," +
+  "'DejaVu Sans Mono','Liberation Mono','Courier New',monospace";
 
 function esc(value) {
   return String(value)
@@ -41,9 +47,13 @@ function typewriter({ id, text, x, y, size, fill, dur }) {
       <rect x="${x}" y="${y - size}" width="${full.toFixed(1)}" height="${(size * 1.4).toFixed(1)}"
             style="transform-origin:${x}px ${y}px;animation:type-${id} ${timing}"/>
     </clipPath>`,
+    // textLength trava a largura real do texto na largura que o clip e o cursor
+    // assumem. Sem isso, cada fonte do stack tem um avanco diferente e o cursor
+    // flutua longe do fim da frase.
     body: `
-      <text x="${x}" y="${y}" font-size="${size}" fill="${fill}" clip-path="url(#clip-${id})">${esc(text)}</text>
-      <rect x="${(x + full).toFixed(1)}" y="${y - size + 1}" width="${caretW.toFixed(1)}" height="${size}" fill="${fill}"
+      <text x="${x}" y="${y}" font-size="${size}" fill="${fill}" clip-path="url(#clip-${id})"
+            textLength="${full.toFixed(1)}" lengthAdjust="spacing">${esc(text)}</text>
+      <rect x="${(x + full + 3).toFixed(1)}" y="${y - size + 1}" width="${caretW.toFixed(1)}" height="${size}" fill="${fill}"
             style="animation:caret-${id} ${timing},blink 1.2s steps(1,end) infinite"/>`,
   };
 }
@@ -153,12 +163,12 @@ export function renderBanner({ palette: p, live }) {
   const screenLabel = `ronas desk · ${version} · ${ci}`;
 
   const commitLine = live.commit
-    ? `ultimo commit · ${live.age} · ${clip(live.commit.repo, 22)}`
+    ? `último commit · ${live.age} · ${clip(live.commit.repo, 22)}`
     : 'react · node · express · mysql';
 
   const tw = typewriter({
     id: 'flow',
-    text: 'problema -> produto -> testes -> deploy',
+    text: 'problema → produto → testes → deploy',
     x: 70,
     y: 220,
     size: 13,
@@ -187,7 +197,7 @@ export function renderBanner({ palette: p, live }) {
 
   return `<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="t d">
   <title id="t">Ronael Moura — Full Stack Developer</title>
-  <desc id="d">Cena de desenvolvimento (${p.label}) com monitores, codigo em movimento e cidade ao fundo.</desc>
+  <desc id="d">Cena de desenvolvimento (${p.label}) com monitores, código em movimento e cidade ao fundo.</desc>
 
   ${styleBlock(tw.keyframes)}
 
