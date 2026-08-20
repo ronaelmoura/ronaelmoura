@@ -260,7 +260,7 @@
       <text x="70" y="220" font-size="13" fill="#5FA8E0" clip-path="url(#clip-flow)">problema -&gt; produto -&gt; testes -&gt; deploy</text>
       <rect x="374.2" y="208" width="7.2" height="13" fill="#5FA8E0"
             style="animation:caret-flow 11s steps(39,end) infinite,blink 1.2s steps(1,end) infinite"/>
-      <text x="70" y="242" font-size="10.5" fill="#5C7492">ultimo commit · ha 12min · ronaelmoura</text>
+      <text x="70" y="242" font-size="10.5" fill="#5C7492">ultimo commit · ha 13min · ronaelmoura</text>
 
       <g clip-path="url(#titleBox)">
         <rect class="scan" x="60" y="46" width="520" height="3" fill="#8FC4EF" opacity="0.1"/>
