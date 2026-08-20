@@ -19,14 +19,10 @@
 
 ## Sobre
 
-Desenvolvedor Full Stack e fundador da Ronas Tech. Construo aplicações completas com React, Node.js, Express e MySQL — não só a interface: API, regras de negócio, banco, autenticação, testes e deploy.
-
-Minha experiência em suporte de TI me ensinou a reproduzir o bug antes de sair reescrevendo tudo, comunicar com clareza e assumir a solução até ela funcionar de verdade — não só no `localhost`.
+Desenvolvedor Full Stack e fundador da Ronas Tech. Entrego a aplicação inteira — interface, API, regras de negócio, banco, autenticação, testes e deploy — e assumo a solução até ela funcionar de verdade, não só no `localhost`.
 
 ```javascript
 const ronael = {
-  stack: ['React', 'Node.js', 'Express', 'MySQL'],
-  entrego: ['interface', 'API REST', 'regras de negócio', 'dados', 'testes', 'deploy'],
   agora: 'construindo produto de verdade na Ronas Tech',
   buscando: 'um time que constrói coisas com impacto real',
   bugsConhecidos: 0, // que eu saiba
@@ -50,13 +46,13 @@ Hoje toco a Ronas Tech, onde levo produto do problema até a produção.
 
 ## Stack
 
-| Camada | Ferramentas | Uso na prática |
-| --- | --- | --- |
-| Interface | React 19, Vite, TypeScript | Dashboards e produtos com estado complexo, UI responsiva e modo escuro |
-| Serviços | Node.js, Express 5, REST, JWT | APIs com regras de negócio, autenticação e autorização por perfil |
-| Dados | MySQL, transações, Zod | Consistência transacional e integridade em operações concorrentes |
-| Qualidade | Vitest, GitHub Actions | Testes automatizados e build validado antes de qualquer deploy |
-| Entrega | Docker, Nginx, Render, Cloudflare Workers | Deploy containerizado, observável e em produção real |
+| Camada | Ferramentas |
+| --- | --- |
+| Interface | React 19, Vite, TypeScript |
+| Serviços | Node.js, Express 5, REST, JWT |
+| Dados | MySQL, transações, Zod |
+| Qualidade | Vitest, GitHub Actions |
+| Entrega | Docker, Nginx, Render, Cloudflare Workers |
 
 ## Ronas Desk
 
