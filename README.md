@@ -64,7 +64,7 @@ Plataforma Full Stack de Help Desk publicada em produção — meu case principa
 
 | Funcionalidades | Engenharia | Qualidade |
 | --- | --- | --- |
-| Clientes, chamados, SLA, relatórios, auditoria, anexos e Portal do Cliente | React 19, Express 5, MySQL, JWT, Docker, Nginx, Render, Aiven TLS e Cloudinary | **122 testes automatizados**, Helmet, rate limit e permissões por perfil |
+| Clientes, chamados, SLA, relatórios, auditoria, anexos e Portal do Cliente | React 19, Express 5, MySQL, JWT, Docker, Nginx, Render, Aiven TLS e Cloudinary | **316 testes automatizados**, Helmet, rate limit e permissões por perfil |
 
 <details>
 <summary><code>$ ronas-desk --arquitetura</code></summary>
