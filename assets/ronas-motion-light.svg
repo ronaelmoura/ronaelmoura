@@ -263,7 +263,7 @@
             textLength="280.8" lengthAdjust="spacing">problema → produto → testes → deploy</text>
       <rect x="353.8" y="208" width="7.2" height="13" fill="#1D68AC"
             style="animation:caret-flow 11s steps(36,end) infinite,blink 1.2s steps(1,end) infinite"/>
-      <text x="70" y="242" font-size="10.5" fill="#5D7A9C">último commit · há 18h · multer-safe-limit</text>
+      <text x="70" y="242" font-size="10.5" fill="#5D7A9C">último commit · há 19h · multer-safe-limit</text>
 
       <g clip-path="url(#titleBox)">
         <rect class="scan" x="60" y="46" width="520" height="3" fill="#3C88C7" opacity="0.1"/>
