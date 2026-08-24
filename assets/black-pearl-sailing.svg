@@ -183,7 +183,7 @@
       <path d="M -200.0 242.0 Q -40.0 254.0 40.0 248.0 Q 120.0 242.0 200.0 248.0 Q 280.0 254.0 360.0 248.0 Q 440.0 242.0 520.0 248.0 Q 600.0 254.0 680.0 248.0 Q 760.0 242.0 840.0 248.0 Q 920.0 254.0 1000.0 248.0 Q 1080.0 242.0 1160.0 248.0 Q 1240.0 254.0 1320.0 248.0 Q 1400.0 242.0 1480.0 248.0 Q 1560.0 254.0 1640.0 248.0 L 1720.0 242.0" fill="none" stroke="#8FC4EF" stroke-opacity="0.16" stroke-width="1.8"/>
     </g>
 
-    <text x="24" y="246" font-family="'JetBrains Mono',ui-monospace,'Cascadia Mono','Segoe UI Mono',Consolas,Menlo,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace" font-size="9" fill="#5C7492" opacity="0.8">altura das ondas = contribuições por semana · 462 no último ano</text>
+    <text x="24" y="246" font-family="'JetBrains Mono',ui-monospace,'Cascadia Mono','Segoe UI Mono',Consolas,Menlo,'DejaVu Sans Mono','Liberation Mono','Courier New',monospace" font-size="9" fill="#5C7492" opacity="0.8">altura das ondas = contribuições por semana · 459 no último ano</text>
 
     <rect width="1200" height="260" rx="16" fill="#000" filter="url(#grain)"/>
   </g>
