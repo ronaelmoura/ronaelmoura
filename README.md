@@ -25,7 +25,6 @@ Desenvolvedor Full Stack com React, Node.js e TypeScript, baseado no Ceará. Con
 const ronael = {
   agora: 'suporte remoto na Ronas Tech e projetos web autorais',
   buscando: 'um time que constrói coisas com impacto real',
-  bugsConhecidos: 0, // que eu saiba
 }
 ```
 
@@ -56,7 +55,7 @@ Hoje conduzo a Ronas Tech, minha operação de suporte remoto para Windows, e de
 
 ## Ronas Desk
 
-Projeto autoral Full Stack de Help Desk com demonstração pública — meu case principal. Criei para simular a operação de uma equipe de suporte com segurança, rastreabilidade e indicadores reais de atendimento.
+Projeto autoral Full Stack de Help Desk com demonstração pública — meu case principal. Criei para simular a operação de uma equipe de suporte com segurança, rastreabilidade e indicadores calculados sobre dados fictícios de atendimento.
 
 <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/terminal-demo.svg" alt="Simulação ilustrativa do fluxo de build, testes e deploy do Ronas Desk" />
 
@@ -95,10 +94,11 @@ O frontend consome a API Express. A gravação do chamado e de seu evento de aud
 | | Projeto | Por que vale abrir |
 | :---: | --- | --- |
 | 🖥️ | [**Ronas Desk**](https://github.com/ronaelmoura/ronas-desk) · [demo](https://ronas-desk.onrender.com/) | Projeto Full Stack de demonstração: regras de negócio, segurança, testes e deploy. |
-| 💰 | [**Nexo — Dashboard Financeiro**](https://github.com/ronaelmoura/nexo-dashboard-financeiro) · [demo](https://ronaelmoura.github.io/nexo-dashboard-financeiro/) | React e TypeScript com gráficos, filtros, modo escuro e layout responsivo. |
 | 📦 | [**StockFlow API**](https://github.com/ronaelmoura/stockflow-api) [![CI](https://img.shields.io/github/actions/workflow/status/ronaelmoura/stockflow-api/ci.yml?branch=main&label=ci&style=flat-square&color=5FA8E0&labelColor=0B1626)](https://github.com/ronaelmoura/stockflow-api/actions/workflows/ci.yml) | API de estoque e pedidos com Node.js, Express, MySQL, transações e OpenAPI. |
+| 🧩 | [**Multer Safe Limit**](https://github.com/ronaelmoura/multer-safe-limit) | Wrapper de upload com testes de tamanho-limite e tratamento compatível com Multer. |
+| 🧩 | [**Portfólio**](https://github.com/ronaelmoura/portfolio-ronael-moura) · [demo](https://ronaelmoura.github.io/portfolio-ronael-moura/) | Portfólio atual com currículo, projetos selecionados e decisões técnicas documentadas. |
+| 💰 | [**Nexo — Dashboard Financeiro**](https://github.com/ronaelmoura/nexo-dashboard-financeiro) · [demo](https://ronaelmoura.github.io/nexo-dashboard-financeiro/) | React e TypeScript com gráficos, filtros, modo escuro e layout responsivo. |
 | ❄️ | [**ClimaZen**](https://github.com/ronaelmoura/climazen-landing-page) · [demo](https://ronaelmoura.github.io/climazen-landing-page/) | Landing page comercial responsiva com simulador de economia e foco em conversão. |
-| 🧩 | [**Portfólio**](https://github.com/ronaelmoura/portfolio-ronael-moura) · [demo](https://ronaelmoura.github.io/portfolio-ronael-moura/) | Site autoral com storytelling, laboratório interativo e cases documentados. |
 
 ## Atividade
 
@@ -119,7 +119,7 @@ O frontend consome a API Express. A gravação do chamado e de seu evento de aud
 
 <br />
 
-As duas cenas deste perfil são SVG que eu gero, não widget de terceiro — o que significa que nenhum serviço fora do ar derruba a página. Um workflow roda de hora em hora e redesenha tudo:
+As duas cenas deste perfil são SVG gerados no próprio repositório. Isso reduz a dependência de widgets externos nessas ilustrações; os badges e cartões de estatísticas continuam usando serviços de terceiros. Um workflow roda de hora em hora e redesenha tudo:
 
 | Peça | De onde vem |
 | --- | --- |
