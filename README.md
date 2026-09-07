@@ -53,9 +53,21 @@ Hoje conduzo a Ronas Tech, minha operação de suporte remoto para Windows, e de
 | Qualidade | Vitest, GitHub Actions |
 | Entrega | Docker, Nginx, Render, Cloudflare Workers |
 
+## Em 30 segundos
+
+| O que você procura | Evidência pública |
+| --- | --- |
+| Desenvolvimento Full Stack | React, TypeScript, Node.js, Express e MySQL |
+| Regras de negócio e dados | [StockFlow API](https://github.com/ronaelmoura/stockflow-api): transações, idempotência, concorrência e Outbox |
+| Qualidade e manutenção | [Ronas Desk](https://github.com/ronaelmoura/ronas-desk): 370 testes documentados, CI, autenticação e auditoria |
+| Open source aplicado | [Multer Safe Limit](https://github.com/ronaelmoura/multer-safe-limit): wrapper testado para um limite de upload do Multer |
+| Experiência com usuários | Ronas Tech: suporte remoto para Windows e investigação de problemas |
+
+> Os projetos de demonstração usam dados fictícios. As métricas acima descrevem código, testes e escopo documentados; não representam escala comercial ou cobertura total.
+
 ## Ronas Desk
 
-Projeto autoral Full Stack de Help Desk com demonstração pública — meu case principal. Criei para simular a operação de uma equipe de suporte com segurança, rastreabilidade e indicadores calculados sobre dados fictícios de atendimento.
+Projeto autoral Full Stack de Help Desk com demonstração pública — meu case principal. Criei para simular a operação de uma equipe de suporte com segurança, rastreabilidade e indicadores calculados sobre dados fictícios de atendimento. A [demo pública](https://ronas-desk.onrender.com/) é somente leitura e não representa uma operação comercial.
 
 <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/terminal-demo.svg" alt="Simulação ilustrativa do fluxo de build, testes e deploy do Ronas Desk" />
 
@@ -135,6 +147,10 @@ A animação é SMIL puro dentro do SVG, inclusive o efeito de máquina de escre
 O código está em [`scripts/`](https://github.com/ronaelmoura/ronaelmoura/tree/main/scripts) — sem dependências, só Node.
 
 </details>
+
+## Como avaliar os projetos
+
+Cada repositório principal contém README, decisões técnicas, instruções de execução e links para testes ou CI quando disponíveis. Para uma avaliação rápida, comece pelo [Ronas Desk](https://github.com/ronaelmoura/ronas-desk), depois veja o [StockFlow](https://github.com/ronaelmoura/stockflow-api) e o [Multer Safe Limit](https://github.com/ronaelmoura/multer-safe-limit). O [portfólio atual](https://ronaelmoura.github.io/portfolio-ronael-moura/) reúne o contexto visual e profissional.
 
 ## Contato
 
