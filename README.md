@@ -6,7 +6,7 @@
 <p align="center"><sub>A cena acompanha a hora em São Paulo e mostra meu último commit de verdade. Regenerada de hora em hora.</sub></p>
 
 <p align="center">
-  <a href="https://ronaelmoura.github.io/"><img src="https://img.shields.io/badge/portfólio-0B1626?style=for-the-badge&logo=googlechrome&logoColor=5FA8E0" alt="Portfólio" /></a>
+  <a href="https://ronaelmoura.github.io/portfolio-ronael-moura/"><img src="https://img.shields.io/badge/portfólio-0B1626?style=for-the-badge&logo=googlechrome&logoColor=5FA8E0" alt="Portfólio" /></a>
   <a href="https://ronas-desk.onrender.com/"><img src="https://img.shields.io/badge/ronas_desk-0B1626?style=for-the-badge&logo=react&logoColor=5FA8E0" alt="Demonstração do Ronas Desk" /></a>
   <a href="https://www.ronastech.com.br/"><img src="https://img.shields.io/badge/ronas_tech-0B1626?style=for-the-badge&logo=googlechrome&logoColor=5FA8E0" alt="Ronas Tech" /></a>
   <a href="https://www.linkedin.com/in/ronael-moura"><img src="https://img.shields.io/badge/linkedin-0B1626?style=for-the-badge&logo=linkedin&logoColor=5FA8E0" alt="LinkedIn" /></a>
@@ -19,11 +19,11 @@
 
 ## Sobre
 
-Desenvolvedor Full Stack e fundador da Ronas Tech. Entrego a aplicação inteira — interface, API, regras de negócio, banco, autenticação, testes e deploy — e assumo a solução até ela funcionar de verdade, não só no `localhost`.
+Desenvolvedor Full Stack com React, Node.js e TypeScript, baseado no Ceará. Construo aplicações web com APIs, bancos relacionais e testes automatizados. Minha experiência em suporte técnico orienta soluções centradas em quem usa. Estou disponível para oportunidades em desenvolvimento. A Ronas Tech é minha atuação atual em suporte remoto.
 
 ```javascript
 const ronael = {
-  agora: 'construindo produto de verdade na Ronas Tech',
+  agora: 'suporte remoto na Ronas Tech e projetos web autorais',
   buscando: 'um time que constrói coisas com impacto real',
   bugsConhecidos: 0, // que eu saiba
 }
@@ -40,7 +40,7 @@ Comecei em suporte de TI, atendendo quem estava com o problema na frente e sem p
 - **Escrever para quem vai ler depois.** Chamado, commit e README têm o mesmo dono: a próxima pessoa — que às vezes sou eu daqui a seis meses.
 - **A entrega termina no usuário, não no merge.** Deploy que ninguém consegue usar é rascunho caro.
 
-Hoje toco a Ronas Tech, onde levo produto do problema até a produção.
+Hoje conduzo a Ronas Tech, minha operação de suporte remoto para Windows, e desenvolvo projetos web autorais.
 
 </details>
 
@@ -56,7 +56,7 @@ Hoje toco a Ronas Tech, onde levo produto do problema até a produção.
 
 ## Ronas Desk
 
-Plataforma Full Stack de Help Desk publicada em produção — meu case principal. Criei para simular a operação de uma equipe de suporte com segurança, rastreabilidade e indicadores reais de atendimento.
+Projeto autoral Full Stack de Help Desk com demonstração pública — meu case principal. Criei para simular a operação de uma equipe de suporte com segurança, rastreabilidade e indicadores reais de atendimento.
 
 <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/terminal-demo.svg" alt="Simulação ilustrativa do fluxo de build, testes e deploy do Ronas Desk" />
 
@@ -64,7 +64,7 @@ Plataforma Full Stack de Help Desk publicada em produção — meu case principa
 
 | Funcionalidades | Engenharia | Qualidade |
 | --- | --- | --- |
-| Clientes, chamados, SLA, relatórios, auditoria, anexos e Portal do Cliente | React 19, Express 5, MySQL, JWT, Docker, Nginx, Render, Aiven TLS e Cloudinary | **316 testes automatizados**, Helmet, rate limit e permissões por perfil |
+| Clientes, chamados, SLA, relatórios, auditoria, anexos e Portal do Cliente | React 19, Express 5, MySQL, JWT, Docker, Nginx, Render, Aiven TLS e Cloudinary | **370 testes documentados: 361 no CI + 9 de integração local**, Helmet, rate limit e permissões por perfil |
 
 <details>
 <summary><code>$ ronas-desk --arquitetura</code></summary>
@@ -80,7 +80,7 @@ flowchart LR
   S --> C["Cloudinary · anexos privados"]
 ```
 
-O front nunca fala com o banco. Toda regra de negócio vive na camada de serviços, que é onde ficam as transações — assim dois atendentes mexendo no mesmo chamado não se atropelam. Anexos não passam pelo servidor de aplicação: vão direto para o Cloudinary com acesso privado.
+O frontend consome a API Express. A gravação do chamado e de seu evento de auditoria usa a mesma transação MySQL para evitar alterações parciais. Anexos privados no Cloudinary são acessados por links temporários após autorização. Consulte o repositório para a implementação e suas limitações.
 
 </details>
 
@@ -94,11 +94,11 @@ O front nunca fala com o banco. Toda regra de negócio vive na camada de serviç
 
 | | Projeto | Por que vale abrir |
 | :---: | --- | --- |
-| 🖥️ | [**Ronas Desk**](https://github.com/ronaelmoura/ronas-desk) · [demo](https://ronas-desk.onrender.com/) | Produto Full Stack em produção: regras de negócio, segurança, testes e deploy. |
+| 🖥️ | [**Ronas Desk**](https://github.com/ronaelmoura/ronas-desk) · [demo](https://ronas-desk.onrender.com/) | Projeto Full Stack de demonstração: regras de negócio, segurança, testes e deploy. |
 | 💰 | [**Nexo — Dashboard Financeiro**](https://github.com/ronaelmoura/nexo-dashboard-financeiro) · [demo](https://ronaelmoura.github.io/nexo-dashboard-financeiro/) | React e TypeScript com gráficos, filtros, modo escuro e layout responsivo. |
 | 📦 | [**StockFlow API**](https://github.com/ronaelmoura/stockflow-api) [![CI](https://img.shields.io/github/actions/workflow/status/ronaelmoura/stockflow-api/ci.yml?branch=main&label=ci&style=flat-square&color=5FA8E0&labelColor=0B1626)](https://github.com/ronaelmoura/stockflow-api/actions/workflows/ci.yml) | API de estoque e pedidos com Node.js, Express, MySQL, transações e OpenAPI. |
 | ❄️ | [**ClimaZen**](https://github.com/ronaelmoura/climazen-landing-page) · [demo](https://ronaelmoura.github.io/climazen-landing-page/) | Landing page comercial responsiva com simulador de economia e foco em conversão. |
-| 🧩 | [**Portfólio**](https://github.com/ronaelmoura/ronaelmoura.github.io) · [demo](https://ronaelmoura.github.io/) | Site autoral com storytelling, laboratório interativo e cases documentados. |
+| 🧩 | [**Portfólio**](https://github.com/ronaelmoura/portfolio-ronael-moura) · [demo](https://ronaelmoura.github.io/portfolio-ronael-moura/) | Site autoral com storytelling, laboratório interativo e cases documentados. |
 
 ## Atividade
 
