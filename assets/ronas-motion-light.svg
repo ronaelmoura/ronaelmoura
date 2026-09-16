@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1200" height="320" viewBox="0 0 1200 320" role="img" aria-labelledby="t d">
   <title id="t">Ronael Moura — Full Stack Developer</title>
-  <desc id="d">Cena de desenvolvimento (manhã) com monitores, código em movimento e cidade ao fundo.</desc>
+  <desc id="d">Cena de desenvolvimento (tarde) com monitores, código em movimento e cidade ao fundo.</desc>
 
   <style>
   @keyframes twinkle { 0%,100% { opacity:.15 } 50% { opacity:.7 } }
@@ -61,39 +61,39 @@
 
   <defs>
     <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#B7D6F0"/>
-      <stop offset="0.55" stop-color="#D9E9F8"/>
-      <stop offset="1" stop-color="#F4D9C0"/>
+      <stop offset="0" stop-color="#9CCAEC"/>
+      <stop offset="0.55" stop-color="#C7E1F5"/>
+      <stop offset="1" stop-color="#E4F1FB"/>
     </linearGradient>
     <linearGradient id="scrim" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#D9E9F8" stop-opacity="0.95"/>
-      <stop offset="0.6" stop-color="#D9E9F8" stop-opacity="0.72"/>
-      <stop offset="1" stop-color="#D9E9F8" stop-opacity="0"/>
+      <stop offset="0" stop-color="#C7E1F5" stop-opacity="0.95"/>
+      <stop offset="0.6" stop-color="#C7E1F5" stop-opacity="0.72"/>
+      <stop offset="1" stop-color="#C7E1F5" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="haze" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#E8A87C" stop-opacity="0"/>
-      <stop offset="1" stop-color="#E8A87C" stop-opacity="0.18"/>
+      <stop offset="0" stop-color="#A8CDE8" stop-opacity="0"/>
+      <stop offset="1" stop-color="#A8CDE8" stop-opacity="0.18"/>
     </linearGradient>
     <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
-      <stop offset="0" stop-color="#1A6BAF" stop-opacity="0.35"/>
-      <stop offset="1" stop-color="#1A6BAF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#15629F" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#15629F" stop-opacity="0"/>
     </linearGradient>
     <linearGradient id="shine" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#3B8AC9" stop-opacity="0"/>
-      <stop offset="0.5" stop-color="#3B8AC9" stop-opacity="0.11"/>
-      <stop offset="1" stop-color="#3B8AC9" stop-opacity="0"/>
+      <stop offset="0" stop-color="#3A85C4" stop-opacity="0"/>
+      <stop offset="0.5" stop-color="#3A85C4" stop-opacity="0.11"/>
+      <stop offset="1" stop-color="#3A85C4" stop-opacity="0"/>
     </linearGradient>
     <radialGradient id="screenGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#1A6BAF" stop-opacity="0.3"/>
-      <stop offset="1" stop-color="#1A6BAF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#15629F" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#15629F" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="deskGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#1A6BAF" stop-opacity="0.2"/>
-      <stop offset="1" stop-color="#1A6BAF" stop-opacity="0"/>
+      <stop offset="0" stop-color="#15629F" stop-opacity="0.2"/>
+      <stop offset="1" stop-color="#15629F" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="celGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#FFC77A" stop-opacity="0.3"/>
-      <stop offset="1" stop-color="#FFC77A" stop-opacity="0"/>
+      <stop offset="0" stop-color="#FFDC94" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#FFDC94" stop-opacity="0"/>
     </radialGradient>
 
     <filter id="grain">
@@ -120,39 +120,39 @@
     <rect width="1200" height="320" fill="url(#sky)"/>
     
     <circle cx="700" cy="82" r="58" fill="url(#celGlow)"/>
-    <circle cx="700" cy="82" r="22" fill="#FFC77A"/>
+    <circle cx="700" cy="82" r="22" fill="#FFDC94"/>
     
 
     <g opacity="0.5">
-      <ellipse class="cloud-a" cx="1460" cy="230" rx="220" ry="24" fill="#8FA9C4"/>
-      <ellipse class="cloud-b" cx="1460" cy="244" rx="280" ry="20" fill="#8FA9C4"/>
+      <ellipse class="cloud-a" cx="1460" cy="230" rx="220" ry="24" fill="#7C9CBC"/>
+      <ellipse class="cloud-b" cx="1460" cy="244" rx="280" ry="20" fill="#7C9CBC"/>
     </g>
 
     <path d="M0 252 V232 H48 V240 H96 V226 H150 V238 H196 V222 H248 V236 H300 V228 H352 V218 H404 V234 H456 V224 H508 V238 H556 V216 H600 V192 H646 V220 H690 V200 H736 V230 H780 V208 H824 V226 H868 V196 H914 V224 H960 V186 H1006 V218 H1050 V206 H1096 V230 H1140 V210 H1200 V252 Z"
-          fill="#8FA9C4"/>
+          fill="#7C9CBC"/>
     <rect x="0" y="184" width="1200" height="68" fill="url(#haze)"/>
-    <g fill="#1A6BAF" opacity="0.2"><rect x="18" y="240" width="3" height="4" class="twk" style="animation-duration:4.2s;animation-delay:-0s"/><rect x="112" y="234" width="3" height="4" class="twk" style="animation-duration:5.6s;animation-delay:-0.7s"/><rect x="166" y="244" width="3" height="4" class="twk" style="animation-duration:6.8s;animation-delay:-1.4s"/><rect x="262" y="242" width="3" height="4" class="twk" style="animation-duration:4.8s;animation-delay:-2.0999999999999996s"/><rect x="318" y="236" width="3" height="4" class="twk" style="animation-duration:7.2s;animation-delay:-2.8s"/><rect x="372" y="228" width="3" height="4" class="twk" style="animation-duration:5.1s;animation-delay:-3.5s"/><rect x="470" y="234" width="3" height="4" class="twk" style="animation-duration:6.2s;animation-delay:-4.199999999999999s"/><rect x="530" y="244" width="3" height="4" class="twk" style="animation-duration:4.6s;animation-delay:-4.8999999999999995s"/><rect x="618" y="204" width="3" height="4" class="twk" style="animation-duration:7.8s;animation-delay:-5.6s"/><rect x="632" y="222" width="3" height="4" class="twk" style="animation-duration:5s;animation-delay:-6.3s"/><rect x="664" y="232" width="3" height="4" class="twk" style="animation-duration:5.4s;animation-delay:-7s"/><rect x="712" y="212" width="3" height="4" class="twk" style="animation-duration:6.4s;animation-delay:-7.699999999999999s"/><rect x="748" y="240" width="3" height="4" class="twk" style="animation-duration:6s;animation-delay:-8.399999999999999s"/><rect x="798" y="220" width="3" height="4" class="twk" style="animation-duration:4.4s;animation-delay:-9.1s"/><rect x="890" y="208" width="3" height="4" class="twk" style="animation-duration:8.2s;animation-delay:-9.799999999999999s"/><rect x="978" y="198" width="3" height="4" class="twk" style="animation-duration:5.9s;animation-delay:-10.5s"/><rect x="1024" y="230" width="3" height="4" class="twk" style="animation-duration:6.9s;animation-delay:-11.2s"/><rect x="1112" y="222" width="3" height="4" class="twk" style="animation-duration:4.9s;animation-delay:-11.899999999999999s"/><rect x="1166" y="226" width="3" height="4" class="twk" style="animation-duration:7.6s;animation-delay:-12.6s"/></g>
+    <g fill="#15629F" opacity="0.12"><rect x="18" y="240" width="3" height="4" class="twk" style="animation-duration:4.2s;animation-delay:-0s"/><rect x="112" y="234" width="3" height="4" class="twk" style="animation-duration:5.6s;animation-delay:-0.7s"/><rect x="166" y="244" width="3" height="4" class="twk" style="animation-duration:6.8s;animation-delay:-1.4s"/><rect x="262" y="242" width="3" height="4" class="twk" style="animation-duration:4.8s;animation-delay:-2.0999999999999996s"/><rect x="318" y="236" width="3" height="4" class="twk" style="animation-duration:7.2s;animation-delay:-2.8s"/><rect x="372" y="228" width="3" height="4" class="twk" style="animation-duration:5.1s;animation-delay:-3.5s"/><rect x="470" y="234" width="3" height="4" class="twk" style="animation-duration:6.2s;animation-delay:-4.199999999999999s"/><rect x="530" y="244" width="3" height="4" class="twk" style="animation-duration:4.6s;animation-delay:-4.8999999999999995s"/><rect x="618" y="204" width="3" height="4" class="twk" style="animation-duration:7.8s;animation-delay:-5.6s"/><rect x="632" y="222" width="3" height="4" class="twk" style="animation-duration:5s;animation-delay:-6.3s"/><rect x="664" y="232" width="3" height="4" class="twk" style="animation-duration:5.4s;animation-delay:-7s"/><rect x="712" y="212" width="3" height="4" class="twk" style="animation-duration:6.4s;animation-delay:-7.699999999999999s"/><rect x="748" y="240" width="3" height="4" class="twk" style="animation-duration:6s;animation-delay:-8.399999999999999s"/><rect x="798" y="220" width="3" height="4" class="twk" style="animation-duration:4.4s;animation-delay:-9.1s"/><rect x="890" y="208" width="3" height="4" class="twk" style="animation-duration:8.2s;animation-delay:-9.799999999999999s"/><rect x="978" y="198" width="3" height="4" class="twk" style="animation-duration:5.9s;animation-delay:-10.5s"/><rect x="1024" y="230" width="3" height="4" class="twk" style="animation-duration:6.9s;animation-delay:-11.2s"/><rect x="1112" y="222" width="3" height="4" class="twk" style="animation-duration:4.9s;animation-delay:-11.899999999999999s"/><rect x="1166" y="226" width="3" height="4" class="twk" style="animation-duration:7.6s;animation-delay:-12.6s"/></g>
 
-    <rect x="0" y="252" width="1200" height="68" fill="#EDF3FA"/>
-    <line x1="0" y1="252" x2="1200" y2="252" stroke="#BCCFE3" stroke-width="1"/>
+    <rect x="0" y="252" width="1200" height="68" fill="#EAF2FA"/>
+    <line x1="0" y1="252" x2="1200" y2="252" stroke="#B4CBE0" stroke-width="1"/>
     <ellipse cx="1000" cy="266" rx="230" ry="26" fill="url(#deskGlow)"/>
 
     <rect x="0" y="0" width="660" height="320" fill="url(#scrim)"/>
 
     <g transform="rotate(-5 845 184)">
-      <rect x="784" y="134" width="122" height="100" rx="5" fill="#22415C" stroke="#BCCFE3" stroke-width="1.4"/>
-      <rect x="790" y="140" width="110" height="88" fill="#183049"/>
+      <rect x="784" y="134" width="122" height="100" rx="5" fill="#1F3D59" stroke="#B4CBE0" stroke-width="1.4"/>
+      <rect x="790" y="140" width="110" height="88" fill="#153046"/>
       <g clip-path="url(#sideScreen)">
-        <g fill="#6486A6" class="soft">
+        <g fill="#5F81A2" class="soft">
           <rect x="796" y="147" width="46" height="3"/>
           <rect x="796" y="156" width="72" height="3"/>
           <rect x="796" y="165" width="34" height="3"/>
           <rect x="796" y="174" width="60" height="3"/>
           <rect x="796" y="183" width="44" height="3"/>
         </g>
-        <rect x="796" y="192" width="28" height="3" fill="#1A6BAF"/>
-        <rect x="828" y="190" width="5" height="6" fill="#3B8AC9" class="blink"/>
-        <g fill="#1A6BAF" opacity="0.85"><rect x="798" y="206" width="5" height="16" class="eq"
+        <rect x="796" y="192" width="28" height="3" fill="#15629F"/>
+        <rect x="828" y="190" width="5" height="6" fill="#3A85C4" class="blink"/>
+        <g fill="#15629F" opacity="0.85"><rect x="798" y="206" width="5" height="16" class="eq"
       style="transform-origin:800.5px 222px;animation-duration:1.6s;animation-delay:-0s"/><rect x="808" y="206" width="5" height="16" class="eq"
       style="transform-origin:810.5px 222px;animation-duration:1.9s;animation-delay:-0.4s"/><rect x="818" y="206" width="5" height="16" class="eq"
       style="transform-origin:820.5px 222px;animation-duration:1.4s;animation-delay:-0.8s"/><rect x="828" y="206" width="5" height="16" class="eq"
@@ -161,31 +161,31 @@
       </g>
     </g>
 
-    <rect x="1032" y="240" width="16" height="14" fill="#BCCFE3"/>
-    <ellipse cx="1040" cy="256" rx="34" ry="4" fill="#BCCFE3"/>
-    <rect x="926" y="96" width="228" height="148" rx="6" fill="#22415C" stroke="#BCCFE3" stroke-width="1.6"/>
-    <rect x="936" y="106" width="208" height="128" fill="#183049"/>
+    <rect x="1032" y="240" width="16" height="14" fill="#B4CBE0"/>
+    <ellipse cx="1040" cy="256" rx="34" ry="4" fill="#B4CBE0"/>
+    <rect x="926" y="96" width="228" height="148" rx="6" fill="#1F3D59" stroke="#B4CBE0" stroke-width="1.6"/>
+    <rect x="936" y="106" width="208" height="128" fill="#153046"/>
     <g clip-path="url(#mainScreen)">
-      <rect x="936" y="106" width="208" height="15" fill="#22415C"/>
-      <g fill="#6486A6">
+      <rect x="936" y="106" width="208" height="15" fill="#1F3D59"/>
+      <g fill="#5F81A2">
         <circle cx="945" cy="113" r="2.2"/><circle cx="954" cy="113" r="2.2"/><circle cx="963" cy="113" r="2.2"/>
       </g>
-      <text x="974" y="116" font-size="8.5" fill="#1A6BAF">ronas desk · v1.0.0 · ci ok</text>
+      <text x="974" y="116" font-size="8.5" fill="#15629F">ronas desk · v1.0.0 · ci ok</text>
 
       <g class="code-scroll">
-        <g transform="translate(0 0)"><rect x="942" y="128" width="16" height="3" fill="#1A6BAF"/><rect x="962" y="128" width="42" height="3" fill="#6486A6"/><rect x="942" y="138" width="58" height="3" fill="#6486A6"/><rect x="1004" y="138" width="18" height="3" fill="#3B8AC9"/><rect x="948" y="148" width="30" height="3" fill="#6486A6"/><rect x="948" y="158" width="66" height="3" fill="#BCCFE3"/><rect x="942" y="168" width="22" height="3" fill="#1A6BAF"/><rect x="968" y="168" width="36" height="3" fill="#6486A6"/><rect x="948" y="178" width="48" height="3" fill="#6486A6"/><rect x="948" y="188" width="26" height="3" fill="#3B8AC9"/><rect x="942" y="198" width="70" height="3" fill="#6486A6"/><rect x="942" y="208" width="34" height="3" fill="#1A6BAF"/><rect x="948" y="218" width="54" height="3" fill="#6486A6"/><rect x="948" y="228" width="28" height="3" fill="#BCCFE3"/><rect x="942" y="238" width="62" height="3" fill="#6486A6"/></g>
-        <g transform="translate(0 130)"><rect x="942" y="128" width="16" height="3" fill="#1A6BAF"/><rect x="962" y="128" width="42" height="3" fill="#6486A6"/><rect x="942" y="138" width="58" height="3" fill="#6486A6"/><rect x="1004" y="138" width="18" height="3" fill="#3B8AC9"/><rect x="948" y="148" width="30" height="3" fill="#6486A6"/><rect x="948" y="158" width="66" height="3" fill="#BCCFE3"/><rect x="942" y="168" width="22" height="3" fill="#1A6BAF"/><rect x="968" y="168" width="36" height="3" fill="#6486A6"/><rect x="948" y="178" width="48" height="3" fill="#6486A6"/><rect x="948" y="188" width="26" height="3" fill="#3B8AC9"/><rect x="942" y="198" width="70" height="3" fill="#6486A6"/><rect x="942" y="208" width="34" height="3" fill="#1A6BAF"/><rect x="948" y="218" width="54" height="3" fill="#6486A6"/><rect x="948" y="228" width="28" height="3" fill="#BCCFE3"/><rect x="942" y="238" width="62" height="3" fill="#6486A6"/></g>
+        <g transform="translate(0 0)"><rect x="942" y="128" width="16" height="3" fill="#15629F"/><rect x="962" y="128" width="42" height="3" fill="#5F81A2"/><rect x="942" y="138" width="58" height="3" fill="#5F81A2"/><rect x="1004" y="138" width="18" height="3" fill="#3A85C4"/><rect x="948" y="148" width="30" height="3" fill="#5F81A2"/><rect x="948" y="158" width="66" height="3" fill="#B4CBE0"/><rect x="942" y="168" width="22" height="3" fill="#15629F"/><rect x="968" y="168" width="36" height="3" fill="#5F81A2"/><rect x="948" y="178" width="48" height="3" fill="#5F81A2"/><rect x="948" y="188" width="26" height="3" fill="#3A85C4"/><rect x="942" y="198" width="70" height="3" fill="#5F81A2"/><rect x="942" y="208" width="34" height="3" fill="#15629F"/><rect x="948" y="218" width="54" height="3" fill="#5F81A2"/><rect x="948" y="228" width="28" height="3" fill="#B4CBE0"/><rect x="942" y="238" width="62" height="3" fill="#5F81A2"/></g>
+        <g transform="translate(0 130)"><rect x="942" y="128" width="16" height="3" fill="#15629F"/><rect x="962" y="128" width="42" height="3" fill="#5F81A2"/><rect x="942" y="138" width="58" height="3" fill="#5F81A2"/><rect x="1004" y="138" width="18" height="3" fill="#3A85C4"/><rect x="948" y="148" width="30" height="3" fill="#5F81A2"/><rect x="948" y="158" width="66" height="3" fill="#B4CBE0"/><rect x="942" y="168" width="22" height="3" fill="#15629F"/><rect x="968" y="168" width="36" height="3" fill="#5F81A2"/><rect x="948" y="178" width="48" height="3" fill="#5F81A2"/><rect x="948" y="188" width="26" height="3" fill="#3A85C4"/><rect x="942" y="198" width="70" height="3" fill="#5F81A2"/><rect x="942" y="208" width="34" height="3" fill="#15629F"/><rect x="948" y="218" width="54" height="3" fill="#5F81A2"/><rect x="948" y="228" width="28" height="3" fill="#B4CBE0"/><rect x="942" y="238" width="62" height="3" fill="#5F81A2"/></g>
       </g>
 
-      <line x1="1030" y1="121" x2="1030" y2="234" stroke="#BCCFE3" stroke-width="1"/>
+      <line x1="1030" y1="121" x2="1030" y2="234" stroke="#B4CBE0" stroke-width="1"/>
 
       <path class="soft" d="M1040 186 L1052 174 L1064 180 L1076 158 L1088 166 L1100 144 L1112 152 L1124 136 L1136 130 L1136 190 L1040 190 Z" fill="url(#chartFill)"/>
       <polyline class="draw-chart" points="1040,186 1052,174 1064,180 1076,158 1088,166 1100,144 1112,152 1124,136 1136,130"
-                fill="none" stroke="#3B8AC9" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                fill="none" stroke="#3A85C4" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
                 stroke-dasharray="180"/>
-      <circle cx="1136" cy="130" r="2.5" fill="#3B8AC9" class="soft" style="animation-duration:1.8s"/>
+      <circle cx="1136" cy="130" r="2.5" fill="#3A85C4" class="soft" style="animation-duration:1.8s"/>
 
-      <g fill="#1A6BAF" opacity="0.75"><rect x="1040" y="204" width="8" height="26" class="bar"
+      <g fill="#15629F" opacity="0.75"><rect x="1040" y="204" width="8" height="26" class="bar"
       style="transform-origin:1044px 230px;animation-duration:3.2s;animation-delay:-0s"/><rect x="1054" y="204" width="8" height="26" class="bar"
       style="transform-origin:1058px 230px;animation-duration:3.8s;animation-delay:-0.6s"/><rect x="1068" y="204" width="8" height="26" class="bar"
       style="transform-origin:1072px 230px;animation-duration:2.9s;animation-delay:-1.2s"/><rect x="1082" y="204" width="8" height="26" class="bar"
@@ -197,37 +197,37 @@
     </g>
 
     <g>
-      <path d="M1004 268 L1136 262 L1146 278 L1010 284 Z" fill="#22415C" stroke="#BCCFE3" stroke-width="1"/>
-      <g fill="#6486A6"><rect x="1016" y="270" width="9" height="3" class="blink" style="animation-duration:0.9s;animation-delay:-0s"/><rect x="1032" y="269" width="9" height="3" class="blink" style="animation-duration:1.3s;animation-delay:-0.3s"/><rect x="1048" y="268" width="9" height="3"/><rect x="1064" y="267" width="9" height="3" class="blink" style="animation-duration:1.1s;animation-delay:-0.8999999999999999s"/><rect x="1080" y="266" width="9" height="3"/><rect x="1096" y="265" width="9" height="3" class="blink" style="animation-duration:0.75s;animation-delay:-1.5s"/><rect x="1022" y="277" width="9" height="3"/><rect x="1038" y="276" width="9" height="3" class="blink" style="animation-duration:1.5s;animation-delay:-2.1s"/><rect x="1054" y="275" width="9" height="3"/><rect x="1070" y="274" width="9" height="3" class="blink" style="animation-duration:1s;animation-delay:-2.6999999999999997s"/><rect x="1086" y="273" width="9" height="3"/></g>
-      <ellipse cx="1168" cy="272" rx="10" ry="7" fill="#22415C" stroke="#BCCFE3" stroke-width="1"/>
+      <path d="M1004 268 L1136 262 L1146 278 L1010 284 Z" fill="#1F3D59" stroke="#B4CBE0" stroke-width="1"/>
+      <g fill="#5F81A2"><rect x="1016" y="270" width="9" height="3" class="blink" style="animation-duration:0.9s;animation-delay:-0s"/><rect x="1032" y="269" width="9" height="3" class="blink" style="animation-duration:1.3s;animation-delay:-0.3s"/><rect x="1048" y="268" width="9" height="3"/><rect x="1064" y="267" width="9" height="3" class="blink" style="animation-duration:1.1s;animation-delay:-0.8999999999999999s"/><rect x="1080" y="266" width="9" height="3"/><rect x="1096" y="265" width="9" height="3" class="blink" style="animation-duration:0.75s;animation-delay:-1.5s"/><rect x="1022" y="277" width="9" height="3"/><rect x="1038" y="276" width="9" height="3" class="blink" style="animation-duration:1.5s;animation-delay:-2.1s"/><rect x="1054" y="275" width="9" height="3"/><rect x="1070" y="274" width="9" height="3" class="blink" style="animation-duration:1s;animation-delay:-2.6999999999999997s"/><rect x="1086" y="273" width="9" height="3"/></g>
+      <ellipse cx="1168" cy="272" rx="10" ry="7" fill="#1F3D59" stroke="#B4CBE0" stroke-width="1"/>
     </g>
 
     <g>
-      <g fill="none" stroke="#1A6BAF" stroke-width="1.2" stroke-linecap="round">
+      <g fill="none" stroke="#15629F" stroke-width="1.2" stroke-linecap="round">
         <path class="steam" d="M606 258 C601 250 611 246 606 238"/>
         <path class="steam" style="animation-duration:5.4s;animation-delay:-1.6s" d="M616 256 C611 248 621 244 616 236"/>
         <path class="steam" style="animation-duration:5s;animation-delay:-3s" d="M625 259 C620 251 630 247 625 239"/>
       </g>
-      <path d="M598 264 H634 V286 Q634 293 627 293 H605 Q598 293 598 286 Z" fill="#22415C" stroke="#1A6BAF" stroke-width="1.3"/>
-      <path d="M634 270 Q646 272 644 280 Q642 287 634 286" fill="none" stroke="#1A6BAF" stroke-width="1.3"/>
-      <ellipse cx="616" cy="264" rx="18" ry="3.4" fill="#BCCFE3"/>
+      <path d="M598 264 H634 V286 Q634 293 627 293 H605 Q598 293 598 286 Z" fill="#1F3D59" stroke="#15629F" stroke-width="1.3"/>
+      <path d="M634 270 Q646 272 644 280 Q642 287 634 286" fill="none" stroke="#15629F" stroke-width="1.3"/>
+      <ellipse cx="616" cy="264" rx="18" ry="3.4" fill="#B4CBE0"/>
     </g>
 
     <ellipse class="soft" cx="1030" cy="180" rx="230" ry="150" fill="url(#screenGlow)"/>
 
-    <path d="M762 306 Q762 292 782 292 H1038 Q1058 292 1058 306 V330 H762 Z" fill="#22384F" stroke="#BCCFE3" stroke-width="1"/>
+    <path d="M762 306 Q762 292 782 292 H1038 Q1058 292 1058 306 V330 H762 Z" fill="#1E3349" stroke="#B4CBE0" stroke-width="1"/>
 
     <g class="breathe">
-      <path d="M780 330 C784 296 812 282 838 274 C830 236 856 208 910 208 C964 208 990 236 982 274 C1008 282 1036 296 1040 330 Z" fill="#22384F"/>
-      <path class="rim" d="M780 330 C784 296 812 282 838 274 C830 236 856 208 910 208 C964 208 990 236 982 274 C1008 282 1036 296 1040 330" fill="none" stroke="#1A6BAF" stroke-width="1.8"/>
-      <path d="M838 256 C838 192 982 192 982 256" fill="none" stroke="#8496AC" stroke-width="7" stroke-linecap="round"/>
-      <path d="M838 256 C838 192 982 192 982 256" fill="none" stroke="#1A6BAF" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
-      <rect x="825" y="246" width="21" height="36" rx="10" fill="#8496AC" stroke="#1A6BAF" stroke-width="1"/>
-      <rect x="974" y="246" width="21" height="36" rx="10" fill="#8496AC" stroke="#1A6BAF" stroke-width="1"/>
-      <circle cx="984" cy="264" r="2.4" fill="#3B8AC9" class="blink" style="animation-duration:2.4s"/>
+      <path d="M780 330 C784 296 812 282 838 274 C830 236 856 208 910 208 C964 208 990 236 982 274 C1008 282 1036 296 1040 330 Z" fill="#1E3349"/>
+      <path class="rim" d="M780 330 C784 296 812 282 838 274 C830 236 856 208 910 208 C964 208 990 236 982 274 C1008 282 1036 296 1040 330" fill="none" stroke="#15629F" stroke-width="1.8"/>
+      <path d="M838 256 C838 192 982 192 982 256" fill="none" stroke="#7F92A9" stroke-width="7" stroke-linecap="round"/>
+      <path d="M838 256 C838 192 982 192 982 256" fill="none" stroke="#15629F" stroke-width="1.2" stroke-linecap="round" opacity="0.4"/>
+      <rect x="825" y="246" width="21" height="36" rx="10" fill="#7F92A9" stroke="#15629F" stroke-width="1"/>
+      <rect x="974" y="246" width="21" height="36" rx="10" fill="#7F92A9" stroke="#15629F" stroke-width="1"/>
+      <circle cx="984" cy="264" r="2.4" fill="#3A85C4" class="blink" style="animation-duration:2.4s"/>
     </g>
 
-    <g fill="#3B8AC9">
+    <g fill="#3A85C4">
       <circle class="rise" cx="672" cy="300" r="1.2"/>
       <circle class="rise" cx="744" cy="300" r="1" style="animation-duration:21s;animation-delay:-3s"/>
       <circle class="rise" cx="1104" cy="300" r="1.1" style="animation-duration:18s;animation-delay:-6s"/>
@@ -238,24 +238,24 @@
     
 
     <g>
-      <text class="glow" x="70" y="126" font-size="38" font-weight="700" fill="#1A6BAF" filter="url(#soft)">RONAEL MOURA</text>
+      <text class="glow" x="70" y="126" font-size="38" font-weight="700" fill="#15629F" filter="url(#soft)">RONAEL MOURA</text>
 
-      <text x="70" y="74" font-size="12" fill="#1A6BAF" letter-spacing="3">RONAS // BUILD LOG</text>
-      <text x="70" y="126" font-size="38" font-weight="700" fill="#0E2035">RONAEL MOURA</text>
+      <text x="70" y="74" font-size="12" fill="#15629F" letter-spacing="3">RONAS // BUILD LOG</text>
+      <text x="70" y="126" font-size="38" font-weight="700" fill="#0C1E33">RONAEL MOURA</text>
 
-      <line class="draw-line" x1="70" y1="140" x2="250" y2="140" stroke="#1A6BAF" stroke-width="1.5" stroke-dasharray="180"/>
+      <line class="draw-line" x1="70" y1="140" x2="250" y2="140" stroke="#15629F" stroke-width="1.5" stroke-dasharray="180"/>
 
-      <text x="70" y="166" font-size="16" fill="#3C5A7A" letter-spacing="1">full stack developer</text>
-      <text x="70" y="192" font-size="11" fill="#6486A6" letter-spacing="1">react · node · express · mysql</text>
+      <text x="70" y="166" font-size="16" fill="#365474" letter-spacing="1">full stack developer</text>
+      <text x="70" y="192" font-size="11" fill="#5F81A2" letter-spacing="1">react · node · express · mysql</text>
       
-      <text x="70" y="220" font-size="13" fill="#1A6BAF" clip-path="url(#clip-flow)"
+      <text x="70" y="220" font-size="13" fill="#15629F" clip-path="url(#clip-flow)"
             textLength="280.8" lengthAdjust="spacing">problema → produto → testes → deploy</text>
-      <rect x="353.8" y="208" width="7.2" height="13" fill="#1A6BAF"
+      <rect x="353.8" y="208" width="7.2" height="13" fill="#15629F"
             style="animation:caret-flow 11s steps(36,end) infinite,blink 1.2s steps(1,end) infinite"/>
-      <text x="70" y="242" font-size="10.5" fill="#6486A6">último commit · há 1d · ronas-tech-site</text>
+      <text x="70" y="242" font-size="10.5" fill="#5F81A2">último commit · há 1d · ronas-tech-site</text>
 
       <g clip-path="url(#titleBox)">
-        <rect class="scan" x="60" y="46" width="520" height="3" fill="#3B8AC9" opacity="0.1"/>
+        <rect class="scan" x="60" y="46" width="520" height="3" fill="#3A85C4" opacity="0.1"/>
         <rect class="shine" x="60" y="46" width="160" height="212" fill="url(#shine)"/>
       </g>
     </g>
