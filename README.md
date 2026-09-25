@@ -1,164 +1,80 @@
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/ronas-motion-light.svg" />
-  <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/ronas-motion.svg" alt="Ronael Moura — Full Stack Developer" />
-</picture>
+# Olá, eu sou Ronael Moura 👋
 
-<p align="center"><sub>A cena acompanha a hora em São Paulo e mostra meu último commit de verdade. Regenerada de hora em hora.</sub></p>
+**Full Stack Developer focado em transformar problemas reais de negócio em sistemas web e soluções digitais.**
 
-<p align="center">
-  <a href="https://ronaelmoura.github.io/portfolio-ronael-moura/"><img src="https://img.shields.io/badge/portfólio-0B1626?style=for-the-badge&logo=googlechrome&logoColor=5FA8E0" alt="Portfólio" /></a>
-  <a href="https://ronas-desk.onrender.com/"><img src="https://img.shields.io/badge/ronas_desk-0B1626?style=for-the-badge&logo=react&logoColor=5FA8E0" alt="Demonstração do Ronas Desk" /></a>
-  <a href="https://www.ronastech.com.br/"><img src="https://img.shields.io/badge/ronas_tech-0B1626?style=for-the-badge&logo=googlechrome&logoColor=5FA8E0" alt="Ronas Tech" /></a>
-  <a href="https://www.linkedin.com/in/ronael-moura"><img src="https://img.shields.io/badge/linkedin-0B1626?style=for-the-badge&logo=linkedin&logoColor=5FA8E0" alt="LinkedIn" /></a>
-  <a href="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/curriculo-ronael-moura.pdf"><img src="https://img.shields.io/badge/currículo-0B1626?style=for-the-badge&logo=readdotcv&logoColor=5FA8E0" alt="Currículo em PDF" /></a>
-</p>
+Construo aplicações com **React, Node.js, TypeScript, Express e MySQL**, com foco em regras de negócio, APIs, segurança, testes e experiência de uso.
 
-<p align="center">
-  <img src="https://img.shields.io/badge/disponível_para_oportunidades-5FA8E0?style=flat-square&labelColor=0B1626" alt="Disponível para oportunidades" />
-</p>
+Também desenvolvo projetos através da **Ronas Tech**, explorando como tecnologia, automação e IA podem ser aplicadas a problemas reais de empresas.
 
-## Sobre
+## 🚀 Projetos em destaque
 
-Desenvolvedor Full Stack com React, Node.js e TypeScript, baseado no Ceará. Construo aplicações web com APIs, bancos relacionais e testes automatizados. Minha experiência em suporte técnico orienta soluções centradas em quem usa. Estou disponível para oportunidades em desenvolvimento. A Ronas Tech é minha atuação atual em suporte remoto.
+### 🖥️ Ronas Desk
 
-```javascript
-const ronael = {
-  agora: 'suporte remoto na Ronas Tech e projetos web autorais',
-  buscando: 'um time que constrói coisas com impacto real',
-}
-```
+Sistema de atendimento e gestão de chamados desenvolvido para simular um cenário real de operação.
 
-<details>
-<summary><code>$ cat trajetoria.txt</code></summary>
+**React · Node.js · Express · MySQL · JWT · Docker · Nginx**
 
-<br />
+Inclui recursos como permissões, SLA, auditoria, relatórios, anexos, testes automatizados e CI.
 
-Comecei em suporte de TI, atendendo quem estava com o problema na frente e sem paciência para jargão. Isso me ensinou três coisas que carrego para o código:
+👉 Projeto em produção: https://ronas-desk.onrender.com/
 
-- **Reproduzir antes de opinar.** Metade dos bugs "impossíveis" some quando você olha o log de verdade.
-- **Escrever para quem vai ler depois.** Chamado, commit e README têm o mesmo dono: a próxima pessoa — que às vezes sou eu daqui a seis meses.
-- **A entrega termina no usuário, não no merge.** Deploy que ninguém consegue usar é rascunho caro.
+### 📦 StockFlow API
 
-Hoje conduzo a Ronas Tech, minha operação de suporte remoto para Windows, e desenvolvo projetos web autorais.
+API backend com foco em regras de negócio e consistência de dados.
 
-</details>
+**Node.js · TypeScript · Express · MySQL · Zod · JWT · Vitest**
 
-## Stack
+O projeto trabalha com conceitos como transações, idempotência, concorrência, controle de estoque, RBAC e arquitetura orientada a eventos.
 
-| Camada | Ferramentas |
-| --- | --- |
-| Interface | React 19, Vite, TypeScript |
-| Serviços | Node.js, Express 5, REST, JWT |
-| Dados | MySQL, transações, Zod |
-| Qualidade | Vitest, GitHub Actions |
-| Entrega | Docker, Nginx, Render, Cloudflare Workers |
+### 📁 Multer Safe Limit
 
-## Em 30 segundos
+Pequena biblioteca criada a partir de um problema específico encontrado no upload de arquivos.
 
-| O que você procura | Evidência pública |
-| --- | --- |
-| Desenvolvimento Full Stack | React, TypeScript, Node.js, Express e MySQL |
-| Regras de negócio e dados | [StockFlow API](https://github.com/ronaelmoura/stockflow-api): transações, idempotência, concorrência e Outbox |
-| Qualidade e manutenção | [Ronas Desk](https://github.com/ronaelmoura/ronas-desk): 370 testes documentados, CI, autenticação e auditoria |
-| Open source aplicado | [Multer Safe Limit](https://github.com/ronaelmoura/multer-safe-limit): wrapper testado para um limite de upload do Multer |
-| Experiência com usuários | Ronas Tech: suporte remoto para Windows e investigação de problemas |
+O objetivo foi corrigir o comportamento de limite de tamanho do Multer sem alterar a API utilizada pela aplicação.
 
-> Os projetos de demonstração usam dados fictícios. As métricas acima descrevem código, testes e escopo documentados; não representam escala comercial ou cobertura total.
+**Node.js · TypeScript · Multer · Testes**
 
-## Ronas Desk
+## 🧠 Como trabalho
 
-Projeto autoral Full Stack de Help Desk com demonstração pública — meu case principal. Criei para simular a operação de uma equipe de suporte com segurança, rastreabilidade e indicadores calculados sobre dados fictícios de atendimento. A [demo pública](https://ronas-desk.onrender.com/) é somente leitura e não representa uma operação comercial.
+Gosto de entender o problema antes de escolher a tecnologia.
 
-<img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/terminal-demo.svg" alt="Simulação ilustrativa do fluxo de build, testes e deploy do Ronas Desk" />
+Meu foco não é apenas fazer uma aplicação funcionar, mas entender:
 
-<p align="center"><sub>Simulação ilustrativa do fluxo de deploy — não é uma gravação de tela real.</sub></p>
+* quais são as regras do negócio;
+* onde podem ocorrer falhas;
+* como os dados devem ser protegidos;
+* como testar o comportamento;
+* como a aplicação será executada em produção;
+* e como tornar a solução fácil de manter.
 
-| Funcionalidades | Engenharia | Qualidade |
-| --- | --- | --- |
-| Clientes, chamados, SLA, relatórios, auditoria, anexos e Portal do Cliente | React 19, Express 5, MySQL, JWT, Docker, Nginx, Render, Aiven TLS e Cloudinary | **370 testes documentados: 361 no CI + 9 de integração local**, Helmet, rate limit e permissões por perfil |
+Também utilizo ferramentas de IA durante o desenvolvimento, mas mantenho a responsabilidade pelas decisões técnicas, validação e revisão do código.
 
-<details>
-<summary><code>$ ronas-desk --arquitetura</code></summary>
+## 🛠️ Tecnologias
 
-<br />
+**Frontend:** React, JavaScript, TypeScript, HTML, CSS
 
-```mermaid
-flowchart LR
-  U["Equipe e clientes"] --> F["React 19"]
-  F --> A["API REST · Express 5"]
-  A --> S["Serviços e regras de negócio"]
-  S --> D[("MySQL com TLS")]
-  S --> C["Cloudinary · anexos privados"]
-```
+**Backend:** Node.js, Express
 
-O frontend consome a API Express. A gravação do chamado e de seu evento de auditoria usa a mesma transação MySQL para evitar alterações parciais. Anexos privados no Cloudinary são acessados por links temporários após autorização. Consulte o repositório para a implementação e suas limitações.
+**Banco de dados:** MySQL
 
-</details>
+**Testes:** Vitest, Jest
 
-<p align="center">
-  <a href="https://ronas-desk.onrender.com/"><img src="https://img.shields.io/badge/testar_demonstração-5FA8E0?style=flat-square&labelColor=0B1626" alt="Testar demonstração" /></a>
-  <a href="https://github.com/ronaelmoura/ronas-desk"><img src="https://img.shields.io/badge/ver_código-0B1626?style=flat-square&logo=github&logoColor=5FA8E0" alt="Ver código" /></a>
-  <a href="https://github.com/ronaelmoura/ronas-desk/actions/workflows/ci.yml"><img src="https://img.shields.io/github/actions/workflow/status/ronaelmoura/ronas-desk/ci.yml?branch=main&label=ci&style=flat-square&color=5FA8E0&labelColor=0B1626" alt="Status do CI" /></a>
-</p>
+**Infraestrutura:** Docker, Nginx, CI/CD
 
-## Projetos
+**Outros:** Git, GitHub, REST APIs, JWT, OpenAPI
 
-| | Projeto | Por que vale abrir |
-| :---: | --- | --- |
-| 🖥️ | [**Ronas Desk**](https://github.com/ronaelmoura/ronas-desk) · [demo](https://ronas-desk.onrender.com/) | Projeto Full Stack de demonstração: regras de negócio, segurança, testes e deploy. |
-| 📦 | [**StockFlow API**](https://github.com/ronaelmoura/stockflow-api) [![CI](https://img.shields.io/github/actions/workflow/status/ronaelmoura/stockflow-api/ci.yml?branch=main&label=ci&style=flat-square&color=5FA8E0&labelColor=0B1626)](https://github.com/ronaelmoura/stockflow-api/actions/workflows/ci.yml) | API de estoque e pedidos com Node.js, Express, MySQL, transações e OpenAPI. |
-| 🧩 | [**Multer Safe Limit**](https://github.com/ronaelmoura/multer-safe-limit) | Wrapper de upload com testes de tamanho-limite e tratamento compatível com Multer. |
-| 🧩 | [**Portfólio**](https://github.com/ronaelmoura/portfolio-ronael-moura) · [demo](https://ronaelmoura.github.io/portfolio-ronael-moura/) | Portfólio atual com currículo, projetos selecionados e decisões técnicas documentadas. |
-| 💰 | [**Nexo — Dashboard Financeiro**](https://github.com/ronaelmoura/nexo-dashboard-financeiro) · [demo](https://ronaelmoura.github.io/nexo-dashboard-financeiro/) | React e TypeScript com gráficos, filtros, modo escuro e layout responsivo. |
-| ❄️ | [**ClimaZen**](https://github.com/ronaelmoura/climazen-landing-page) · [demo](https://ronaelmoura.github.io/climazen-landing-page/) | Landing page comercial responsiva com simulador de economia e foco em conversão. |
+## 📌 Atualmente
 
-## Atividade
+Estou desenvolvendo minha atuação em duas frentes:
 
-<p align="center">
-  <img height="160" src="https://github-readme-stats-eight-theta.vercel.app/api?username=ronaelmoura&show_icons=true&count_private=true&hide_border=true&bg_color=0B1626&title_color=5FA8E0&icon_color=5FA8E0&text_color=C8D8EA&ring_color=5FA8E0" alt="Estatísticas do GitHub" />
-  <img height="160" src="https://github-readme-stats-eight-theta.vercel.app/api/top-langs/?username=ronaelmoura&layout=compact&hide_border=true&bg_color=0B1626&title_color=5FA8E0&text_color=C8D8EA&langs_count=8" alt="Linguagens mais usadas" />
-</p>
+**💼 Desenvolvimento:**
+Buscando oportunidades para trabalhar com desenvolvimento Full Stack, backend e sistemas web.
 
-<picture>
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/black-pearl-sailing-light.svg" />
-  <img width="100%" src="https://raw.githubusercontent.com/ronaelmoura/ronaelmoura/main/assets/black-pearl-sailing.svg" alt="Pérola Negra navegando sobre o gráfico de contribuições" />
-</picture>
+**🚀 Ronas Tech:**
+Construindo soluções digitais para empresas, incluindo sites, sistemas web, automações e aplicações de IA.
 
-<p align="center"><sub>O mar não é enfeite: a altura de cada onda é o total de contribuições daquela semana, e o navio percorre essa curva.</sub></p>
+---
 
-<details>
-<summary><code>$ como-a-arte-funciona --verbose</code></summary>
+📫 **Contato**
 
-<br />
-
-As duas cenas deste perfil são SVG gerados no próprio repositório. Isso reduz a dependência de widgets externos nessas ilustrações; os badges e cartões de estatísticas continuam usando serviços de terceiros. Um workflow roda de hora em hora e redesenha tudo:
-
-| Peça | De onde vem |
-| --- | --- |
-| Luz da cena | Hora atual em São Paulo — madrugada, manhã, tarde e noite têm paletas diferentes |
-| Chuva e relâmpago | Aparecem no fim da tarde e na madrugada |
-| Linha do último commit | Feed público de eventos, com a mensagem buscada pelo SHA |
-| Rótulo do monitor | Última execução do CI do Ronas Desk |
-| Altura das ondas | Contribuições por semana no último ano |
-| Versão clara/escura | Duas artes geradas no mesmo passo, servidas por `<picture>` |
-
-A animação é SMIL puro dentro do SVG, inclusive o efeito de máquina de escrever — um `clipPath` que cresce em passos discretos, uma letra por vez. O navio não é animado à mão: ele percorre a curva das contribuições com `animateMotion`, então sobe de verdade nas semanas cheias.
-
-O código está em [`scripts/`](https://github.com/ronaelmoura/ronaelmoura/tree/main/scripts) — sem dependências, só Node.
-
-</details>
-
-## Como avaliar os projetos
-
-Cada repositório principal contém README, decisões técnicas, instruções de execução e links para testes ou CI quando disponíveis. Para uma avaliação rápida, comece pelo [Ronas Desk](https://github.com/ronaelmoura/ronas-desk), depois veja o [StockFlow](https://github.com/ronaelmoura/stockflow-api) e o [Multer Safe Limit](https://github.com/ronaelmoura/multer-safe-limit). O [portfólio atual](https://ronaelmoura.github.io/portfolio-ronael-moura/) reúne o contexto visual e profissional.
-
-## Contato
-
-Se você procura alguém com disposição para entender o problema, aprender rápido e entregar software que funciona de verdade — e não só no ambiente de dev —, vamos conversar.
-
-<p align="center">
-  <a href="mailto:ronaelmoura240@gmail.com"><img src="https://img.shields.io/badge/e--mail-5FA8E0?style=for-the-badge&logo=gmail&logoColor=0B1626" alt="Enviar e-mail" /></a>
-  <a href="https://www.linkedin.com/in/ronael-moura"><img src="https://img.shields.io/badge/linkedin-0B1626?style=for-the-badge&logo=linkedin&logoColor=5FA8E0" alt="LinkedIn" /></a>
-</p>
-
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:5FA8E0,55:0B1626,100:050B14&height=110&section=footer&text=Vamos+construir+algo+que+funciona.&fontSize=20&fontColor=E7F1FF&fontAlignY=68&animation=twinkling" alt="Vamos construir algo que funciona" />
+Se você encontrou algum projeto interessante aqui, fique à vontade para explorar os repositórios ou entrar em contato.
