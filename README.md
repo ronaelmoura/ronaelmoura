@@ -1,46 +1,80 @@
-# Ronael Moura
+# Olá, eu sou Ronael Moura 👋
 
-Desenvolvedor Full Stack focado em sistemas web que organizam atendimento, operações e dados de negócio.
+**Full Stack Developer focado em transformar problemas reais de negócio em sistemas web e soluções digitais.**
 
-Trabalho com React, Node.js, TypeScript, Express e MySQL, priorizando regras de negócio, APIs REST, autenticação, testes automatizados e deploy. Tenho formação em Desenvolvimento de Sistemas pelo SENAI e experiência anterior em suporte de TI.
+Construo aplicações com **React, Node.js, TypeScript, Express e MySQL**, com foco em regras de negócio, APIs, segurança, testes e experiência de uso.
 
-Aberto a oportunidades remotas CLT ou PJ em desenvolvimento Full Stack e backend.
+Também desenvolvo projetos através da **Ronas Tech**, explorando como tecnologia, automação e IA podem ser aplicadas a problemas reais de empresas.
 
-## Projetos selecionados
+## 🚀 Projetos em destaque
 
-### [Ronas Desk](https://github.com/ronaelmoura/ronas-desk)
+### 🖥️ Ronas Desk
 
-Sistema web de atendimento e gestão de chamados com dados fictícios e demonstração em produção.
+Sistema de atendimento e gestão de chamados desenvolvido para simular um cenário real de operação.
 
 **React · Node.js · Express · MySQL · JWT · Docker · Nginx**
 
-Inclui permissões, SLA, auditoria, relatórios, anexos, testes automatizados e CI.
+Inclui recursos como permissões, SLA, auditoria, relatórios, anexos, testes automatizados e CI.
 
-[Ver demonstração](https://ronas-desk.onrender.com/) · [Ver código](https://github.com/ronaelmoura/ronas-desk)
+👉 Projeto em produção: https://ronas-desk.onrender.com/
 
-### [StockFlow API](https://github.com/ronaelmoura/stockflow-api)
+### 📦 StockFlow API
 
-API para estoque e pedidos que explora reservas transacionais, idempotência, concorrência, RBAC, auditoria, Outbox Pattern e OpenAPI.
+API backend com foco em regras de negócio e consistência de dados.
 
-**Node.js · TypeScript · Express · MySQL · Zod · Vitest**
+**Node.js · TypeScript · Express · MySQL · Zod · JWT · Vitest**
 
-### [Multer Safe Limit](https://github.com/ronaelmoura/multer-safe-limit)
+O projeto trabalha com conceitos como transações, idempotência, concorrência, controle de estoque, RBAC e arquitetura orientada a eventos.
 
-Biblioteca TypeScript que trata de forma previsível o limite exato de tamanho de arquivos em uploads com Multer.
+### 📁 Multer Safe Limit
+
+Pequena biblioteca criada a partir de um problema específico encontrado no upload de arquivos.
+
+O objetivo foi corrigir o comportamento de limite de tamanho do Multer sem alterar a API utilizada pela aplicação.
 
 **Node.js · TypeScript · Multer · Testes**
 
-## Como trabalho
+## 🧠 Como trabalho
 
-Antes de escolher a tecnologia, procuro entender o processo, as regras de negócio e os riscos de falha. Em seguida, transformo isso em uma solução simples de operar, testável e fácil de manter.
+Gosto de entender o problema antes de escolher a tecnologia.
 
-## Tecnologias
+Meu foco não é apenas fazer uma aplicação funcionar, mas entender:
 
-**Frontend:** React, JavaScript, TypeScript, HTML e CSS  
-**Backend:** Node.js, Express e APIs REST  
-**Banco de dados:** MySQL  
-**Qualidade e infraestrutura:** Vitest, Jest, Docker, Nginx, CI/CD, Git e OpenAPI
+* quais são as regras do negócio;
+* onde podem ocorrer falhas;
+* como os dados devem ser protegidos;
+* como testar o comportamento;
+* como a aplicação será executada em produção;
+* e como tornar a solução fácil de manter.
 
-## Contato
+Também utilizo ferramentas de IA durante o desenvolvimento, mas mantenho a responsabilidade pelas decisões técnicas, validação e revisão do código.
 
-[Portfólio](https://www.ronastech.com.br/) · [LinkedIn](https://www.linkedin.com/in/ronael-moura) · [E-mail](mailto:contato@ronastech.com.br)
+## 🛠️ Tecnologias
+
+**Frontend:** React, JavaScript, TypeScript, HTML, CSS
+
+**Backend:** Node.js, Express
+
+**Banco de dados:** MySQL
+
+**Testes:** Vitest, Jest
+
+**Infraestrutura:** Docker, Nginx, CI/CD
+
+**Outros:** Git, GitHub, REST APIs, JWT, OpenAPI
+
+## 📌 Atualmente
+
+Estou desenvolvendo minha atuação em duas frentes:
+
+**💼 Desenvolvimento:**
+Buscando oportunidades para trabalhar com desenvolvimento Full Stack, backend e sistemas web.
+
+**🚀 Ronas Tech:**
+Construindo soluções digitais para empresas, incluindo sites, sistemas web, automações e aplicações de IA.
+
+---
+
+📫 **Contato**
+
+Se você encontrou algum projeto interessante aqui, fique à vontade para explorar os repositórios ou entrar em contato.
