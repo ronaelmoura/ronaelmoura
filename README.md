@@ -15,6 +15,7 @@
 
 <p align="center">
   <img src="https://img.shields.io/badge/disponível_para_oportunidades-5FA8E0?style=flat-square&labelColor=0B1626" alt="Disponível para oportunidades" />
+  <img src="https://komarev.com/ghpvc/?username=ronaelmoura&label=visitas+ao+perfil&color=5FA8E0&style=flat-square&abbreviated=true" alt="Visitas ao perfil" />
 </p>
 
 ## Sobre
@@ -111,6 +112,20 @@ O frontend consome a API Express. A gravação do chamado e de seu evento de aud
 | 🧩 | [**Portfólio**](https://github.com/ronaelmoura/portfolio-ronael-moura) · [demo](https://ronaelmoura.github.io/portfolio-ronael-moura/) | Portfólio atual com currículo, projetos selecionados e decisões técnicas documentadas. |
 | 💰 | [**Nexo — Dashboard Financeiro**](https://github.com/ronaelmoura/nexo-dashboard-financeiro) · [demo](https://ronaelmoura.github.io/nexo-dashboard-financeiro/) | React e TypeScript com gráficos, filtros, modo escuro e layout responsivo. |
 | ❄️ | [**ClimaZen**](https://github.com/ronaelmoura/climazen-landing-page) · [demo](https://ronaelmoura.github.io/climazen-landing-page/) | Landing page comercial responsiva com simulador de economia e foco em conversão. |
+
+## Repositórios em destaque
+
+<p align="center">
+  <a href="https://github.com/ronaelmoura/ronas-desk"><img height="145" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=ronaelmoura&repo=ronas-desk&hide_border=true&bg_color=0B1626&title_color=5FA8E0&icon_color=5FA8E0&text_color=C8D8EA" alt="Ronas Desk" /></a>
+  <a href="https://github.com/ronaelmoura/stockflow-api"><img height="145" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=ronaelmoura&repo=stockflow-api&hide_border=true&bg_color=0B1626&title_color=5FA8E0&icon_color=5FA8E0&text_color=C8D8EA" alt="StockFlow API" /></a>
+</p>
+
+<p align="center">
+  <a href="https://github.com/ronaelmoura/portfolio-ronael-moura"><img height="145" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=ronaelmoura&repo=portfolio-ronael-moura&hide_border=true&bg_color=0B1626&title_color=5FA8E0&icon_color=5FA8E0&text_color=C8D8EA" alt="Portfólio Ronael Moura" /></a>
+  <a href="https://github.com/ronaelmoura/ronas-tech-site"><img height="145" src="https://github-readme-stats-eight-theta.vercel.app/api/pin/?username=ronaelmoura&repo=ronas-tech-site&hide_border=true&bg_color=0B1626&title_color=5FA8E0&icon_color=5FA8E0&text_color=C8D8EA" alt="Ronas Tech Site" /></a>
+</p>
+
+<p align="center"><sub>O GitHub não expõe publicamente a contagem real de visualizações por repositório. Os cards acima mostram métricas públicas dos projetos que mais representam meu trabalho.</sub></p>
 
 ## Atividade
 
