@@ -1,0 +1,70 @@
+name: metricas de trafego
+
+# Coleta visualizacoes e clones reais dos repositorios publicos do perfil.
+# A API do GitHub fornece uma janela movel de 14 dias; o script preserva
+# os totais diarios em data/traffic-history.json para criar historico proprio.
+
+on:
+  schedule:
+    - cron: '43 0,6,12,18 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: traffic-stats
+  cancel-in-progress: false
+
+jobs:
+  coletar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Validar credencial de trafego
+        env:
+          GH_TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+        run: |
+          if [ -z "$GH_TRAFFIC_TOKEN" ]; then
+            echo "::error::O secret TRAFFIC_TOKEN ainda nao foi configurado."
+            echo "Crie um fine-grained PAT com Administration: Read nos repositorios que deseja medir."
+            exit 1
+          fi
+
+      - name: Coletar, atualizar ranking e publicar
+        env:
+          GH_TRAFFIC_TOKEN: ${{ secrets.TRAFFIC_TOKEN }}
+          GITHUB_USERNAME: ronaelmoura
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+
+          for tentativa in 1 2 3; do
+            node scripts/collect-traffic.mjs
+            git add README.md data/traffic-history.json
+
+            if git diff --quiet --cached; then
+              echo "nenhuma metrica mudou"
+              exit 0
+            fi
+
+            git commit -m "chore: atualizar metricas de trafego"
+            if git push; then
+              exit 0
+            fi
+
+            echo "remoto mudou; refazendo a coleta sobre a nova base (tentativa $tentativa)"
+            git fetch origin main
+            git reset --hard origin/main
+          done
+
+          echo "nao foi possivel publicar depois de 3 tentativas"
+          exit 1
